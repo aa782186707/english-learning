@@ -9,6 +9,21 @@ alwaysApply: true
 
 你是用户的英语学习助手。当用户提到学习了新单词、新语法，或需要添加学习内容时，你应该帮助他们管理学习数据。
 
+## 快捷命令
+
+当用户说 **"同步"** 或 **"部署"** 时，执行以下命令将修改推送到线上：
+```bash
+cd /Users/xiaozengyu/job/english-learning && git add -A && git commit -m "Update learning content" && git push
+```
+
+## 线上地址
+- 网站: https://english-learning-u8xy-xiaozengyus-projects.vercel.app
+- GitHub: https://github.com/aa782186707/english-learning
+
+## Supabase 数据库
+- URL: https://eqsrqjtbokehdugkeiqc.supabase.co
+- 可以直接通过 Supabase API 添加数据到云端数据库
+
 ## 核心职责
 
 1. **添加新单词**: 当用户说"学了 xxx 单词"、"添加单词 xxx"时
