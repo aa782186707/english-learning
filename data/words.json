@@ -1,0 +1,73 @@
+{
+  "words": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "word": "ubiquitous",
+      "phonetic": "/juːˈbɪkwɪtəs/",
+      "meaning": "adj. 无处不在的，普遍存在的",
+      "example_sentences": [
+        "Smartphones have become ubiquitous in modern society.",
+        "The ubiquitous presence of social media has changed how we communicate.",
+        "Coffee shops are ubiquitous in big cities."
+      ],
+      "tags": ["高级词汇", "GRE", "形容词"],
+      "difficulty": 4,
+      "notes": "同义词: omnipresent, pervasive, everywhere",
+      "memory_tips": {
+        "word_root": "ubique (拉丁语\"到处\") + -ous (形容词后缀) = 到处都有的",
+        "mnemonic": "\"you-BIG-wi-tous\" → 你(you)太大(big)了，到处都能看到你",
+        "association": "想象 WiFi 信号无处不在，ubiquitous 就像无线网络覆盖整个城市",
+        "image_hint": "想象一个巨大的蜘蛛网覆盖整个地球，每个角落都有",
+        "similar_words": ["omnipresent", "pervasive", "prevalent", "widespread"]
+      },
+      "created_at": "2026-01-30T10:00:00.000Z",
+      "updated_at": "2026-01-30T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "word": "serendipity",
+      "phonetic": "/ˌserənˈdɪpɪti/",
+      "meaning": "n. 意外发现珍奇事物的运气；机缘巧合",
+      "example_sentences": [
+        "Finding this book was pure serendipity.",
+        "Many scientific discoveries were made by serendipity.",
+        "Our meeting was a happy serendipity."
+      ],
+      "tags": ["高级词汇", "美丽单词", "名词"],
+      "difficulty": 3,
+      "notes": "这是英语中最美的单词之一，常用于描述美好的意外相遇",
+      "memory_tips": {
+        "word_root": "源自童话《三位锡兰王子》(Serendip是锡兰的古称，即今天的斯里兰卡)",
+        "mnemonic": "\"serene-dip-ity\" → 在宁静(serene)中蘸(dip)一下，获得惊喜",
+        "association": "就像你随便翻开一本旧书，发现里面夹着一张100元钞票",
+        "image_hint": "想象在海滩散步时，无意中发现一颗美丽的珍珠",
+        "similar_words": ["fortune", "luck", "chance", "coincidence"]
+      },
+      "created_at": "2026-01-30T10:00:00.000Z",
+      "updated_at": "2026-01-30T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440003",
+      "word": "ephemeral",
+      "phonetic": "/ɪˈfemərəl/",
+      "meaning": "adj. 短暂的，转瞬即逝的",
+      "example_sentences": [
+        "Fame is often ephemeral.",
+        "The ephemeral beauty of cherry blossoms reminds us of life's transience.",
+        "Social media posts feel ephemeral compared to printed books."
+      ],
+      "tags": ["高级词汇", "GRE", "形容词"],
+      "difficulty": 4,
+      "notes": "反义词: permanent, lasting, enduring, eternal",
+      "memory_tips": {
+        "word_root": "epi- (在...上) + hemer (一天，希腊语) + -al = 只存在一天的 → 短暂的",
+        "mnemonic": "\"一-费-摸-弱\" → 一费力气去摸，结果太弱了，转瞬即逝",
+        "association": "蜉蝣(ephemera)只活一天，ephemeral 就是像蜉蝣一样短暂",
+        "image_hint": "想象清晨的露珠，太阳一出来就消失了",
+        "similar_words": ["transient", "fleeting", "momentary", "brief"]
+      },
+      "created_at": "2026-01-30T10:00:00.000Z",
+      "updated_at": "2026-01-30T10:00:00.000Z"
+    }
+  ]
+}
