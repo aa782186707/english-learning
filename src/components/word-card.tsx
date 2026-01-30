@@ -62,15 +62,20 @@ export function WordCard({
   // 键盘快捷键
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (mode === 'view') return;
+      // view 模式：左右箭头切换
+      if (mode === 'view') {
+        if (e.code === 'ArrowLeft' && onPrev) onPrev();
+        if (e.code === 'ArrowRight' && onNext) onNext();
+        return;
+      }
 
-      // 空格键显示答案
+      // learn/review 模式：空格键显示答案
       if (e.code === 'Space' && !showAnswer) {
         e.preventDefault();
         setShowAnswer(true);
       }
 
-      // 数字键评分 (1-6 对应 0-5)
+      // review 模式：数字键评分 (1-6 对应 0-5)
       if (showAnswer && onReview) {
         const keyMap: Record<string, ReviewQuality> = {
           'Digit1': 0, 'Digit2': 1, 'Digit3': 2,
@@ -79,12 +84,6 @@ export function WordCard({
         if (keyMap[e.code] !== undefined) {
           onReview(keyMap[e.code]);
         }
-      }
-
-      // 左右箭头切换（view模式）
-      if (mode === 'view') {
-        if (e.code === 'ArrowLeft' && onPrev) onPrev();
-        if (e.code === 'ArrowRight' && onNext) onNext();
       }
     };
 

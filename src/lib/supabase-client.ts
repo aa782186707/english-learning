@@ -1,40 +1,18 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import type { Word, Grammar, LearningProgress } from '@/types';
-
-// 数据库类型定义
-export type Database = {
-  public: {
-    Tables: {
-      words: {
-        Row: Word & { memory_tips: Word['memory_tips'] };
-        Insert: Omit<Word, 'id' | 'created_at' | 'updated_at'>;
-        Update: Partial<Omit<Word, 'id' | 'created_at' | 'updated_at'>>;
-      };
-      grammar: {
-        Row: Grammar;
-        Insert: Omit<Grammar, 'id' | 'created_at' | 'updated_at'>;
-        Update: Partial<Omit<Grammar, 'id' | 'created_at' | 'updated_at'>>;
-      };
-      learning_progress: {
-        Row: LearningProgress;
-        Insert: Omit<LearningProgress, 'id' | 'created_at' | 'updated_at'>;
-        Update: Partial<Omit<LearningProgress, 'id' | 'created_at' | 'updated_at'>>;
-      };
-    };
-  };
-};
 
 // 创建 Supabase 客户端
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 // 兼容新版和旧版 Supabase 的变量名
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY 
   || process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY;
 
 // 检查是否配置了 Supabase
 export const isSupabaseConfigured = !!(supabaseUrl && supabaseAnonKey);
 
-export const supabase = isSupabaseConfigured
-  ? createClient<Database>(supabaseUrl!, supabaseAnonKey!)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const supabase: SupabaseClient<any> | null = isSupabaseConfigured
+  ? createClient(supabaseUrl!, supabaseAnonKey!)
   : null;
 
 // ============================================
