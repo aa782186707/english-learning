@@ -55,54 +55,62 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
     resetState();
   }, [exercise.id, resetState]);
 
+  // 记录提交时间，防止快速连续操作
+  const [submitTime, setSubmitTime] = useState<number>(0);
+
   // 键盘快捷键
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // 已提交答案后，按 Enter 或空格进入下一题
+      // 但需要等待至少 500ms，让用户有时间看答案
       if (isSubmitted) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          onNext?.();
+          const now = Date.now();
+          if (now - submitTime > 500) {
+            onNext?.();
+          }
         }
         return;
       }
 
-      // 选择题/判断题快捷键
+      // 选择题快捷键：直接提交
       if (exercise.type === 'choice' && exercise.options) {
         const keyMap: Record<string, string> = {
           '1': 'A', '2': 'B', '3': 'C', '4': 'D',
           'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D',
         };
-        if (keyMap[e.key.toLowerCase()]) {
-          setSelectedAnswer(keyMap[e.key.toLowerCase()]);
+        const answer = keyMap[e.key.toLowerCase()];
+        if (answer) {
+          e.preventDefault();
+          handleOptionClick(answer);
         }
       }
 
+      // 判断题快捷键：直接提交
       if (exercise.type === 'judge') {
         if (e.key === '1' || e.key.toLowerCase() === 'y') {
-          setSelectedAnswer('正确');
+          e.preventDefault();
+          handleOptionClick('正确');
         } else if (e.key === '2' || e.key.toLowerCase() === 'n') {
-          setSelectedAnswer('错误');
+          e.preventDefault();
+          handleOptionClick('错误');
         }
       }
 
-      // Enter 提交答案
-      if (e.key === 'Enter' && !isSubmitted) {
-        if (exercise.type === 'choice' || exercise.type === 'judge') {
-          if (selectedAnswer) {
-            handleSubmit();
-          }
-        } else if (fillAnswer.trim()) {
-          handleSubmit();
-        }
-      }
+      // 填空题/翻译题：Enter 提交（不在这里处理，由表单提交处理）
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [exercise, selectedAnswer, fillAnswer, isSubmitted, onNext]);
+  }, [exercise, isSubmitted, onNext, submitTime]);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e?: React.FormEvent) => {
+    if (e) {
+      e.preventDefault();
+    }
+    if (isSubmitted) return;
+
     let userAnswer = '';
     let correct = false;
 
@@ -128,6 +136,19 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
 
     setIsCorrect(correct);
     setIsSubmitted(true);
+    setSubmitTime(Date.now());
+    onAnswer?.(correct);
+  };
+
+  // 选择题/判断题：点击即提交
+  const handleOptionClick = (answer: string) => {
+    if (isSubmitted) return;
+
+    setSelectedAnswer(answer);
+    const correct = answer === exercise.correct_answer;
+    setIsCorrect(correct);
+    setIsSubmitted(true);
+    setSubmitTime(Date.now());
     onAnswer?.(correct);
   };
 
@@ -141,28 +162,24 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
             const isCorrectOption = optionLetter === exercise.correct_answer;
 
             let optionClass = 'border-2 p-4 rounded-lg cursor-pointer transition-all';
-            
+
             if (isSubmitted) {
               if (isCorrectOption) {
                 optionClass += ' border-green-500 bg-green-50';
               } else if (isSelected && !isCorrect) {
                 optionClass += ' border-red-500 bg-red-50';
               } else {
-                optionClass += ' border-gray-200 opacity-50';
+                optionClass += ' border-gray-200 opacity-50 cursor-default';
               }
             } else {
-              if (isSelected) {
-                optionClass += ' border-primary bg-primary/5';
-              } else {
-                optionClass += ' border-gray-200 hover:border-primary/50';
-              }
+              optionClass += ' border-gray-200 hover:border-primary hover:bg-primary/5';
             }
 
             return (
               <div
                 key={option}
                 className={optionClass}
-                onClick={() => !isSubmitted && setSelectedAnswer(optionLetter)}
+                onClick={() => handleOptionClick(optionLetter)}
               >
                 <div className="flex items-center justify-between">
                   <span>{option}</span>
@@ -176,9 +193,11 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
               </div>
             );
           })}
-          <p className="text-xs text-muted-foreground mt-2">
-            快捷键：按 1/2/3/4 或 A/B/C/D 选择，Enter 提交
-          </p>
+          {!isSubmitted && (
+            <p className="text-xs text-muted-foreground mt-2">
+              快捷键：按 1/2/3/4 或 A/B/C/D 直接选择
+            </p>
+          )}
         </div>
       );
     }
@@ -190,30 +209,33 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
             const isSelected = selectedAnswer === option;
             const isCorrectOption = option === exercise.correct_answer;
 
-            let btnVariant: 'default' | 'outline' | 'destructive' | 'secondary' = 'outline';
-            
+            let btnClass = 'flex-1 h-14 text-lg ';
+
             if (isSubmitted) {
               if (isCorrectOption) {
-                btnVariant = 'default';
+                btnClass += 'bg-green-500 hover:bg-green-500 text-white border-green-500';
               } else if (isSelected) {
-                btnVariant = 'destructive';
+                btnClass += 'bg-red-500 hover:bg-red-500 text-white border-red-500';
+              } else {
+                btnClass += 'opacity-50';
               }
-            } else if (isSelected) {
-              btnVariant = 'secondary';
             }
 
             return (
               <Button
                 key={option}
-                variant={btnVariant}
+                variant="outline"
                 size="lg"
-                className="flex-1"
-                onClick={() => !isSubmitted && setSelectedAnswer(option)}
+                className={btnClass}
+                onClick={() => handleOptionClick(option)}
                 disabled={isSubmitted}
               >
                 {option}
                 {isSubmitted && isCorrectOption && (
-                  <CheckCircle2 className="h-4 w-4 ml-2" />
+                  <CheckCircle2 className="h-5 w-5 ml-2" />
+                )}
+                {isSubmitted && isSelected && !isCorrect && (
+                  <XCircle className="h-5 w-5 ml-2" />
                 )}
               </Button>
             );
@@ -224,20 +246,19 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
 
     if (exercise.type === 'fill' || exercise.type === 'translate') {
       return (
-        <div className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <Input
             type="text"
             placeholder={exercise.type === 'fill' ? '输入答案...' : '输入翻译...'}
             value={fillAnswer}
             onChange={(e) => setFillAnswer(e.target.value)}
             disabled={isSubmitted}
-            className={`text-lg p-6 ${
-              isSubmitted
-                ? isCorrect
-                  ? 'border-green-500 bg-green-50'
-                  : 'border-red-500 bg-red-50'
-                : ''
-            }`}
+            className={`text-lg p-6 ${isSubmitted
+              ? isCorrect
+                ? 'border-green-500 bg-green-50'
+                : 'border-red-500 bg-red-50'
+              : ''
+              }`}
             autoFocus
           />
           {isSubmitted && !isCorrect && (
@@ -247,7 +268,7 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
               </span>
             </div>
           )}
-        </div>
+        </form>
       );
     }
 
@@ -280,20 +301,37 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
 
         {/* 答案解析 */}
         {isSubmitted && (
-          <div className={`p-4 rounded-lg ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-amber-50 border border-amber-200'}`}>
+          <div className={`p-4 rounded-lg ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
             <div className="flex items-start gap-3">
               {isCorrect ? (
                 <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5" />
               ) : (
-                <Lightbulb className="h-6 w-6 text-amber-500 flex-shrink-0 mt-0.5" />
+                <XCircle className="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" />
               )}
-              <div>
-                <p className={`font-semibold ${isCorrect ? 'text-green-800' : 'text-amber-800'}`}>
-                  {isCorrect ? '回答正确！' : '答案解析'}
+              <div className="flex-1">
+                <p className={`font-semibold ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
+                  {isCorrect ? '回答正确！' : '回答错误'}
                 </p>
-                <p className={`mt-1 text-sm ${isCorrect ? 'text-green-700' : 'text-amber-700'}`}>
-                  {exercise.explanation}
-                </p>
+
+                {/* 答错时显示正确答案 */}
+                {!isCorrect && (
+                  <div className="mt-2 p-3 bg-green-100 border border-green-300 rounded-md">
+                    <p className="text-green-800 font-medium">
+                      正确答案：<span className="font-bold">{exercise.correct_answer}</span>
+                    </p>
+                  </div>
+                )}
+
+                {/* 解析 */}
+                <div className={`mt-3 p-3 rounded-md ${isCorrect ? 'bg-green-100/50' : 'bg-amber-50 border border-amber-200'}`}>
+                  <p className={`text-sm font-medium ${isCorrect ? 'text-green-700' : 'text-amber-700'}`}>
+                    <Lightbulb className="h-4 w-4 inline mr-1" />
+                    解析
+                  </p>
+                  <p className={`mt-1 text-sm ${isCorrect ? 'text-green-700' : 'text-amber-800'}`}>
+                    {exercise.explanation}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -302,26 +340,31 @@ export function ExerciseCard({ exercise, onAnswer, onNext }: ExerciseCardProps) 
 
       <CardFooter className="flex justify-between">
         {!isSubmitted ? (
-          <>
-            <Button variant="ghost" onClick={resetState}>
-              <RotateCcw className="h-4 w-4 mr-1" />
-              重置
-            </Button>
-            <Button
-              onClick={handleSubmit}
-              disabled={
-                (exercise.type === 'choice' || exercise.type === 'judge')
-                  ? !selectedAnswer
-                  : !fillAnswer.trim()
-              }
-            >
-              提交答案
-            </Button>
-          </>
+          // 填空题和翻译题需要提交按钮
+          (exercise.type === 'fill' || exercise.type === 'translate') ? (
+            <>
+              <Button variant="ghost" onClick={resetState} type="button">
+                <RotateCcw className="h-4 w-4 mr-1" />
+                重置
+              </Button>
+              <Button
+                onClick={() => handleSubmit()}
+                disabled={!fillAnswer.trim()}
+                type="button"
+              >
+                提交答案
+              </Button>
+            </>
+          ) : (
+            // 选择题和判断题：提示直接点击选项
+            <div className="w-full text-center text-sm text-muted-foreground">
+              点击选项即可作答
+            </div>
+          )
         ) : (
           <>
             <div className="text-sm text-muted-foreground">
-              按 Enter 或空格进入下一题
+              查看完解析后，按 Enter 进入下一题
             </div>
             <Button onClick={onNext}>
               下一题

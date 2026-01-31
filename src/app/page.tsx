@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { StatsCard } from '@/components/stats-card';
 import { WordCard } from '@/components/word-card';
 import { GrammarCard } from '@/components/grammar-card';
-import { ExerciseCard } from '@/components/exercise-card';
+import { ExercisePractice } from '@/components/exercise-practice';
 import {
   BookOpen,
   Brain,
@@ -15,15 +15,13 @@ import {
   Plus,
   PlayCircle,
   ChevronRight,
-  Sparkles,
   Loader2,
   Cloud,
   HardDrive,
   PenTool,
-  Trophy,
   Target
 } from 'lucide-react';
-import type { Word, Grammar, Exercise, ExerciseStats } from '@/types';
+import type { Word, Grammar, Exercise } from '@/types';
 import { fetchWords, fetchGrammar, isSupabaseConfigured } from '@/lib/supabase-client';
 
 // 本地备用数据
@@ -59,12 +57,6 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [isCloud, setIsCloud] = useState(false);
   
-  // 练习统计
-  const [exerciseStats, setExerciseStats] = useState<ExerciseStats>({
-    total: 0,
-    correct: 0,
-    accuracy: 0,
-  });
 
   // 从 Supabase 或本地加载数据
   const loadData = useCallback(async () => {
@@ -521,7 +513,6 @@ export default function Home() {
     ];
 
     const startPractice = () => {
-      setExerciseStats({ total: 0, correct: 0, accuracy: 0 });
       setCurrentView('exercise-practice');
     };
 
@@ -610,116 +601,6 @@ export default function Home() {
     );
   };
 
-  // 练习视图
-  const ExercisePracticeView = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [shuffledExercises] = useState(() => 
-      [...exercises].sort(() => Math.random() - 0.5)
-    );
-    
-    const currentExercise = shuffledExercises[currentIndex];
-
-    const handleAnswer = (isCorrect: boolean) => {
-      setExerciseStats(prev => ({
-        total: prev.total + 1,
-        correct: prev.correct + (isCorrect ? 1 : 0),
-        accuracy: Math.round(((prev.correct + (isCorrect ? 1 : 0)) / (prev.total + 1)) * 100),
-      }));
-    };
-
-    const handleNext = () => {
-      if (currentIndex < shuffledExercises.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-      }
-    };
-
-    // 完成所有题目
-    if (currentIndex >= shuffledExercises.length - 1 && exerciseStats.total > 0 && exerciseStats.total === currentIndex + 1) {
-      return (
-        <div className="space-y-6">
-          <Button variant="ghost" onClick={() => setCurrentView('exercises')}>
-            ← 返回题库
-          </Button>
-          <Card className="max-w-md mx-auto">
-            <CardContent className="pt-6 text-center">
-              <Trophy className="h-16 w-16 mx-auto text-yellow-500 mb-4" />
-              <h2 className="text-2xl font-bold">练习完成！</h2>
-              <div className="mt-6 space-y-4">
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-3xl font-bold text-primary">{exerciseStats.total}</div>
-                    <div className="text-sm text-muted-foreground">总题数</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-green-500">{exerciseStats.correct}</div>
-                    <div className="text-sm text-muted-foreground">答对</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-blue-500">{exerciseStats.accuracy}%</div>
-                    <div className="text-sm text-muted-foreground">正确率</div>
-                  </div>
-                </div>
-                <div className="pt-4">
-                  {exerciseStats.accuracy >= 80 ? (
-                    <p className="text-green-600">太棒了！你掌握得很好！</p>
-                  ) : exerciseStats.accuracy >= 60 ? (
-                    <p className="text-yellow-600">不错，继续加油！</p>
-                  ) : (
-                    <p className="text-orange-600">还需要多复习一下哦！</p>
-                  )}
-                </div>
-              </div>
-              <div className="flex gap-3 mt-6">
-                <Button variant="outline" className="flex-1" onClick={() => setCurrentView('grammar')}>
-                  复习语法
-                </Button>
-                <Button className="flex-1" onClick={() => {
-                  setExerciseStats({ total: 0, correct: 0, accuracy: 0 });
-                  setCurrentIndex(0);
-                }}>
-                  再来一次
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      );
-    }
-
-    return (
-      <div className="space-y-6">
-        <div className="flex items-center justify-between">
-          <Button variant="ghost" onClick={() => setCurrentView('exercises')}>
-            ← 返回题库
-          </Button>
-          <div className="flex items-center gap-4">
-            <Badge variant="outline" className="text-sm">
-              {currentIndex + 1} / {shuffledExercises.length}
-            </Badge>
-            {exerciseStats.total > 0 && (
-              <Badge variant="secondary" className="text-sm">
-                正确率: {exerciseStats.accuracy}%
-              </Badge>
-            )}
-          </div>
-        </div>
-
-        {/* 进度条 */}
-        <div className="w-full bg-gray-200 rounded-full h-2">
-          <div 
-            className="bg-primary h-2 rounded-full transition-all duration-300"
-            style={{ width: `${((currentIndex + 1) / shuffledExercises.length) * 100}%` }}
-          />
-        </div>
-
-        <ExerciseCard
-          exercise={currentExercise}
-          onAnswer={handleAnswer}
-          onNext={handleNext}
-        />
-      </div>
-    );
-  };
 
   // 渲染当前视图
   const renderView = () => {
@@ -739,7 +620,13 @@ export default function Home() {
       case 'exercises':
         return <ExercisesView />;
       case 'exercise-practice':
-        return <ExercisePracticeView />;
+        return (
+          <ExercisePractice 
+            exercises={exercises}
+            onBack={() => setCurrentView('exercises')}
+            onGoToGrammar={() => setCurrentView('grammar')}
+          />
+        );
       default:
         return <DashboardView />;
     }
