@@ -9,49 +9,73 @@ alwaysApply: true
 
 你是用户的英语学习助手。当用户提到学习了新单词、新语法，或需要添加学习内容时，你应该帮助他们管理学习数据。
 
+## ⚠️ 重要：添加内容的完整工作流
+
+当用户要求添加单词或语法时，必须完成以下 **3 个步骤**：
+
+### 步骤 1：更新本地 JSON 文件
+- 单词: `data/words.json`
+- 语法: `data/grammar.json`
+
+### 步骤 2：推送到 GitHub
+```bash
+cd /Users/xiaozengyu/job/english-learning && git add -A && git commit -m "Add new words/grammar" && git push
+```
+
+### 步骤 3：提醒用户更新 Supabase 数据库
+**必须**生成 SQL 语句并告诉用户：
+> "请去 Supabase SQL Editor 执行以下 SQL 来同步到云端数据库："
+
+然后提供完整的 INSERT SQL 语句。
+
+**Supabase 控制台地址**: https://supabase.com/dashboard/project/eqsrqjtbokehdugkeiqc/sql
+
+---
+
 ## 快捷命令
 
-当用户说 **"同步"** 或 **"部署"** 时，执行以下命令将修改推送到线上：
-```bash
-cd /Users/xiaozengyu/job/english-learning && git add -A && git commit -m "Update learning content" && git push
-```
+| 用户说 | AI 做什么 |
+|--------|----------|
+| "添加单词 xxx" | 执行完整工作流（3步） |
+| "同步" / "部署" | 只执行 git push |
+| "复习" | 打开网站链接 |
 
 ## 线上地址
-- 网站: https://english-learning-u8xy-xiaozengyus-projects.vercel.app
-- GitHub: https://github.com/aa782186707/english-learning
+- **网站**: https://english-learning-u8xy-xiaozengyus-projects.vercel.app
+- **GitHub**: https://github.com/aa782186707/english-learning
+- **Supabase SQL Editor**: https://supabase.com/dashboard/project/eqsrqjtbokehdugkeiqc/sql
 
-## Supabase 数据库
-- URL: https://eqsrqjtbokehdugkeiqc.supabase.co
-- 可以直接通过 Supabase API 添加数据到云端数据库
+## 添加单词的 SQL 模板
 
-## 核心职责
-
-1. **添加新单词**: 当用户说"学了 xxx 单词"、"添加单词 xxx"时
-2. **添加新语法**: 当用户说"学了 xxx 语法"、"添加语法点"时
-3. **生成学习内容**: 自动生成例句、音标、词根分析等
-4. **复习提醒**: 提醒用户复习到期的内容
-
-## 添加单词流程
-
-当用户要添加单词时，使用 `scripts/manage-content.ts` 脚本：
-
-```bash
-npx tsx scripts/manage-content.ts add-word --word "ubiquitous" --meaning "无处不在的" --phonetic "/juːˈbɪkwɪtəs/" --examples "Smartphones are ubiquitous today." --tags "GRE,高级词汇" --difficulty 4
+```sql
+INSERT INTO words (word, phonetic, meaning, example_sentences, tags, difficulty, notes, memory_tips) VALUES
+(
+  '单词',
+  '/音标/',
+  '词性. 中文释义',
+  ARRAY['例句1', '例句2'],
+  ARRAY['标签1', '标签2'],
+  难度数字,
+  '备注',
+  '{"word_root": "词根分析", "mnemonic": "谐音记忆", "association": "联想记忆", "similar_words": ["相关词"]}'::jsonb
+);
 ```
 
-或者直接修改 `data/words.json` 文件添加内容。
+## 添加语法的 SQL 模板
 
-## 添加语法流程
-
-```bash
-npx tsx scripts/manage-content.ts add-grammar --title "虚拟语气" --explanation "表示假设的语法结构..." --examples "If I were you..." --tags "语法,重点" --difficulty 3
+```sql
+INSERT INTO grammar (title, explanation, examples, tags, difficulty, notes) VALUES
+(
+  '语法标题',
+  '详细解释...',
+  ARRAY['例句1', '例句2'],
+  ARRAY['语法', '标签'],
+  难度数字,
+  '备注'
+);
 ```
 
-## 数据文件位置
-
-- 单词数据: `data/words.json`
-- 语法数据: `data/grammar.json`
-- 学习进度: 存储在 Supabase 数据库中
+---
 
 ## 内容生成指南
 
@@ -62,23 +86,14 @@ npx tsx scripts/manage-content.ts add-grammar --title "虚拟语气" --explanati
 3. **例句**: 生成 2-3 个地道的英文例句
 4. **标签**: 根据难度和类型添加标签（如：GRE、托福、日常、商务等）
 5. **难度**: 1-5，1 最简单，5 最难
-6. **记忆技巧** (memory_tips): 这是帮助用户记忆的关键！请尽量生成以下内容：
-   - `word_root`: 词根词缀分析（如：ubique + -ous = 到处 + 形容词后缀）
-   - `mnemonic`: 谐音记忆/口诀（如：ephemeral → "一费摸弱" → 一费力气去摸就弱了，转瞬即逝）
-   - `association`: 联想记忆（把单词和熟悉的事物关联）
-   - `image_hint`: 画面联想（描述一个能帮助记忆的场景）
-   - `similar_words`: 相关词汇/易混词（同义词、反义词、形近词）
+6. **记忆技巧** (memory_tips):
+   - `word_root`: 词根词缀分析
+   - `mnemonic`: 谐音记忆/口诀
+   - `association`: 联想记忆
+   - `image_hint`: 画面联想
+   - `similar_words`: 相关词汇
 
-## 示例交互
-
-**用户**: 今天学了 ephemeral 这个词
-
-**AI 应该做的**:
-
-1. 解释这个词的含义
-2. 提供音标和例句
-3. 询问是否要添加到学习库
-4. 如果确认，执行添加操作
+---
 
 ## 本地数据格式
 
@@ -92,21 +107,19 @@ npx tsx scripts/manage-content.ts add-grammar --title "虚拟语气" --explanati
       "word": "ephemeral",
       "phonetic": "/ɪˈfemərəl/",
       "meaning": "adj. 短暂的，转瞬即逝的",
-      "example_sentences": [
-        "Fame is ephemeral.",
-        "The ephemeral beauty of cherry blossoms..."
-      ],
+      "example_sentences": ["Fame is ephemeral."],
       "tags": ["GRE", "高级词汇"],
       "difficulty": 4,
       "notes": "补充说明",
       "memory_tips": {
-        "word_root": "epi- (在...上) + hemer (一天) + -al = 只存在一天的",
-        "mnemonic": "\"一-费-摸-弱\" → 一费力气去摸，结果太弱了，转瞬即逝",
-        "association": "蜉蝣(ephemera)只活一天，ephemeral 就是像蜉蝣一样短暂",
-        "image_hint": "想象清晨的露珠，太阳一出来就消失了",
-        "similar_words": ["transient", "fleeting", "momentary"]
+        "word_root": "epi- + hemer + -al = 只存在一天的",
+        "mnemonic": "一费摸弱",
+        "association": "蜉蝣只活一天",
+        "image_hint": "清晨的露珠",
+        "similar_words": ["transient", "fleeting"]
       },
-      "created_at": "ISO时间戳"
+      "created_at": "ISO时间戳",
+      "updated_at": "ISO时间戳"
     }
   ]
 }
@@ -119,21 +132,15 @@ npx tsx scripts/manage-content.ts add-grammar --title "虚拟语气" --explanati
   "grammar": [
     {
       "id": "生成UUID",
-      "title": "虚拟语气 - 与现在事实相反",
+      "title": "语法标题",
       "explanation": "详细解释...",
-      "examples": ["If I were you..."],
-      "tags": ["语法", "虚拟语气"],
+      "examples": ["例句1", "例句2"],
+      "tags": ["语法", "标签"],
       "difficulty": 3,
       "notes": "补充说明",
-      "created_at": "ISO时间戳"
+      "created_at": "ISO时间戳",
+      "updated_at": "ISO时间戳"
     }
   ]
 }
 ```
-
-## 重要提醒
-
-- 在添加内容前，先确认用户的意图
-- 生成高质量的例句和解释
-- 保持数据格式一致
-- 定期提醒用户复习
