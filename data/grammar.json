@@ -31,6 +31,214 @@
       "notes": "美式英语中，现在完成时的使用频率低于英式英语，很多情况会用一般过去时代替",
       "created_at": "2026-01-30T10:00:00.000Z",
       "updated_at": "2026-01-30T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440003",
+      "title": "一般过去时的「言外之意」用法",
+      "explanation": "一般过去时不仅表示过去发生的事，还常用于委婉地表达「与现在事实相反」的含义。\n\n核心理解：说话者用过去时态，暗示这件事只存在于过去，现在已经改变了。\n\n应用场景：\n- 分手时说 I loved you.（我爱过你），委婉表达"现在不爱了"\n- 比直接说 I don't love you. 更缓和、更有修养",
+      "examples": [
+        "I gave up smoking and drinking. (我戒过烟戒过酒 - 言外之意：现在又开始了)",
+        "I loved you. (我爱过你 - 言外之意：但现在不爱了)",
+        "I trusted him. (我曾经信任他 - 言外之意：但现在不信了)",
+        "We were friends. (我们曾是朋友 - 言外之意：但现在不是了)"
+      ],
+      "tags": ["语法", "时态", "言外之意", "高级技巧"],
+      "difficulty": 3,
+      "notes": "这是英语中非常高级的表达技巧，用时态来传递情感变化，而不是直接说出来",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440004",
+      "title": "Been to vs Gone to 的区别",
+      "explanation": "在现在完成时中，been to 和 gone to 有本质区别：\n\n• been to = 去过（人已经回来了），强调「经历」\n• gone to = 去了（人还没回来），强调「状态」\n\n记忆口诀：been 回来了，gone 还没回",
+      "examples": [
+        "He's been to Beijing. (他去过北京 - 人已经回来了，强调有这个经历)",
+        "He's gone to Beijing. (他去北京了 - 人还在路上或还在北京)",
+        "Have you ever been to Japan? (你去过日本吗？- 问经历)",
+        "Where's Tom? He's gone to the store. (Tom去哪了？他去商店了 - 还没回来)"
+      ],
+      "tags": ["语法", "时态", "易混淆", "现在完成时"],
+      "difficulty": 2,
+      "notes": "这是中国学生最容易混淆的语法点之一，一定要牢记",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440005",
+      "title": "避免用一般现在时误指长期规律",
+      "explanation": "一般现在时表示「习惯性、经常性」的动作，而不是单次事件！\n\n常见错误场景：你想说某个团队上周延迟了\n❌ That team delays. （听起来像指责「那个团队总是延迟」）\n✅ That team delayed last week. （明确是上周的单次事件）\n\n⚠️ 时态选择会极大影响语义，甚至引发误解和冲突！",
+      "examples": [
+        "❌ He lies. (他撒谎 - 暗示他是个骗子，经常撒谎)",
+        "✅ He lied yesterday. (他昨天撒了谎 - 只是说一次事件)",
+        "❌ She complains. (她抱怨 - 暗示她是个爱抱怨的人)",
+        "✅ She complained about the food. (她抱怨了那个食物 - 单次事件)"
+      ],
+      "tags": ["语法", "时态", "易错点", "职场"],
+      "difficulty": 2,
+      "notes": "在职场中尤其要注意！错误的时态可能让同事觉得你在给他们贴标签",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440006",
+      "title": "「包子皮」思维 - 高级英语表达的核心",
+      "explanation": "高级的英语表达如同描述「包子皮」，而不是直接亮出「包子馅」。\n\n核心理念：不直接说出核心意思，而是通过描绘场景、感受和画面，让听者自己体会。\n\n为什么这样更高级？\n1. 更生动、更有画面感\n2. 给听者想象空间\n3. 体现语言的艺术性和文化素养",
+      "examples": [
+        "想表达「她唱歌太难听」：",
+        "❌ 直接说：She is torturing. (她在折磨人)",
+        "✅ 包子皮：She's so bad she makes me wanna put my finger through my eye into my brain and swirl it around. (她差到让我想把手指捅进眼睛，伸到脑子里搅一搅)",
+        "I'm an open book. (我是一本打开的书 → 我这人很坦诚，没什么秘密)"
+      ],
+      "tags": ["表达技巧", "高级", "隐喻", "思维方式"],
+      "difficulty": 4,
+      "notes": "这是从B级表达升级到C级表达的关键思维转变",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440007",
+      "title": "职场礼貌表达 - 发起沟通",
+      "explanation": "职场中发起沟通的礼貌表达，比直接问「Do you have time?」更得体。\n\n⚠️ 注意：直接问 Do you have time? 可能被理解为「你还有多少时间（生命意义上）？」\n\n正确的问法强调的是「时机是否合适」，而不是「你有没有时间」。",
+      "examples": [
+        "Is it a good time to talk? (现在聊方便吗？- 强调时机是否合适)",
+        "Can I have a word? (能和你说句话吗？- 简短非正式交流)",
+        "Do you have a moment? (你有空吗？- 比 have time 更礼貌)",
+        "Could I grab you for a minute? (能占用你一分钟吗？- 非正式但礼貌)"
+      ],
+      "tags": ["职场英语", "礼貌表达", "高频套句"],
+      "difficulty": 1,
+      "notes": "这些是职场必备表达，建议背下来形成肌肉记忆",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440008",
+      "title": "职场表达 - 请假与休息",
+      "explanation": "表达「休息几天」时，take a few days off 比 have a rest 更专业。\n\n为什么？\n• take...off 暗示从排满的日程中「拿掉」几天\n• 强调是在不影响整体工作的前提下做出的短暂调整\n• 显得更专业、更负责\n\n而 have a rest 比较笼统，像是「我要休息了」，不够职业化。",
+      "examples": [
+        "I'd like to take a few days off next week. (我想下周请几天假)",
+        "I need to take some time off to handle personal matters. (我需要请假处理私事)",
+        "She's taking Friday off. (她周五请假)",
+        "❌ I need to have a rest. (太笼统，不专业)"
+      ],
+      "tags": ["职场英语", "请假", "高频套句"],
+      "difficulty": 1,
+      "notes": "take...off 是职场请假的标准表达",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440009",
+      "title": "非正式邀约 - grab 系列表达",
+      "explanation": "用 grab 表达「随便吃点/喝点」的轻松、非正式感。\n\ngrab 原义是「抓、拿」，用在邀约中传达「随手抓一个」的轻松感，表示不是什么正式的大事。\n\n适用场景：和同事、朋友的日常邀约",
+      "examples": [
+        "Let's grab a bite. (我们随便吃点东西吧)",
+        "Wanna grab a drink after work? (下班后要不要去喝一杯？)",
+        "Let's grab a coffee and catch up. (我们去喝杯咖啡叙叙旧)",
+        "I'll grab lunch with you. (我陪你去吃午饭)"
+      ],
+      "tags": ["职场英语", "日常表达", "非正式", "邀约"],
+      "difficulty": 1,
+      "notes": "grab 系列是非常地道的口语表达，日常必备",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440010",
+      "title": "礼貌结束对话 - I'll let you...",
+      "explanation": "用 I'll let you... 将选择权交给对方，表达体贴和礼貌。\n\n为什么高级？\n• 不是命令对方去做什么\n• 而是「我让出时间/空间，让你去...」\n• 体现对对方的尊重和体贴",
+      "examples": [
+        "I'll let you sleep. (那你先休息吧 - 深夜聊天结束)",
+        "I'll let you get back to work. (那你先忙吧)",
+        "I'll let you go. (那我不打扰你了)",
+        "I'll let you think about it. (你先考虑考虑)"
+      ],
+      "tags": ["职场英语", "礼貌表达", "结束对话"],
+      "difficulty": 1,
+      "notes": "比直接说 Go to sleep 或 Get back to work 温和得多",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440011",
+      "title": "高级赞美表达 - 脱帽致敬系列",
+      "explanation": "用带有文化背景的隐喻来表达赞赏，比简单说 Great 有层次感得多。\n\n文化背景：西方绅士见到尊敬的人会脱帽致意，这个礼节演变成了表达敬意的习语。",
+      "examples": [
+        "Hats off to him! (向他脱帽致敬！)",
+        "I take my hat off to her for her dedication. (我对她的敬业精神脱帽致敬)",
+        "I bow to his expertise. (我对他的专业知识鞠躬致敬)",
+        "I'm a big fan of his work. (我是他作品的铁杆粉丝)"
+      ],
+      "tags": ["赞美表达", "高级", "文化背景"],
+      "difficulty": 2,
+      "notes": "Hats off 非常正式、充满敬意；I'm a big fan 更日常口语化",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440012",
+      "title": "情感表达升级 - 从B1到C1",
+      "explanation": "通过增加副词、改变句式或引入时间维度，让简单的情感表达变得丰富而深刻。\n\n升级路径：\nB1 → 简单直接\nB2 → 加入副词和细节\nC1 → 引入时间维度、诗意表达",
+      "examples": [
+        "B1: I love you. (我爱你)",
+        "B1+: I fall in love with you. (我坠入了爱河)",
+        "B2: I am madly, deeply, truly, passionately in love with you. (我疯狂地、深深地、真挚地、热情地爱着你)",
+        "C1: I've loved you since I can't remember when, and I'm gonna love you till I can't remember how. (我爱你不知从何时起，并将爱你至岁月无期)"
+      ],
+      "tags": ["情感表达", "高级", "表达升级"],
+      "difficulty": 4,
+      "notes": "C1级别的表达有诗意，适合特殊场合使用",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440013",
+      "title": "替代 How are you 的寒暄方式",
+      "explanation": "让日常寒暄不再止于千篇一律的 How are you?\n\n不同表达的语气差异：\n• How's your day going? - 更关心对方的一天\n• What's up? - 非常口语化、轻松\n• Long time no see - 中式英语但已被广泛接受",
+      "examples": [
+        "How's your day going? (你今天过得怎么样？)",
+        "What's up? (最近怎么样？- 非常口语)",
+        "How's everything? (一切都好吗？)",
+        "What have you been up to? (你最近在忙什么？)"
+      ],
+      "tags": ["日常表达", "寒暄", "口语"],
+      "difficulty": 1,
+      "notes": "Long time no see 在非常正式的场合需慎用",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440014",
+      "title": "场景化回答技巧 - CE水平示范",
+      "explanation": "在回答简单问题时，主动引入具体生活场景，让回答更自然、更有内容。\n\n为什么这样更高级？\n1. 展示语言的实际运用能力\n2. 让对话更有内容、更自然\n3. 体现思维的灵活性",
+      "examples": [
+        "问：What's your favorite color?",
+        "❌ 低效：Blue.",
+        "✅ CE水平：Well, to be honest, I don't really have an actual favorite color, but I guess if I were buying clothes, then I'd usually go for something like blue or gray, kind of dull colors, nothing too bright.",
+        "(嗯，说实话我没有特别喜欢的颜色，不过买衣服的时候我通常会选蓝色或灰色这类素色，不会选太亮的)"
+      ],
+      "tags": ["表达技巧", "场景化", "CE水平", "口语考试"],
+      "difficulty": 3,
+      "notes": "这个技巧在口语考试中特别有用，能展示语言运用能力",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440015",
+      "title": "中式英语纠正 - Let's catch up",
+      "explanation": "常见的中式直译错误及地道表达。\n\ncatch up 是非常地道的表达「叙旧、聊聊近况」的说法。",
+      "examples": [
+        "❌ 中式直译：Talk about old things. (聊旧事)",
+        "✅ 地道表达：Let's catch up. (让我们聊聊近况/叙叙旧)",
+        "We should catch up sometime. (我们找时间聚聚)",
+        "It was great catching up with you! (很高兴能和你叙旧！)"
+      ],
+      "tags": ["易错点", "中式英语", "地道表达"],
+      "difficulty": 2,
+      "notes": "catch up 是叙旧的标准表达，一定要记住",
+      "created_at": "2026-01-30T17:00:00.000Z",
+      "updated_at": "2026-01-30T17:00:00.000Z"
     }
   ]
 }

@@ -14,16 +14,20 @@ alwaysApply: true
 当用户要求添加单词或语法时，必须完成以下 **3 个步骤**：
 
 ### 步骤 1：更新本地 JSON 文件
+
 - 单词: `data/words.json`
 - 语法: `data/grammar.json`
 
 ### 步骤 2：推送到 GitHub
+
 ```bash
 cd /Users/xiaozengyu/job/english-learning && git add -A && git commit -m "Add new words/grammar" && git push
 ```
 
 ### 步骤 3：提醒用户更新 Supabase 数据库
+
 **必须**生成 SQL 语句并告诉用户：
+
 > "请去 Supabase SQL Editor 执行以下 SQL 来同步到云端数据库："
 
 然后提供完整的 INSERT SQL 语句。
@@ -34,13 +38,14 @@ cd /Users/xiaozengyu/job/english-learning && git add -A && git commit -m "Add ne
 
 ## 快捷命令
 
-| 用户说 | AI 做什么 |
-|--------|----------|
-| "添加单词 xxx" | 执行完整工作流（3步） |
-| "同步" / "部署" | 只执行 git push |
-| "复习" | 打开网站链接 |
+| 用户说          | AI 做什么              |
+| --------------- | ---------------------- |
+| "添加单词 xxx"  | 执行完整工作流（3 步） |
+| "同步" / "部署" | 只执行 git push        |
+| "复习"          | 打开网站链接           |
 
 ## 线上地址
+
 - **网站**: https://english-learning-u8xy-xiaozengyus-projects.vercel.app
 - **GitHub**: https://github.com/aa782186707/english-learning
 - **Supabase SQL Editor**: https://supabase.com/dashboard/project/eqsrqjtbokehdugkeiqc/sql
