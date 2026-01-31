@@ -111,3 +111,37 @@ export interface AddGrammarRequest {
   difficulty?: number;
   notes?: string;
 }
+
+// 题目类型
+export type ExerciseType = 'choice' | 'fill' | 'judge' | 'translate';
+
+// 练习题目
+export interface Exercise {
+  id: string;
+  grammar_id?: string;       // 关联的语法点ID（可选）
+  type: ExerciseType;        // 题目类型
+  question: string;          // 题目内容
+  options?: string[];        // 选项（选择题/判断题用）
+  correct_answer: string;    // 正确答案
+  explanation: string;       // 答案解析
+  tags: string[];            // 标签
+  difficulty: number;        // 难度 1-5
+  created_at: string;
+  updated_at: string;
+}
+
+// 答题记录
+export interface ExerciseRecord {
+  id: string;
+  exercise_id: string;
+  user_answer: string;
+  is_correct: boolean;
+  answered_at: string;
+}
+
+// 练习统计
+export interface ExerciseStats {
+  total: number;
+  correct: number;
+  accuracy: number;
+}
