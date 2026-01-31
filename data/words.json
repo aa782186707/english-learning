@@ -68,6 +68,144 @@
       },
       "created_at": "2026-01-30T10:00:00.000Z",
       "updated_at": "2026-01-30T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440004",
+      "word": "leverage",
+      "phonetic": "/ˈlevərɪdʒ/",
+      "meaning": "n. 杠杆作用；影响力 v. 充分利用（资源、优势）",
+      "example_sentences": [
+        "We need to leverage our existing customer base to increase sales.",
+        "The company leveraged its brand recognition to enter new markets.",
+        "He used his connections to leverage a better deal."
+      ],
+      "tags": ["商务英语", "高频词", "动词", "名词"],
+      "difficulty": 2,
+      "notes": "商务场景中常用作动词，表示\"充分利用\"",
+      "memory_tips": {
+        "word_root": "lever (杠杆) + -age (名词后缀) = 杠杆作用 → 借力、利用",
+        "mnemonic": "lever(杠杆) → 阿基米德说给我一个杠杆我能撬动地球 → 借力使力",
+        "association": "想象用一根杠杆撬动巨石，leverage 就是用小力量获得大效果",
+        "image_hint": "想象跷跷板，一点点力就能抬起重物",
+        "similar_words": ["utilize", "exploit", "capitalize on", "harness"]
+      },
+      "created_at": "2026-01-30T16:00:00.000Z",
+      "updated_at": "2026-01-30T16:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440005",
+      "word": "synergy",
+      "phonetic": "/ˈsɪnədʒi/",
+      "meaning": "n. 协同作用；协同效应（1+1>2的效果）",
+      "example_sentences": [
+        "The merger will create significant synergies between the two companies.",
+        "There's a great synergy between our marketing and sales teams.",
+        "We're looking for synergies to reduce costs."
+      ],
+      "tags": ["商务英语", "高频词", "名词"],
+      "difficulty": 3,
+      "notes": "常用于并购、团队合作等场景，强调合作产生的额外价值",
+      "memory_tips": {
+        "word_root": "syn- (共同，希腊语) + erg (工作，能量) + -y = 共同工作 → 协同",
+        "mnemonic": "\"syn-能-激\" → 共同(syn)产生能量，激发更大效果",
+        "association": "想象两个齿轮配合转动，比单独转动更有效率",
+        "image_hint": "想象两只手合在一起鼓掌，比单手拍响亮得多",
+        "similar_words": ["collaboration", "cooperation", "teamwork", "combined effect"]
+      },
+      "created_at": "2026-01-30T16:00:00.000Z",
+      "updated_at": "2026-01-30T16:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440006",
+      "word": "stakeholder",
+      "phonetic": "/ˈsteɪkhoʊldər/",
+      "meaning": "n. 利益相关者；利益攸关方",
+      "example_sentences": [
+        "We need to consider all stakeholders before making this decision.",
+        "Key stakeholders include investors, employees, and customers.",
+        "The project manager held a meeting with all stakeholders."
+      ],
+      "tags": ["商务英语", "高频词", "名词"],
+      "difficulty": 2,
+      "notes": "包括股东、员工、客户、供应商等所有与公司/项目相关的人",
+      "memory_tips": {
+        "word_root": "stake (桩，赌注) + holder (持有者) = 持有赌注的人 → 利益相关者",
+        "mnemonic": "stake(赌注) + holder(持有人) → 在这件事上下了注的人",
+        "association": "想象一场扑克游戏，所有下了赌注的人都是 stakeholder",
+        "image_hint": "想象一个圆桌，周围坐着投资人、员工、客户，他们都关心公司的发展",
+        "similar_words": ["shareholder", "participant", "interested party"]
+      },
+      "created_at": "2026-01-30T16:00:00.000Z",
+      "updated_at": "2026-01-30T16:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440007",
+      "word": "scalable",
+      "phonetic": "/ˈskeɪləbl/",
+      "meaning": "adj. 可扩展的；可规模化的",
+      "example_sentences": [
+        "We need a scalable solution that can grow with our business.",
+        "This business model is highly scalable.",
+        "Is your software architecture scalable to handle millions of users?"
+      ],
+      "tags": ["商务英语", "科技", "形容词"],
+      "difficulty": 2,
+      "notes": "常用于描述商业模式、技术架构能否随业务增长而扩展",
+      "memory_tips": {
+        "word_root": "scale (规模，刻度) + -able (能够) = 能够扩大规模的",
+        "mnemonic": "scale(规模) + able(能够) → 能够放大规模",
+        "association": "想象一个气球，能够不断吹大而不会爆炸",
+        "image_hint": "想象乐高积木，可以无限拼接扩展",
+        "similar_words": ["expandable", "extensible", "growable"]
+      },
+      "created_at": "2026-01-30T16:00:00.000Z",
+      "updated_at": "2026-01-30T16:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440008",
+      "word": "bandwidth",
+      "phonetic": "/ˈbændwɪdθ/",
+      "meaning": "n. 带宽；（比喻）精力、时间、能力",
+      "example_sentences": [
+        "I don't have the bandwidth to take on another project right now.",
+        "Do you have bandwidth to help with this task?",
+        "The team's bandwidth is limited this quarter."
+      ],
+      "tags": ["商务英语", "科技", "俚语", "名词"],
+      "difficulty": 2,
+      "notes": "原义是网络带宽，商务中常比喻为人的时间/精力/处理能力",
+      "memory_tips": {
+        "word_root": "band (带) + width (宽度) = 带宽 → 引申为处理能力",
+        "mnemonic": "网络带宽越大，能传输的数据越多；人的 bandwidth 越大，能处理的事越多",
+        "association": "想象一条高速公路，车道越多(带宽越大)，能通过的车越多",
+        "image_hint": "想象一个水管，口径越大，水流越大",
+        "similar_words": ["capacity", "availability", "resources"]
+      },
+      "created_at": "2026-01-30T16:00:00.000Z",
+      "updated_at": "2026-01-30T16:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440009",
+      "word": "pivot",
+      "phonetic": "/ˈpɪvət/",
+      "meaning": "n./v. 转型；（战略）转向；支点",
+      "example_sentences": [
+        "The startup decided to pivot from B2C to B2B.",
+        "We need to pivot our strategy in response to market changes.",
+        "Instagram pivoted from a check-in app to a photo-sharing platform."
+      ],
+      "tags": ["商务英语", "创业", "动词", "名词"],
+      "difficulty": 2,
+      "notes": "在创业圈特别常用，指公司调整商业模式或战略方向",
+      "memory_tips": {
+        "word_root": "pivot 原义是\"枢轴、支点\"，像篮球中的轴心脚转身",
+        "mnemonic": "想象篮球运动员一只脚固定，另一只脚转动找角度 → 战略转型",
+        "association": "想象一个旋转门，围绕中心点转动方向",
+        "image_hint": "想象指南针的指针，可以灵活转向",
+        "similar_words": ["shift", "transition", "transform", "redirect"]
+      },
+      "created_at": "2026-01-30T16:00:00.000Z",
+      "updated_at": "2026-01-30T16:00:00.000Z"
     }
   ]
 }
