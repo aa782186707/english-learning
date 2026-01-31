@@ -16,7 +16,7 @@ interface ExercisePracticeProps {
 
 export function ExercisePractice({ exercises, onBack, onGoToGrammar }: ExercisePracticeProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [shuffledExercises] = useState(() => 
+  const [shuffledExercises] = useState(() =>
     [...exercises].sort(() => Math.random() - 0.5)
   );
   const [stats, setStats] = useState<ExerciseStats>({
@@ -116,7 +116,7 @@ export function ExercisePractice({ exercises, onBack, onGoToGrammar }: ExerciseP
 
       {/* 进度条 */}
       <div className="w-full bg-gray-200 rounded-full h-2">
-        <div 
+        <div
           className="bg-primary h-2 rounded-full transition-all duration-300"
           style={{ width: `${((currentIndex + 1) / shuffledExercises.length) * 100}%` }}
         />

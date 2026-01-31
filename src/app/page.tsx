@@ -56,7 +56,7 @@ export default function Home() {
   const [exercises, setExercises] = useState<Exercise[]>(localExercises);
   const [loading, setLoading] = useState(true);
   const [isCloud, setIsCloud] = useState(false);
-  
+
 
   // 从 Supabase 或本地加载数据
   const loadData = useCallback(async () => {
@@ -621,7 +621,7 @@ export default function Home() {
         return <ExercisesView />;
       case 'exercise-practice':
         return (
-          <ExercisePractice 
+          <ExercisePractice
             exercises={exercises}
             onBack={() => setCurrentView('exercises')}
             onGoToGrammar={() => setCurrentView('grammar')}
