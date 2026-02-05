@@ -4,7 +4,7 @@ import type { Word, Grammar, LearningProgress } from '@/types';
 // 创建 Supabase 客户端
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 // 兼容新版和旧版 Supabase 的变量名
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY 
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
   || process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY;
 
 // 检查是否配置了 Supabase
@@ -21,7 +21,15 @@ export const supabase: SupabaseClient<any> | null = isSupabaseConfigured
 
 export async function fetchWords(): Promise<Word[]> {
   if (!supabase) {
-    console.log('Supabase not configured, using local data');
+    console.log('Supabase not configured, using local API');
+    try {
+      const response = await fetch('/api/words');
+      if (response.ok) {
+        return await response.json();
+      }
+    } catch (e) {
+      console.error('Failed to fetch from local API', e);
+    }
     return [];
   }
 
@@ -39,7 +47,21 @@ export async function fetchWords(): Promise<Word[]> {
 }
 
 export async function addWord(word: Omit<Word, 'id' | 'created_at' | 'updated_at'>): Promise<Word | null> {
-  if (!supabase) return null;
+  if (!supabase) {
+    try {
+      const response = await fetch('/api/words', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(word),
+      });
+      if (response.ok) {
+        return await response.json();
+      }
+    } catch (e) {
+      console.error('Failed to add word locally', e);
+    }
+    return null;
+  }
 
   const { data, error } = await supabase
     .from('words')

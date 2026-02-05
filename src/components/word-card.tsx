@@ -16,8 +16,10 @@ import {
   Sparkles,
   BookOpen,
   Link2,
-  ImageIcon
+  ImageIcon,
+  Ear
 } from 'lucide-react';
+import { speak } from '@/lib/tts';
 
 interface WordCardProps {
   word: Word;
@@ -28,6 +30,7 @@ interface WordCardProps {
   onPrev?: () => void;
   currentIndex?: number;
   totalCount?: number;
+  enableListeningMode?: boolean; // New prop for listening mode
 }
 
 export function WordCard({
@@ -38,25 +41,25 @@ export function WordCard({
   onNext,
   onPrev,
   currentIndex,
-  totalCount
+  totalCount,
+  enableListeningMode = false
 }: WordCardProps) {
   const [showAnswer, setShowAnswer] = useState(mode === 'view');
   const [showMemoryTips, setShowMemoryTips] = useState(false);
+  // Default to obscured if listening mode is enabled and not showing answer
+  const [isObscured, setIsObscured] = useState(enableListeningMode && mode !== 'view');
 
   // 当单词变化时重置状态
   useEffect(() => {
     if (mode !== 'view') {
       setShowAnswer(false);
       setShowMemoryTips(false);
+      setIsObscured(enableListeningMode);
     }
-  }, [word.id, mode]);
+  }, [word.id, mode, enableListeningMode]);
 
   const handleSpeak = () => {
-    if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(word.word);
-      utterance.lang = 'en-US';
-      speechSynthesis.speak(utterance);
-    }
+    speak(word.word);
   };
 
   // 键盘快捷键
@@ -73,6 +76,7 @@ export function WordCard({
       if (e.code === 'Space' && !showAnswer) {
         e.preventDefault();
         setShowAnswer(true);
+        setIsObscured(false); // Reveal word when answer is shown
       }
 
       // review 模式：数字键评分 (1-6 对应 0-5)
@@ -103,16 +107,35 @@ export function WordCard({
     <Card className="w-full max-w-2xl mx-auto">
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
-          <div className="space-y-1">
-            <CardTitle className="text-3xl font-bold">{word.word}</CardTitle>
+          <div className="space-y-1 relative">
+            <div className="flex items-center gap-3">
+              <CardTitle className={cn(
+                "font-bold transition-all px-2 rounded-md select-none",
+                word.word.length > 50 ? "text-xl" : "text-3xl",
+                isObscured && "text-transparent bg-slate-200 dark:bg-slate-700 animate-pulse"
+              )}>
+                {word.word}
+              </CardTitle>
+              {isObscured && (
+                <Button variant="ghost" size="icon" onClick={handleSpeak} className="animate-bounce">
+                  <Ear className="h-6 w-6 text-primary" />
+                </Button>
+              )}
+            </div>
+
             {word.phonetic && (
-              <p className="text-lg text-muted-foreground">{word.phonetic}</p>
+              <p className={cn(
+                "text-lg text-muted-foreground transition-all rounded-md px-1",
+                isObscured && "text-transparent bg-slate-200 dark:bg-slate-700 select-none"
+              )}>{word.phonetic}</p>
             )}
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" onClick={handleSpeak} title="发音">
-              <Volume2 className="h-5 w-5" />
-            </Button>
+            {!isObscured && (
+              <Button variant="ghost" size="icon" onClick={handleSpeak} title="发音">
+                <Volume2 className="h-5 w-5" />
+              </Button>
+            )}
             <Badge className={getDifficultyColor(word.difficulty)}>
               {getDifficultyLabel(word.difficulty)}
             </Badge>
@@ -133,10 +156,15 @@ export function WordCard({
         {/* 未显示答案时的提示 */}
         {!showAnswer && mode !== 'view' && (
           <div className="text-center py-8">
-            <p className="text-muted-foreground mb-4">你还记得这个单词的意思吗？</p>
+            <p className="text-muted-foreground mb-4">
+              {isObscured ? '听音频，猜内容意思' : '你还记得这个内容的意思吗？'}
+            </p>
             <Button
               size="lg"
-              onClick={() => setShowAnswer(true)}
+              onClick={() => {
+                setShowAnswer(true);
+                setIsObscured(false);
+              }}
               className="min-w-[200px]"
             >
               <Eye className="h-5 w-5 mr-2" />
@@ -277,7 +305,7 @@ export function WordCard({
             {mode === 'review' && onReview && (
               <div className="space-y-3 pt-4 border-t">
                 <h4 className="font-medium text-sm text-center text-muted-foreground">
-                  你记得这个单词吗？选择记忆程度
+                  你记得这个内容吗？选择记忆程度
                 </h4>
                 <div className="grid grid-cols-3 gap-2">
                   {([0, 1, 2, 3, 4, 5] as ReviewQuality[]).map((quality) => (

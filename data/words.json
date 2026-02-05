@@ -1,6 +1,19 @@
 {
   "words": [
     {
+      "word": "i love you",
+      "phonetic": null,
+      "meaning": "我看你",
+      "tags": [],
+      "difficulty": 1,
+      "notes": "",
+      "example_sentences": [],
+      "user_id": "local",
+      "id": "bffbf248-0db7-4bd6-a17a-969b02ed5135",
+      "created_at": "2026-02-05T11:43:06.296Z",
+      "updated_at": "2026-02-05T11:43:06.296Z"
+    },
+    {
       "id": "550e8400-e29b-41d4-a716-446655440001",
       "word": "ubiquitous",
       "phonetic": "/juːˈbɪkwɪtəs/",
@@ -10,7 +23,11 @@
         "The ubiquitous presence of social media has changed how we communicate.",
         "Coffee shops are ubiquitous in big cities."
       ],
-      "tags": ["高级词汇", "GRE", "形容词"],
+      "tags": [
+        "高级词汇",
+        "GRE",
+        "形容词"
+      ],
       "difficulty": 4,
       "notes": "同义词: omnipresent, pervasive, everywhere",
       "memory_tips": {
@@ -18,7 +35,12 @@
         "mnemonic": "\"you-BIG-wi-tous\" → 你(you)太大(big)了，到处都能看到你",
         "association": "想象 WiFi 信号无处不在，ubiquitous 就像无线网络覆盖整个城市",
         "image_hint": "想象一个巨大的蜘蛛网覆盖整个地球，每个角落都有",
-        "similar_words": ["omnipresent", "pervasive", "prevalent", "widespread"]
+        "similar_words": [
+          "omnipresent",
+          "pervasive",
+          "prevalent",
+          "widespread"
+        ]
       },
       "created_at": "2026-01-30T10:00:00.000Z",
       "updated_at": "2026-01-30T10:00:00.000Z"
@@ -33,7 +55,11 @@
         "Many scientific discoveries were made by serendipity.",
         "Our meeting was a happy serendipity."
       ],
-      "tags": ["高级词汇", "美丽单词", "名词"],
+      "tags": [
+        "高级词汇",
+        "美丽单词",
+        "名词"
+      ],
       "difficulty": 3,
       "notes": "这是英语中最美的单词之一，常用于描述美好的意外相遇",
       "memory_tips": {
@@ -41,7 +67,12 @@
         "mnemonic": "\"serene-dip-ity\" → 在宁静(serene)中蘸(dip)一下，获得惊喜",
         "association": "就像你随便翻开一本旧书，发现里面夹着一张100元钞票",
         "image_hint": "想象在海滩散步时，无意中发现一颗美丽的珍珠",
-        "similar_words": ["fortune", "luck", "chance", "coincidence"]
+        "similar_words": [
+          "fortune",
+          "luck",
+          "chance",
+          "coincidence"
+        ]
       },
       "created_at": "2026-01-30T10:00:00.000Z",
       "updated_at": "2026-01-30T10:00:00.000Z"
@@ -56,7 +87,11 @@
         "The ephemeral beauty of cherry blossoms reminds us of life's transience.",
         "Social media posts feel ephemeral compared to printed books."
       ],
-      "tags": ["高级词汇", "GRE", "形容词"],
+      "tags": [
+        "高级词汇",
+        "GRE",
+        "形容词"
+      ],
       "difficulty": 4,
       "notes": "反义词: permanent, lasting, enduring, eternal",
       "memory_tips": {
@@ -64,7 +99,12 @@
         "mnemonic": "\"一-费-摸-弱\" → 一费力气去摸，结果太弱了，转瞬即逝",
         "association": "蜉蝣(ephemera)只活一天，ephemeral 就是像蜉蝣一样短暂",
         "image_hint": "想象清晨的露珠，太阳一出来就消失了",
-        "similar_words": ["transient", "fleeting", "momentary", "brief"]
+        "similar_words": [
+          "transient",
+          "fleeting",
+          "momentary",
+          "brief"
+        ]
       },
       "created_at": "2026-01-30T10:00:00.000Z",
       "updated_at": "2026-01-30T10:00:00.000Z"
@@ -79,7 +119,12 @@
         "The company leveraged its brand recognition to enter new markets.",
         "He used his connections to leverage a better deal."
       ],
-      "tags": ["商务英语", "高频词", "动词", "名词"],
+      "tags": [
+        "商务英语",
+        "高频词",
+        "动词",
+        "名词"
+      ],
       "difficulty": 2,
       "notes": "商务场景中常用作动词，表示\"充分利用\"",
       "memory_tips": {
@@ -87,7 +132,12 @@
         "mnemonic": "lever(杠杆) → 阿基米德说给我一个杠杆我能撬动地球 → 借力使力",
         "association": "想象用一根杠杆撬动巨石，leverage 就是用小力量获得大效果",
         "image_hint": "想象跷跷板，一点点力就能抬起重物",
-        "similar_words": ["utilize", "exploit", "capitalize on", "harness"]
+        "similar_words": [
+          "utilize",
+          "exploit",
+          "capitalize on",
+          "harness"
+        ]
       },
       "created_at": "2026-01-30T16:00:00.000Z",
       "updated_at": "2026-01-30T16:00:00.000Z"
@@ -102,7 +152,11 @@
         "There's a great synergy between our marketing and sales teams.",
         "We're looking for synergies to reduce costs."
       ],
-      "tags": ["商务英语", "高频词", "名词"],
+      "tags": [
+        "商务英语",
+        "高频词",
+        "名词"
+      ],
       "difficulty": 3,
       "notes": "常用于并购、团队合作等场景，强调合作产生的额外价值",
       "memory_tips": {
@@ -110,7 +164,12 @@
         "mnemonic": "\"syn-能-激\" → 共同(syn)产生能量，激发更大效果",
         "association": "想象两个齿轮配合转动，比单独转动更有效率",
         "image_hint": "想象两只手合在一起鼓掌，比单手拍响亮得多",
-        "similar_words": ["collaboration", "cooperation", "teamwork", "combined effect"]
+        "similar_words": [
+          "collaboration",
+          "cooperation",
+          "teamwork",
+          "combined effect"
+        ]
       },
       "created_at": "2026-01-30T16:00:00.000Z",
       "updated_at": "2026-01-30T16:00:00.000Z"
@@ -125,7 +184,11 @@
         "Key stakeholders include investors, employees, and customers.",
         "The project manager held a meeting with all stakeholders."
       ],
-      "tags": ["商务英语", "高频词", "名词"],
+      "tags": [
+        "商务英语",
+        "高频词",
+        "名词"
+      ],
       "difficulty": 2,
       "notes": "包括股东、员工、客户、供应商等所有与公司/项目相关的人",
       "memory_tips": {
@@ -133,7 +196,11 @@
         "mnemonic": "stake(赌注) + holder(持有人) → 在这件事上下了注的人",
         "association": "想象一场扑克游戏，所有下了赌注的人都是 stakeholder",
         "image_hint": "想象一个圆桌，周围坐着投资人、员工、客户，他们都关心公司的发展",
-        "similar_words": ["shareholder", "participant", "interested party"]
+        "similar_words": [
+          "shareholder",
+          "participant",
+          "interested party"
+        ]
       },
       "created_at": "2026-01-30T16:00:00.000Z",
       "updated_at": "2026-01-30T16:00:00.000Z"
@@ -148,7 +215,11 @@
         "This business model is highly scalable.",
         "Is your software architecture scalable to handle millions of users?"
       ],
-      "tags": ["商务英语", "科技", "形容词"],
+      "tags": [
+        "商务英语",
+        "科技",
+        "形容词"
+      ],
       "difficulty": 2,
       "notes": "常用于描述商业模式、技术架构能否随业务增长而扩展",
       "memory_tips": {
@@ -156,7 +227,11 @@
         "mnemonic": "scale(规模) + able(能够) → 能够放大规模",
         "association": "想象一个气球，能够不断吹大而不会爆炸",
         "image_hint": "想象乐高积木，可以无限拼接扩展",
-        "similar_words": ["expandable", "extensible", "growable"]
+        "similar_words": [
+          "expandable",
+          "extensible",
+          "growable"
+        ]
       },
       "created_at": "2026-01-30T16:00:00.000Z",
       "updated_at": "2026-01-30T16:00:00.000Z"
@@ -171,7 +246,12 @@
         "Do you have bandwidth to help with this task?",
         "The team's bandwidth is limited this quarter."
       ],
-      "tags": ["商务英语", "科技", "俚语", "名词"],
+      "tags": [
+        "商务英语",
+        "科技",
+        "俚语",
+        "名词"
+      ],
       "difficulty": 2,
       "notes": "原义是网络带宽，商务中常比喻为人的时间/精力/处理能力",
       "memory_tips": {
@@ -179,7 +259,11 @@
         "mnemonic": "网络带宽越大，能传输的数据越多；人的 bandwidth 越大，能处理的事越多",
         "association": "想象一条高速公路，车道越多(带宽越大)，能通过的车越多",
         "image_hint": "想象一个水管，口径越大，水流越大",
-        "similar_words": ["capacity", "availability", "resources"]
+        "similar_words": [
+          "capacity",
+          "availability",
+          "resources"
+        ]
       },
       "created_at": "2026-01-30T16:00:00.000Z",
       "updated_at": "2026-01-30T16:00:00.000Z"
@@ -194,7 +278,12 @@
         "We need to pivot our strategy in response to market changes.",
         "Instagram pivoted from a check-in app to a photo-sharing platform."
       ],
-      "tags": ["商务英语", "创业", "动词", "名词"],
+      "tags": [
+        "商务英语",
+        "创业",
+        "动词",
+        "名词"
+      ],
       "difficulty": 2,
       "notes": "在创业圈特别常用，指公司调整商业模式或战略方向",
       "memory_tips": {
@@ -202,7 +291,12 @@
         "mnemonic": "想象篮球运动员一只脚固定，另一只脚转动找角度 → 战略转型",
         "association": "想象一个旋转门，围绕中心点转动方向",
         "image_hint": "想象指南针的指针，可以灵活转向",
-        "similar_words": ["shift", "transition", "transform", "redirect"]
+        "similar_words": [
+          "shift",
+          "transition",
+          "transform",
+          "redirect"
+        ]
       },
       "created_at": "2026-01-30T16:00:00.000Z",
       "updated_at": "2026-01-30T16:00:00.000Z"

@@ -19,10 +19,16 @@ import {
   Cloud,
   HardDrive,
   PenTool,
-  Target
+  Target,
+  CloudUpload,
+  GraduationCap,
+  LayoutDashboard
 } from 'lucide-react';
 import type { Word, Grammar, Exercise } from '@/types';
-import { fetchWords, fetchGrammar, isSupabaseConfigured } from '@/lib/supabase-client';
+import { fetchWords, fetchGrammar, isSupabaseConfigured, supabase } from '@/lib/supabase-client';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { addWord } from '@/lib/supabase-client';
 
 // 本地备用数据
 import wordsData from '@/../data/words.json';
@@ -56,6 +62,10 @@ export default function Home() {
   const [exercises, setExercises] = useState<Exercise[]>(localExercises);
   const [loading, setLoading] = useState(true);
   const [isCloud, setIsCloud] = useState(false);
+  const [isAddWordOpen, setIsAddWordOpen] = useState(false);
+  const [filterDate, setFilterDate] = useState<string>('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSyncing, setIsSyncing] = useState(false);
 
 
   // 从 Supabase 或本地加载数据
@@ -131,6 +141,147 @@ export default function Home() {
     setCurrentView('grammar-detail');
   };
 
+  const handleAddWordSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const formData = new FormData(e.currentTarget);
+
+    try {
+      const newWord = {
+        word: formData.get('word') as string,
+        phonetic: formData.get('phonetic') as string,
+        meaning: formData.get('meaning') as string,
+        tags: (formData.get('tags') as string).split(/[,，]/).map(t => t.trim()).filter(Boolean),
+        difficulty: 1,
+        notes: formData.get('notes') as string,
+        example_sentences: [],
+      };
+
+      await addWord({
+        ...newWord,
+        user_id: isCloud ? 'user' : 'local',
+      });
+
+      await loadData();
+      setIsAddWordOpen(false);
+    } catch (error) {
+      console.error('Failed to add word:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleSync = async () => {
+    setIsSyncing(true);
+
+    if (!supabase) {
+      alert('未检测到 Supabase 客户端配置');
+      setIsSyncing(false);
+      return;
+    }
+
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        alert('请先登录以同步数据');
+        setIsSyncing(false);
+        return;
+      }
+
+      // Sync Words
+      const wordsToSync = words.map(w => ({
+        ...w,
+        user_id: user.id
+      }));
+
+      for (const word of wordsToSync) {
+        const { error } = await supabase.from('words').upsert(word);
+        if (error) console.error('Error syncing word:', word.word, error);
+      }
+
+      // Sync Grammar
+      const grammarToSync = grammar.map(g => ({
+        ...g,
+        user_id: user.id
+      }));
+
+      for (const item of grammarToSync) {
+        const { error } = await supabase.from('grammar').upsert(item);
+        if (error) console.error('Error syncing grammar:', item.title, error);
+      }
+
+      alert('同步完成！');
+      await loadData();
+    } catch (error) {
+      console.error('Sync failed:', error);
+      alert('同步失败');
+    } finally {
+      setIsSyncing(false);
+    }
+  };
+
+  // Add Word Modal
+  const AddWordModal = () => {
+    const [isSentence, setIsSentence] = useState(false);
+
+    if (!isAddWordOpen) return null;
+    return (
+      <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+        <div className="bg-white dark:bg-slate-900 p-6 rounded-lg w-full max-w-md shadow-xl max-h-[90vh] overflow-y-auto">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xl font-bold">添加{isSentence ? '句子' : '单词/词组'}</h2>
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-muted-foreground cursor-pointer" onClick={() => setIsSentence(!isSentence)}>
+                {isSentence ? '切换到单词' : '切换到句子'}
+              </span>
+            </div>
+          </div>
+          <form onSubmit={handleAddWordSubmit} className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium mb-1">{isSentence ? '句子内容' : '单词/词组'}</label>
+              {isSentence ? (
+                <Textarea name="word" required placeholder="例如: The quick brown fox jumps over the lazy dog." className="h-24" />
+              ) : (
+                <Input name="word" required placeholder="例如: ubiquitous 或 piece of cake" />
+              )}
+            </div>
+
+            {!isSentence && (
+              <div>
+                <label className="block text-sm font-medium mb-1">音标 (可选)</label>
+                <Input name="phonetic" placeholder="/.../" />
+              </div>
+            )}
+
+            <div>
+              <label className="block text-sm font-medium mb-1">含义</label>
+              {isSentence ? (
+                <Textarea name="meaning" required placeholder="中文释义" />
+              ) : (
+                <Input name="meaning" required placeholder="中文释义" />
+              )}
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">标签 (逗号分隔)</label>
+              <Input name="tags" placeholder={isSentence ? "口语, 电影台词" : "生活, 考试, 高频"} />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">备注</label>
+              <Input name="notes" placeholder="助记或其他" />
+            </div>
+            <div className="flex justify-end gap-2 mt-6">
+              <Button type="button" variant="ghost" onClick={() => setIsAddWordOpen(false)}>取消</Button>
+              <Button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
+                保存
+              </Button>
+            </div>
+          </form>
+        </div>
+      </div>
+    );
+  };
+
   // 仪表盘视图
   const DashboardView = () => (
     <div className="space-y-8">
@@ -156,13 +307,19 @@ export default function Home() {
               </>
             )}
           </Badge>
+          {!isCloud && (
+            <Button size="sm" variant="outline" onClick={handleSync} disabled={isSyncing}>
+              {isSyncing ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <CloudUpload className="h-4 w-4 mr-1" />}
+              同步到云端
+            </Button>
+          )}
         </div>
       </div>
 
       {/* 统计卡片 */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <StatsCard
-          title="单词总数"
+          title="词汇总数"
           value={stats.totalWords}
           description="已添加到词库"
           icon="words"
@@ -229,15 +386,15 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <BookOpen className="h-5 w-5 text-blue-500" />
-              单词库
+              词汇库
             </CardTitle>
             <CardDescription>
-              浏览和管理你的 {stats.totalWords} 个单词
+              浏览和管理你的 {stats.totalWords} 个单词/句子
             </CardDescription>
           </CardHeader>
           <CardContent>
             <Button variant="outline" className="w-full">
-              查看单词
+              查看词汇
               <ChevronRight className="h-4 w-4 ml-1" />
             </Button>
           </CardContent>
@@ -264,7 +421,7 @@ export default function Home() {
 
       {/* 最近添加 */}
       <div className="space-y-4">
-        <h2 className="text-xl font-semibold">最近添加的单词</h2>
+        <h2 className="text-xl font-semibold">最近添加的内容</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {words.slice(0, 4).map((word) => (
             <Card
@@ -296,49 +453,77 @@ export default function Home() {
   );
 
   // 单词列表视图
-  const WordsView = () => (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <Button variant="ghost" onClick={() => setCurrentView('dashboard')} className="mb-2">
-            ← 返回
-          </Button>
-          <h1 className="text-2xl font-bold">单词库</h1>
-        </div>
-        <Button>
-          <Plus className="h-4 w-4 mr-1" />
-          添加单词
-        </Button>
-      </div>
+  const WordsView = () => {
+    const filteredWords = words.filter(w => {
+      if (!filterDate) return true;
+      const wordDate = new Date(w.created_at).toISOString().split('T')[0];
+      return wordDate === filterDate;
+    });
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {words.map((word, index) => (
-          <Card
-            key={word.id}
-            className="cursor-pointer hover:shadow-md transition-shadow"
-            onClick={() => handleViewWord(word, index)}
-          >
-            <CardHeader className="pb-2">
-              <div className="flex items-center justify-between">
-                <CardTitle className="text-lg">{word.word}</CardTitle>
-                <span className="text-sm text-muted-foreground">{word.phonetic}</span>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground line-clamp-2">{word.meaning}</p>
-              <div className="flex gap-1 mt-2 flex-wrap">
-                {word.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="text-xs">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        ))}
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center justify-between flex-wrap gap-4">
+          <div>
+            <Button variant="ghost" onClick={() => setCurrentView('dashboard')} className="mb-2">
+              ← 返回
+            </Button>
+            <h1 className="text-2xl font-bold">词汇库</h1>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mr-2">
+              <span className="text-sm text-muted-foreground hidden sm:inline">按日期:</span>
+              <Input
+                type="date"
+                className="w-auto"
+                value={filterDate}
+                onChange={(e) => setFilterDate(e.target.value)}
+              />
+              {filterDate && (
+                <Button variant="ghost" size="sm" onClick={() => setFilterDate('')}>清除</Button>
+              )}
+            </div>
+            <Button onClick={() => setIsAddWordOpen(true)}>
+              <Plus className="h-4 w-4 mr-1" />
+              添加
+            </Button>
+          </div>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {filteredWords.length === 0 ? (
+            <div className="col-span-full text-center py-12 text-muted-foreground">
+              {filterDate ? `在 ${filterDate} 没有找到记录` : '还没有添加任何内容'}
+            </div>
+          ) : (
+            filteredWords.map((word, index) => (
+              <Card
+                key={word.id}
+                className="cursor-pointer hover:shadow-md transition-shadow"
+                onClick={() => handleViewWord(word, index)}
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="text-lg">{word.word}</CardTitle>
+                    <span className="text-sm text-muted-foreground">{word.phonetic}</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground line-clamp-2">{word.meaning}</p>
+                  <div className="flex gap-1 mt-2 flex-wrap">
+                    {word.tags.map((tag) => (
+                      <Badge key={tag} variant="secondary" className="text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))
+          )}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   // 语法列表视图
   const GrammarView = () => (
@@ -388,16 +573,38 @@ export default function Home() {
   // 复习视图
   const ReviewView = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const allItems = [...words, ...grammar];
-    const currentItem = allItems[currentIndex];
+    const [isListeningMode, setIsListeningMode] = useState(false);
+    const [reviewItems, setReviewItems] = useState<(Word | Grammar)[]>([]);
+    const [isInitialized, setIsInitialized] = useState(false);
+
+    useEffect(() => {
+      const items = [...words, ...grammar];
+      // Shuffle items (Fisher-Yates shuffle)
+      for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+      }
+      setReviewItems(items);
+      setIsInitialized(true);
+    }, []);
+
+    const currentItem = reviewItems[currentIndex];
 
     const handleNext = () => {
-      if (currentIndex < allItems.length - 1) {
+      if (currentIndex < reviewItems.length - 1) {
         setCurrentIndex(currentIndex + 1);
       } else {
         setCurrentView('dashboard');
       }
     };
+
+    if (!isInitialized) {
+      return (
+        <div className="flex justify-center py-20">
+          <Loader2 className="h-8 w-8 animate-spin text-primary" />
+        </div>
+      );
+    }
 
     if (!currentItem) {
       return (
@@ -408,9 +615,11 @@ export default function Home() {
           <Card className="max-w-md mx-auto">
             <CardContent className="pt-6 text-center">
               <Calendar className="h-12 w-12 mx-auto text-green-500 mb-4" />
-              <h2 className="text-xl font-semibold">太棒了！</h2>
+              <h2 className="text-xl font-semibold">
+                {reviewItems.length === 0 ? '暂无内容' : '太棒了！'}
+              </h2>
               <p className="text-muted-foreground mt-2">
-                今天的复习任务已全部完成
+                {reviewItems.length === 0 ? '还没有添加任何单词或语法' : '今天的复习任务已全部完成'}
               </p>
               <Button className="mt-4" onClick={() => setCurrentView('dashboard')}>
                 返回首页
@@ -429,15 +638,35 @@ export default function Home() {
           <Button variant="ghost" onClick={() => setCurrentView('dashboard')}>
             ← 返回
           </Button>
-          <Badge variant="outline">
-            {currentIndex + 1} / {allItems.length}
-          </Badge>
+          <div className="flex items-center gap-4">
+            {isWord && (
+              <div className="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  id="listening-mode"
+                  checked={isListeningMode}
+                  onChange={(e) => setIsListeningMode(e.target.checked)}
+                  className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                />
+                <label
+                  htmlFor="listening-mode"
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                >
+                  听音模式
+                </label>
+              </div>
+            )}
+            <Badge variant="outline">
+              {currentIndex + 1} / {reviewItems.length}
+            </Badge>
+          </div>
         </div>
 
         {isWord ? (
           <WordCard
             word={currentItem as Word}
             mode="review"
+            enableListeningMode={isListeningMode}
             onReview={(quality) => {
               console.log('Review quality:', quality);
               handleNext();
@@ -464,7 +693,7 @@ export default function Home() {
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <Button variant="ghost" onClick={() => setCurrentView('words')}>
-            ← 返回单词库
+            ← 返回词汇库
           </Button>
           <Badge variant="outline">
             {selectedWordIndex + 1} / {words.length}
@@ -649,6 +878,7 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4 py-8 max-w-6xl">
       {renderView()}
+      <AddWordModal />
     </main>
   );
 }
