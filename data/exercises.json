@@ -209,6 +209,107 @@
       "difficulty": 2,
       "created_at": "2026-01-30T17:00:00.000Z",
       "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "ex-016",
+      "type": "choice",
+      "question": "关于英语学习中的 'Chunk' (语块)，下列说法错误的是？",
+      "options": [
+        "A. 英语句子是由一个个单词拼出来的",
+        "B. 英语句子是用 '零件'(连接词) 把 '块'(chunk) 串起来的",
+        "C. 以 chunk 为单位学习能提升输入和输出的效率",
+        "D. 掌握 chunk 能提升交流反应速度"
+      ],
+      "correct_answer": "A",
+      "explanation": "英语学习的核心理念之一是：英语句子不是一个个单词拼出来的，而是由 chunk（语块）通过连接词串联而成的。按 chunk 学习效率更高。",
+      "tags": ["Chunk", "学习方法"],
+      "difficulty": 1,
+      "created_at": "2026-02-05T20:55:00.000Z",
+      "updated_at": "2026-02-05T20:55:00.000Z"
+    },
+    {
+      "id": "ex-017",
+      "type": "choice",
+      "question": "在句子 'I want to go to the Summer Palace' 中，'I want to' 属于哪种类型的 chunk？",
+      "options": [
+        "A. 句首结构 (Sentence Starter)",
+        "B. 动作描述",
+        "C. 地点描述",
+        "D. 连接词"
+      ],
+      "correct_answer": "A",
+      "explanation": "'I want to' 是典型的句首结构 (Sentence Starter)，它引出了句子的主体意图，后面接具体动作 'go to the Summer Palace'。",
+      "tags": ["Chunk", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T20:55:00.000Z",
+      "updated_at": "2026-02-05T20:55:00.000Z"
+    },
+    {
+      "id": "ex-018",
+      "type": "fill",
+      "question": "在会议开场时，想表达“我感谢大家抽出时间参加今天的会议”，可以用句首 chunk: _____ everyone taking the time to join us today.",
+      "correct_answer": "I appreciate",
+      "explanation": "'I appreciate everyone taking the time...' 是非常专业且得体的会议开场白，属于高频句首 chunk。",
+      "tags": ["Chunk", "会议场景", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T20:55:00.000Z",
+      "updated_at": "2026-02-05T20:55:00.000Z"
+    },
+    {
+      "id": "ex-019",
+      "type": "fill",
+      "question": "想介绍今天的会议议程是深入探讨某项举措，可以说: Our agenda today is _____ _____ an innovative initiative.",
+      "correct_answer": "to delve into",
+      "explanation": "'Our agenda today is...' 是会议议程介绍的标准句首 chunk，'to delve into' 意为深入探究/钻研。",
+      "tags": ["Chunk", "会议场景", "句首结构"],
+      "difficulty": 3,
+      "created_at": "2026-02-05T20:55:00.000Z",
+      "updated_at": "2026-02-05T20:55:00.000Z"
+    },
+    {
+      "id": "ex-020",
+      "type": "choice",
+      "question": "句子 'This initiative represents a significant step forward.' 中的句首 chunk 是？",
+      "options": [
+        "A. This initiative",
+        "B. This initiative represents",
+        "C. a significant step",
+        "D. step forward"
+      ],
+      "correct_answer": "B",
+      "explanation": "'This initiative represents' 是句首结构 chunk，意思是“这项举措代表了...”，后面接具体的意义或价值。",
+      "tags": ["Chunk", "会议场景", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T20:55:00.000Z",
+      "updated_at": "2026-02-05T20:55:00.000Z"
+    },
+    {
+      "id": "ex-021",
+      "type": "choice",
+      "question": "在会议中想要开始某项议程，说 'To kick things off, we will finalize...'，其中 'kick things off' 的意思是？",
+      "options": [
+        "A. 结束会议",
+        "B. 把东西踢开",
+        "C. 正式开始",
+        "D. 暂停讨论"
+      ],
+      "correct_answer": "C",
+      "explanation": "'To kick things off' 是一个地道的口语 chunk，常用于会议或活动开始时，意为“为了开始（我们的议程）”。",
+      "tags": ["Chunk", "会议场景", "地道表达"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T20:55:00.000Z",
+      "updated_at": "2026-02-05T20:55:00.000Z"
+    },
+    {
+      "id": "ex-022",
+      "type": "fill",
+      "question": "介绍主要贡献者将展示概览时，可以说: Additionally, our key contributors _____ _____ an overview.",
+      "correct_answer": "will present",
+      "explanation": "'our key contributors will present' 是一个完整的句首 chunk，包含主语和谓语动词，引出接下来的动作。",
+      "tags": ["Chunk", "会议场景", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T20:55:00.000Z",
+      "updated_at": "2026-02-05T20:55:00.000Z"
     }
   ]
 }

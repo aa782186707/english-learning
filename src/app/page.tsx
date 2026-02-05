@@ -64,6 +64,8 @@ export default function Home() {
   const [isCloud, setIsCloud] = useState(false);
   const [isAddWordOpen, setIsAddWordOpen] = useState(false);
   const [filterDate, setFilterDate] = useState<string>('');
+  const [filterType, setFilterType] = useState<'all' | 'word' | 'sentence'>('all');
+  const [filterScenario, setFilterScenario] = useState<string>('all');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSyncing, setIsSyncing] = useState(false);
 
@@ -455,9 +457,24 @@ export default function Home() {
   // 单词列表视图
   const WordsView = () => {
     const filteredWords = words.filter(w => {
-      if (!filterDate) return true;
-      const wordDate = new Date(w.created_at).toISOString().split('T')[0];
-      return wordDate === filterDate;
+      // Date Filter
+      if (filterDate) {
+        const wordDate = new Date(w.created_at).toISOString().split('T')[0];
+        if (wordDate !== filterDate) return false;
+      }
+
+      // Type Filter
+      if (filterType === 'all') return true;
+
+      // Heuristic for sentence detection
+      const isSentence = w.tags.some(t => ['句子', '例句'].includes(t)) ||
+        /[.?!]$/.test(w.word) ||
+        (w.word.includes(' ') && w.word.length > 30);
+
+      if (filterType === 'sentence') return isSentence;
+      if (filterType === 'word') return !isSentence;
+
+      return true;
     });
 
     return (
@@ -471,15 +488,25 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-2 mr-2">
-              <span className="text-sm text-muted-foreground hidden sm:inline">按日期:</span>
+              <select
+                className="h-10 rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                value={filterType}
+                onChange={(e) => setFilterType(e.target.value as any)}
+              >
+                <option value="all">全部类型</option>
+                <option value="word">单词/词组</option>
+                <option value="sentence">句子</option>
+              </select>
+
+              <span className="text-sm text-muted-foreground hidden sm:inline">日期:</span>
               <Input
                 type="date"
                 className="w-auto"
                 value={filterDate}
                 onChange={(e) => setFilterDate(e.target.value)}
               />
-              {filterDate && (
-                <Button variant="ghost" size="sm" onClick={() => setFilterDate('')}>清除</Button>
+              {(filterDate || filterType !== 'all') && (
+                <Button variant="ghost" size="sm" onClick={() => { setFilterDate(''); setFilterType('all'); }}>清除</Button>
               )}
             </div>
             <Button onClick={() => setIsAddWordOpen(true)}>
@@ -492,7 +519,7 @@ export default function Home() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {filteredWords.length === 0 ? (
             <div className="col-span-full text-center py-12 text-muted-foreground">
-              {filterDate ? `在 ${filterDate} 没有找到记录` : '还没有添加任何内容'}
+              没有找到匹配的内容
             </div>
           ) : (
             filteredWords.map((word, index) => (
@@ -741,13 +768,21 @@ export default function Home() {
       'bg-red-100 text-red-800',
     ];
 
+    // Get all unique tags as scenarios
+    const allScenarios = Array.from(new Set(exercises.flatMap(e => e.tags)));
+
+    const filteredExercises = exercises.filter(e => {
+      if (filterScenario === 'all') return true;
+      return e.tags.includes(filterScenario);
+    });
+
     const startPractice = () => {
       setCurrentView('exercise-practice');
     };
 
     return (
       <div className="space-y-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap gap-4">
           <div>
             <Button variant="ghost" onClick={() => setCurrentView('dashboard')} className="mb-2">
               ← 返回
@@ -757,24 +792,39 @@ export default function Home() {
               通过做题来巩固语法知识，加深记忆
             </p>
           </div>
-          <Button onClick={startPractice} size="lg">
-            <Target className="h-5 w-5 mr-2" />
-            开始练习
-          </Button>
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mr-2">
+              <span className="text-sm text-muted-foreground">场景:</span>
+              <select
+                className="h-10 rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-w-[120px]"
+                value={filterScenario}
+                onChange={(e) => setFilterScenario(e.target.value)}
+              >
+                <option value="all">全部场景</option>
+                {allScenarios.map(scenario => (
+                  <option key={scenario} value={scenario}>{scenario}</option>
+                ))}
+              </select>
+            </div>
+            <Button onClick={startPractice} size="lg" disabled={filteredExercises.length === 0}>
+              <Target className="h-5 w-5 mr-2" />
+              开始练习 ({filteredExercises.length})
+            </Button>
+          </div>
         </div>
 
         {/* 题目统计 */}
         <div className="grid gap-4 md:grid-cols-4">
           <Card>
             <CardContent className="pt-6">
-              <div className="text-2xl font-bold">{exercises.length}</div>
+              <div className="text-2xl font-bold">{filteredExercises.length}</div>
               <div className="text-sm text-muted-foreground">题目总数</div>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="pt-6">
               <div className="text-2xl font-bold">
-                {exercises.filter(e => e.type === 'choice').length}
+                {filteredExercises.filter(e => e.type === 'choice').length}
               </div>
               <div className="text-sm text-muted-foreground">选择题</div>
             </CardContent>
@@ -782,7 +832,7 @@ export default function Home() {
           <Card>
             <CardContent className="pt-6">
               <div className="text-2xl font-bold">
-                {exercises.filter(e => e.type === 'fill').length}
+                {filteredExercises.filter(e => e.type === 'fill').length}
               </div>
               <div className="text-sm text-muted-foreground">填空题</div>
             </CardContent>
@@ -790,7 +840,7 @@ export default function Home() {
           <Card>
             <CardContent className="pt-6">
               <div className="text-2xl font-bold">
-                {exercises.filter(e => e.type === 'judge' || e.type === 'translate').length}
+                {filteredExercises.filter(e => e.type === 'judge' || e.type === 'translate').length}
               </div>
               <div className="text-sm text-muted-foreground">判断/翻译题</div>
             </CardContent>
@@ -800,31 +850,37 @@ export default function Home() {
         {/* 题目列表 */}
         <div className="space-y-3">
           <h2 className="text-lg font-semibold">题目预览</h2>
-          {exercises.map((exercise, index) => (
-            <Card key={exercise.id} className="hover:shadow-md transition-shadow">
-              <CardContent className="py-4">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Badge variant="outline">{typeLabels[exercise.type]}</Badge>
-                      <Badge className={difficultyColors[exercise.difficulty - 1]}>
-                        难度 {exercise.difficulty}
-                      </Badge>
-                      {exercise.tags.slice(0, 2).map((tag) => (
-                        <Badge key={tag} variant="secondary" className="text-xs">
-                          {tag}
+          {filteredExercises.length === 0 ? (
+            <div className="text-center py-12 text-muted-foreground">
+              该场景下暂无题目
+            </div>
+          ) : (
+            filteredExercises.map((exercise, index) => (
+              <Card key={exercise.id} className="hover:shadow-md transition-shadow">
+                <CardContent className="py-4">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge variant="outline">{typeLabels[exercise.type]}</Badge>
+                        <Badge className={difficultyColors[exercise.difficulty - 1]}>
+                          难度 {exercise.difficulty}
                         </Badge>
-                      ))}
+                        {exercise.tags.slice(0, 2).map((tag) => (
+                          <Badge key={tag} variant="secondary" className="text-xs">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      <p className="text-sm line-clamp-2">{exercise.question}</p>
                     </div>
-                    <p className="text-sm line-clamp-2">{exercise.question}</p>
+                    <div className="text-2xl font-bold text-muted-foreground/30">
+                      #{index + 1}
+                    </div>
                   </div>
-                  <div className="text-2xl font-bold text-muted-foreground/30">
-                    #{index + 1}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            ))
+          )}
         </div>
       </div>
     );
@@ -849,9 +905,14 @@ export default function Home() {
       case 'exercises':
         return <ExercisesView />;
       case 'exercise-practice':
+        const filteredExercises = exercises.filter(e => {
+          if (filterScenario === 'all') return true;
+          return e.tags.includes(filterScenario);
+        });
+
         return (
           <ExercisePractice
-            exercises={exercises}
+            exercises={filteredExercises}
             onBack={() => setCurrentView('exercises')}
             onGoToGrammar={() => setCurrentView('grammar')}
           />

@@ -10,6 +10,7 @@
 
 - 单词: `data/words.json`
 - 语法: `data/grammar.json`
+- 练习: `data/exercises.json`
 
 ### 步骤 2：推送到 GitHub
 
@@ -73,6 +74,21 @@ INSERT INTO grammar (title, explanation, examples, tags, difficulty, notes) VALU
 );
 ```
 
+## 添加练习的 SQL 模板
+
+```sql
+INSERT INTO exercises (question, type, options, correct_answer, explanation, tags, difficulty) VALUES
+(
+  '题目内容',
+  'choice', -- choice, fill, judge, translate
+  ARRAY['A. 选项1', 'B. 选项2', 'C. 选项3', 'D. 选项4'], -- 仅选择题需要
+  '正确答案',
+  '答案解析...',
+  ARRAY['标签1', '标签2', '场景标签'], -- ⚠️必须包含场景标签，如：会议场景、商务英语
+  难度数字
+);
+```
+
 ---
 
 ## 内容生成指南
@@ -90,6 +106,12 @@ INSERT INTO grammar (title, explanation, examples, tags, difficulty, notes) VALU
    - `association`: 联想记忆
    - `image_hint`: 画面联想
    - `similar_words`: 相关词汇
+
+当添加练习时，请注意：
+
+1. **场景标签**: 必须为每个题目添加具体的场景标签（如：会议场景、邮件写作、日常对话），以便后续筛选。
+2. **多样性**: 题型应多样化（选择、填空、判断）。
+3. **解析**: 解析要详尽，解释为什么选这个，以及背后的知识点。
 
 ---
 
@@ -136,6 +158,27 @@ INSERT INTO grammar (title, explanation, examples, tags, difficulty, notes) VALU
       "tags": ["语法", "标签"],
       "difficulty": 3,
       "notes": "补充说明",
+      "created_at": "ISO时间戳",
+      "updated_at": "ISO时间戳"
+    }
+  ]
+}
+```
+
+### exercises.json 格式
+
+```json
+{
+  "exercises": [
+    {
+      "id": "生成UUID",
+      "type": "choice",
+      "question": "题目内容",
+      "options": ["A. 选项1", "B. 选项2"],
+      "correct_answer": "A",
+      "explanation": "答案解析...",
+      "tags": ["场景标签", "知识点标签"],
+      "difficulty": 2,
       "created_at": "ISO时间戳",
       "updated_at": "ISO时间戳"
     }
