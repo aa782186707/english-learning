@@ -300,6 +300,182 @@
       },
       "created_at": "2026-01-30T16:00:00.000Z",
       "updated_at": "2026-01-30T16:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440010",
+      "word": "obsolete",
+      "phonetic": "/ˌɒbsəˈliːt/",
+      "meaning": "adj. 过时的；废弃的",
+      "example_sentences": [
+        "The review found some features obsolete and highlighted areas for improvement.",
+        "Floppy disks are now obsolete technology."
+      ],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "工作"
+      ],
+      "difficulty": 3,
+      "notes": "常指因出现更新、更好的替代品而变得过时",
+      "memory_tips": {
+        "similar_words": ["outdated", "archaic"]
+      },
+      "created_at": "2026-02-05T12:00:00.000Z",
+      "updated_at": "2026-02-05T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440011",
+      "word": "areas for improvement",
+      "phonetic": null,
+      "meaning": "n. 改进空间；待改进之处",
+      "example_sentences": [
+        "The review found some features obsolete and highlighted areas for improvement.",
+        "We identified several areas for improvement in our customer service."
+      ],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "短语"
+      ],
+      "difficulty": 2,
+      "notes": "绩效评估或复盘时的常用委婉语，指缺点或不足",
+      "created_at": "2026-02-05T12:00:00.000Z",
+      "updated_at": "2026-02-05T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440012",
+      "word": "The review found some features obsolete and highlighted areas for improvement.",
+      "phonetic": null,
+      "meaning": "这次评估发现了部分的功能过时，并指出了改进空间。",
+      "example_sentences": [],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "例句"
+      ],
+      "difficulty": 3,
+      "notes": "一句话搞定两个单词: obsolete, areas for improvement",
+      "created_at": "2026-02-05T12:00:00.000Z",
+      "updated_at": "2026-02-05T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440013",
+      "word": "rationale",
+      "phonetic": "/ˌræʃəˈnɑːl/",
+      "meaning": "n. 根本原因；基本原理；理论基础",
+      "example_sentences": [
+        "The rationale behind the change is to serve the goal of better performance.",
+        "He explained the rationale for his decision."
+      ],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "工作"
+      ],
+      "difficulty": 4,
+      "notes": "指决策或行动背后的逻辑依据",
+      "memory_tips": {
+        "similar_words": ["reasoning", "logic", "basis"]
+      },
+      "created_at": "2026-02-04T12:00:00.000Z",
+      "updated_at": "2026-02-04T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440014",
+      "word": "serve the goal",
+      "phonetic": null,
+      "meaning": "v. 为实现目标；服务于目标",
+      "example_sentences": [
+        "The rationale behind the change is to serve the goal of better performance.",
+        "All our efforts must serve the goal of customer satisfaction."
+      ],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "短语"
+      ],
+      "difficulty": 2,
+      "notes": "强调行动的目的性",
+      "created_at": "2026-02-04T12:00:00.000Z",
+      "updated_at": "2026-02-04T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440015",
+      "word": "The rationale behind the change is to serve the goal of better performance.",
+      "phonetic": null,
+      "meaning": "这次改动的根本原因是为实现更好的性能目标。",
+      "example_sentences": [],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "例句"
+      ],
+      "difficulty": 3,
+      "notes": "一句话搞定两个单词: rationale, serve the goal",
+      "created_at": "2026-02-04T12:00:00.000Z",
+      "updated_at": "2026-02-04T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440016",
+      "word": "allocation",
+      "phonetic": "/ˌæləˈkeɪʃn/",
+      "meaning": "n. 分配；配置；安置",
+      "example_sentences": [
+        "Effective allocation of resources enables better system optimization and faster performance.",
+        "Asset allocation is key to investment strategy."
+      ],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "工作"
+      ],
+      "difficulty": 3,
+      "notes": "常用于资源、资金、时间的分配",
+      "memory_tips": {
+        "word_root": "ad- (to) + locus (place) -> allocate (to place)",
+        "similar_words": ["distribution", "allotment", "assignment"]
+      },
+      "created_at": "2026-02-03T12:00:00.000Z",
+      "updated_at": "2026-02-03T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440017",
+      "word": "optimization",
+      "phonetic": "/ˌɒptɪmaɪˈzeɪʃn/",
+      "meaning": "n. 优化；最佳化",
+      "example_sentences": [
+        "Effective allocation of resources enables better system optimization and faster performance.",
+        "Search engine optimization (SEO) is important for websites."
+      ],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "工作"
+      ],
+      "difficulty": 3,
+      "notes": "使某事变得尽可能有效或完美的过程",
+      "memory_tips": {
+        "word_root": "optimus (best)",
+        "similar_words": ["improvement", "enhancement"]
+      },
+      "created_at": "2026-02-03T12:00:00.000Z",
+      "updated_at": "2026-02-03T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440018",
+      "word": "Effective allocation of resources enables better system optimization and faster performance.",
+      "phonetic": null,
+      "meaning": "有效的资源配置能够实现更好的系统优化，并提升系统性能。",
+      "example_sentences": [],
+      "tags": [
+        "PDI语言中心",
+        "商务英语",
+        "例句"
+      ],
+      "difficulty": 3,
+      "notes": "一句话搞定两个单词: allocation, optimization",
+      "created_at": "2026-02-03T12:00:00.000Z",
+      "updated_at": "2026-02-03T12:00:00.000Z"
     }
   ]
 }
