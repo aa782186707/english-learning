@@ -310,6 +310,170 @@
       "difficulty": 2,
       "created_at": "2026-02-05T20:55:00.000Z",
       "updated_at": "2026-02-05T20:55:00.000Z"
+    },
+    {
+      "id": "ex-023",
+      "type": "choice",
+      "question": "句子 'I plan to finish the report by Friday.' 可以拆分为哪两个主要 chunk？",
+      "options": [
+        "A. I plan / to finish the report by Friday",
+        "B. I plan to / finish the report by Friday",
+        "C. I plan to finish / the report by Friday",
+        "D. I / plan to finish the report by Friday"
+      ],
+      "correct_answer": "B",
+      "explanation": "'I plan to' 是典型的句首结构（表示意图），'finish the report by Friday' 是具体的动作内容。这样拆分符合 'Who + Action' 的逻辑。",
+      "tags": ["Chunk", "拆分练习", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T21:00:00.000Z",
+      "updated_at": "2026-02-05T21:00:00.000Z"
+    },
+    {
+      "id": "ex-024",
+      "type": "choice",
+      "question": "在句子 'We need to discuss the budget allocation.' 中，'We need to' 属于什么类型的 chunk？",
+      "options": [
+        "A. 句首结构 (Sentence Starter)",
+        "B. 动作短语 (Action Phrase)",
+        "C. 时间状语 (Time Expression)",
+        "D. 连接词 (Connector)"
+      ],
+      "correct_answer": "A",
+      "explanation": "'We need to' 是非常高频的句首结构，用于表达需求或义务，引出后续的动作 'discuss the budget allocation'。",
+      "tags": ["Chunk", "句首结构", "识别练习"],
+      "difficulty": 1,
+      "created_at": "2026-02-05T21:00:00.000Z",
+      "updated_at": "2026-02-05T21:00:00.000Z"
+    },
+    {
+      "id": "ex-025",
+      "type": "choice",
+      "question": "下列哪个选项是表达“我想知道...”的地道句首 chunk？",
+      "options": [
+        "A. I want to know",
+        "B. I was wondering if",
+        "C. Please tell me",
+        "D. Do you know"
+      ],
+      "correct_answer": "B",
+      "explanation": "'I was wondering if...' 是比 'I want to know' 更委婉、礼貌的地道句首 chunk，常用于提出请求或询问。",
+      "tags": ["Chunk", "句首结构", "礼貌表达"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T21:00:00.000Z",
+      "updated_at": "2026-02-05T21:00:00.000Z"
+    },
+    {
+      "id": "ex-026",
+      "type": "choice",
+      "question": "句子 'Ideally, we should launch the product next month.' 中的句首 chunk 是？",
+      "options": [
+        "A. Ideally",
+        "B. Ideally, we should",
+        "C. we should",
+        "D. launch the product"
+      ],
+      "correct_answer": "B",
+      "explanation": "'Ideally, we should' 作为一个整体 chunk，表达了“理想情况下，我们应该...”的态度和建议，比单独用 'we should' 语气更丰富。",
+      "tags": ["Chunk", "句首结构", "拆分练习"],
+      "difficulty": 3,
+      "created_at": "2026-02-05T21:00:00.000Z",
+      "updated_at": "2026-02-05T21:00:00.000Z"
+    },
+    {
+      "id": "ex-027",
+      "type": "fill",
+      "question": "想表达“根据我的经验，这个方案行不通”，可以用句首 chunk: _____ _____ _____ _____, this plan won't work.",
+      "correct_answer": "In my experience",
+      "explanation": "'In my experience' 是发表个人观点时常用的句首 chunk，起到限定和铺垫的作用。",
+      "tags": ["Chunk", "句首结构", "表达观点"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T21:00:00.000Z",
+      "updated_at": "2026-02-05T21:00:00.000Z"
+    },
+    {
+      "id": "ex-028",
+      "type": "choice",
+      "question": "句子 'The reason I'm asking is that I need your help.' 应该如何拆分为两个核心 Chunk？",
+      "options": [
+        "A. The reason I'm asking is / that I need your help.",
+        "B. The reason / I'm asking is that / I need your help.",
+        "C. The reason I'm / asking is that I / need your help.",
+        "D. The reason I'm asking / is that I need your help."
+      ],
+      "correct_answer": "A",
+      "explanation": "'The reason I'm asking is' 作为一个长句首 Chunk (Sentence Starter)，用来引出原因。'that I need your help' 是具体的内容。",
+      "tags": ["Chunk", "拆分练习", "句首结构"],
+      "difficulty": 3,
+      "created_at": "2026-02-05T21:30:00.000Z",
+      "updated_at": "2026-02-05T21:30:00.000Z"
+    },
+    {
+      "id": "ex-029",
+      "type": "choice",
+      "question": "在句子 'What I mean by that is we need more time.' 中，Chunk 'What I mean by that is' 属于什么类型？",
+      "options": [
+        "A. 句首结构 (Sentence Starter)",
+        "B. 动作描述 (Action Description)",
+        "C. 时间状语 (Time Expression)",
+        "D. 连接词 (Connector)"
+      ],
+      "correct_answer": "A",
+      "explanation": "这是一个用于澄清或进一步解释观点的经典句首结构。",
+      "tags": ["Chunk", "分类练习", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T21:30:00.000Z",
+      "updated_at": "2026-02-05T21:30:00.000Z"
+    },
+    {
+      "id": "ex-030",
+      "type": "choice",
+      "question": "句子 'It's important to remember that safety comes first.' 中的句首 Chunk 是哪部分？",
+      "options": [
+        "A. It's important to remember that",
+        "B. safety comes first",
+        "C. It's important",
+        "D. remember that"
+      ],
+      "correct_answer": "A",
+      "explanation": "'It's important to remember that' 作为一个整体，设定了句子的基调（强调重要性），引出后面的核心信息。",
+      "tags": ["Chunk", "识别练习", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T21:30:00.000Z",
+      "updated_at": "2026-02-05T21:30:00.000Z"
+    },
+    {
+      "id": "ex-031",
+      "type": "choice",
+      "question": "句子 'I was wondering if you could help me with this report.' 最自然的 Chunk 拆分方式是？",
+      "options": [
+        "A. I was wondering if / you could help me with this report.",
+        "B. I was wondering / if you could help me with this report.",
+        "C. I was wondering if you could / help me with this report.",
+        "D. I / was wondering if you could help me with this report."
+      ],
+      "correct_answer": "A",
+      "explanation": "'I was wondering if' 是表达礼貌请求的固定句首结构。将其作为一个整体处理，语流更顺畅。",
+      "tags": ["Chunk", "拆分练习", "礼貌表达"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T21:30:00.000Z",
+      "updated_at": "2026-02-05T21:30:00.000Z"
+    },
+    {
+      "id": "ex-032",
+      "type": "choice",
+      "question": "Chunk 'There is no doubt that' (毫无疑问...) 属于哪种类型的句首结构？",
+      "options": [
+        "A. 表达确定性 (Expressing Certainty)",
+        "B. 表达不确定性 (Expressing Uncertainty)",
+        "C. 表达时间 (Expressing Time)",
+        "D. 表达动作 (Expressing Action)"
+      ],
+      "correct_answer": "A",
+      "explanation": "这个 Chunk 用来强调后面陈述内容的真实性或确定性。",
+      "tags": ["Chunk", "分类练习", "句首结构"],
+      "difficulty": 2,
+      "created_at": "2026-02-05T21:30:00.000Z",
+      "updated_at": "2026-02-05T21:30:00.000Z"
     }
   ]
 }
