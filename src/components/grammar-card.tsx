@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { cn, getDifficultyColor, getDifficultyLabel } from '@/lib/utils';
 import type { Grammar, LearningProgress, ReviewQuality } from '@/types';
-import { qualityDescriptions, getQualityColor } from '@/lib/spaced-repetition';
+import { qualityDescriptions, getQualityColor, simpleQualityDescriptions, getSimpleQualityColor, mapSimpleQualityToStandard } from '@/lib/spaced-repetition';
 import { Eye, EyeOff, BookOpen } from 'lucide-react';
 
 interface GrammarCardProps {
@@ -129,24 +129,31 @@ export function GrammarCard({ grammar, progress, mode, onReview }: GrammarCardPr
             <h4 className="font-medium text-sm text-center text-muted-foreground">
               你掌握这个语法点了吗？
             </h4>
-            <div className="grid grid-cols-3 gap-2">
-              {([0, 1, 2, 3, 4, 5] as ReviewQuality[]).map((quality) => (
+            <div className="grid grid-cols-3 gap-3">
+              {[0, 1, 2].map((simpleQuality) => (
                 <Button
-                  key={quality}
-                  variant="outline"
-                  size="sm"
+                  key={simpleQuality}
+                  variant="default"
+                  size="lg"
                   className={cn(
-                    'h-auto py-2 flex flex-col',
-                    getQualityColor(quality),
-                    'text-white border-0 hover:opacity-90'
+                    'h-16 flex flex-col items-center justify-center transition-all transform hover:scale-105',
+                    getSimpleQualityColor(simpleQuality),
+                    'text-white border-0 shadow-md'
                   )}
-                  onClick={() => onReview(quality)}
+                  onClick={() => onReview(mapSimpleQualityToStandard(simpleQuality))}
                 >
-                  <span className="text-lg font-bold">{quality}</span>
-                  <span className="text-xs">{qualityDescriptions[quality]}</span>
+                  <span className="text-xl font-bold mb-1">{simpleQualityDescriptions[simpleQuality]}</span>
+                  <span className="text-xs opacity-90 font-normal">
+                      {simpleQuality === 0 && "完全记不住"}
+                      {simpleQuality === 1 && "有些模糊"}
+                      {simpleQuality === 2 && "完美记忆"}
+                  </span>
                 </Button>
               ))}
             </div>
+            <p className="text-xs text-center text-muted-foreground mt-2">
+               按数字键 1-3 快速评分
+            </p>
           </div>
         )}
 

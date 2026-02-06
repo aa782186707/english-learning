@@ -45,6 +45,7 @@ export interface LearningProgress {
   repetitions: number;
   next_review_at: string;
   last_reviewed_at: string | null;
+  last_quality?: number; // 上次复习的评分 (0-5)
   created_at: string;
   updated_at: string;
 }

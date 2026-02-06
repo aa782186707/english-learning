@@ -120,7 +120,40 @@ function addDays(date: Date, days: number): Date {
 }
 
 /**
- * 评分描述
+ * 简化版评分描述 (用于 UI 显示)
+ */
+export const simpleQualityDescriptions: Record<number, string> = {
+  0: '忘记', // 对应原 0-2 (Hard)
+  1: '模糊', // 对应原 3-4 (Medium)
+  2: '掌握', // 对应原 5 (Easy)
+};
+
+/**
+ * 将简化版评分映射回 SM-2 标准评分 (0-5)
+ */
+export function mapSimpleQualityToStandard(simpleQuality: number): ReviewQuality {
+  switch (simpleQuality) {
+    case 0: return 1; // 忘记 -> 错误，但看到答案后记起 (保守策略)
+    case 1: return 3; // 模糊 -> 正确，但很费力
+    case 2: return 5; // 掌握 -> 完美记忆
+    default: return 3;
+  }
+}
+
+/**
+ * 获取简化版评分对应的颜色
+ */
+export function getSimpleQualityColor(simpleQuality: number): string {
+  const colors: Record<number, string> = {
+    0: 'bg-red-500 hover:bg-red-600',
+    1: 'bg-yellow-500 hover:bg-yellow-600',
+    2: 'bg-green-500 hover:bg-green-600',
+  };
+  return colors[simpleQuality];
+}
+
+/**
+ * 评分描述 (保留原版以兼容旧逻辑)
  */
 export const qualityDescriptions: Record<ReviewQuality, string> = {
   0: '完全忘记',
@@ -129,6 +162,7 @@ export const qualityDescriptions: Record<ReviewQuality, string> = {
   3: '正确，但很费力',
   4: '正确，有些犹豫',
   5: '完美记忆',
+  6: '简单' // 保留给类型兼容
 };
 
 /**

@@ -22,10 +22,12 @@ import {
   Target,
   CloudUpload,
   GraduationCap,
-  LayoutDashboard
+  LayoutDashboard,
+  Filter
 } from 'lucide-react';
-import type { Word, Grammar, Exercise } from '@/types';
-import { fetchWords, fetchGrammar, isSupabaseConfigured, supabase } from '@/lib/supabase-client';
+import type { Word, Grammar, Exercise, LearningProgress, ReviewQuality } from '@/types';
+import { fetchWords, fetchGrammar, fetchProgress, saveProgress, isSupabaseConfigured, supabase } from '@/lib/supabase-client';
+import { calculateFromProgress } from '@/lib/spaced-repetition';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { addWord } from '@/lib/supabase-client';
@@ -60,6 +62,8 @@ export default function Home() {
   const [words, setWords] = useState<Word[]>(localWords);
   const [grammar, setGrammar] = useState<Grammar[]>(localGrammar);
   const [exercises, setExercises] = useState<Exercise[]>(localExercises);
+  const [progressMap, setProgressMap] = useState<Record<string, LearningProgress>>({});
+  const [reviewMode, setReviewMode] = useState<'due' | 'all' | 'hard' | 'new' | 'mastered'>('due');
   const [loading, setLoading] = useState(true);
   const [isCloud, setIsCloud] = useState(false);
   const [isAddWordOpen, setIsAddWordOpen] = useState(false);
@@ -74,12 +78,21 @@ export default function Home() {
   const loadData = useCallback(async () => {
     setLoading(true);
 
-    if (isSupabaseConfigured) {
+    if (isSupabaseConfigured && supabase) {
       try {
+        const { data: { user } } = await supabase.auth.getUser();
+
         const [wordsFromDb, grammarFromDb] = await Promise.all([
           fetchWords(),
           fetchGrammar(),
         ]);
+
+        if (user) {
+          const progress = await fetchProgress(user.id);
+          const pMap: Record<string, LearningProgress> = {};
+          progress.forEach(p => { pMap[p.item_id] = p; });
+          setProgressMap(pMap);
+        }
 
         if (wordsFromDb.length > 0 || grammarFromDb.length > 0) {
           setWords(wordsFromDb.length > 0 ? wordsFromDb : localWords);
@@ -111,13 +124,22 @@ export default function Home() {
     loadData();
   }, [loadData]);
 
-  // 模拟统计数据
+  // 统计数据
+  const dueCount = Object.values(progressMap).filter(p => {
+    const reviewDate = new Date(p.next_review_at);
+    return reviewDate <= new Date();
+  }).length;
+
   const stats = {
     totalWords: words.length,
     totalGrammar: grammar.length,
     totalExercises: exercises.length,
-    dueForReview: 5,
-    todayLearned: 3,
+    dueForReview: dueCount,
+    todayLearned: Object.values(progressMap).filter(p => {
+      const lastReview = p.last_reviewed_at ? new Date(p.last_reviewed_at) : null;
+      const today = new Date();
+      return lastReview && lastReview.getDate() === today.getDate() && lastReview.getMonth() === today.getMonth() && lastReview.getFullYear() === today.getFullYear();
+    }).length,
   };
 
   const handleViewWord = (word: Word, index?: number) => {
@@ -348,18 +370,33 @@ export default function Home() {
 
       {/* 快速操作 */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => setCurrentView('review')}>
+        <Card className="hover:shadow-lg transition-shadow">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <PlayCircle className="h-5 w-5 text-primary" />
               开始复习
             </CardTitle>
             <CardDescription>
-              复习今天到期的 {stats.dueForReview} 个项目
+              选择复习模式
             </CardDescription>
           </CardHeader>
-          <CardContent>
-            <Button className="w-full">
+          <CardContent className="space-y-3">
+            <div className="flex items-center gap-2">
+              <Filter className="h-4 w-4 text-muted-foreground" />
+              <select
+                className="flex-1 h-9 rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                value={reviewMode}
+                onChange={(e) => setReviewMode(e.target.value as any)}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <option value="due">到期复习 ({stats.dueForReview})</option>
+                <option value="all">所有内容</option>
+                <option value="new">新词/未学</option>
+                <option value="hard">忘记 (Hard)</option>
+                <option value="mastered">掌握 (Mastered)</option>
+              </select>
+            </div>
+            <Button className="w-full" onClick={() => setCurrentView('review')}>
               立即开始
               <ChevronRight className="h-4 w-4 ml-1" />
             </Button>
@@ -604,18 +641,44 @@ export default function Home() {
     const [reviewItems, setReviewItems] = useState<(Word | Grammar)[]>([]);
     const [isInitialized, setIsInitialized] = useState(false);
 
+    // Initialize review items once on mount
     useEffect(() => {
-      const items = [...words, ...grammar];
+      const allItems = [...words, ...grammar];
+      const filtered = allItems.filter(item => {
+        const progress = progressMap[item.id];
+
+        switch (reviewMode) {
+          case 'new':
+            return !progress;
+          case 'hard':
+            // 0, 1, 2 = Hard/Forgot
+            return progress && progress.last_quality !== undefined && progress.last_quality <= 2;
+          case 'mastered':
+            // 4, 5 = Easy/Mastered
+            return progress && progress.last_quality !== undefined && progress.last_quality >= 4;
+          case 'due':
+            // Default behavior: Due for review or new
+            if (!progress) return true;
+            return new Date(progress.next_review_at) <= new Date();
+          case 'all':
+            return true;
+          default:
+            return true;
+        }
+      });
+
       // Shuffle items (Fisher-Yates shuffle)
-      for (let i = items.length - 1; i > 0; i--) {
+      for (let i = filtered.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [items[i], items[j]] = [items[j], items[i]];
+        [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
       }
-      setReviewItems(items);
+      setReviewItems(filtered);
       setIsInitialized(true);
-    }, []);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []); // Only run once on mount to avoid re-shuffling during review
 
     const currentItem = reviewItems[currentIndex];
+    const currentProgress = currentItem ? progressMap[currentItem.id] : null;
 
     const handleNext = () => {
       if (currentIndex < reviewItems.length - 1) {
@@ -623,6 +686,47 @@ export default function Home() {
       } else {
         setCurrentView('dashboard');
       }
+    };
+
+    const handleReviewSubmit = async (quality: ReviewQuality) => {
+      if (!currentItem) return;
+
+      // Calculate next review
+      const result = calculateFromProgress(currentProgress, quality);
+
+      // Prepare new progress object
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const newProgress: any = {
+        ...currentProgress,
+        item_type: 'word' in currentItem ? 'word' : 'grammar',
+        item_id: currentItem.id,
+        ease_factor: result.easeFactor,
+        interval_days: result.intervalDays,
+        repetitions: result.repetitions,
+        next_review_at: result.nextReviewAt.toISOString(),
+        last_reviewed_at: new Date().toISOString(),
+        last_quality: quality, // Save the quality!
+        created_at: currentProgress?.created_at || new Date().toISOString(),
+      };
+
+      // 1. Update local state immediately (Optimistic UI)
+      setProgressMap(prev => ({
+        ...prev,
+        [currentItem.id]: newProgress
+      }));
+
+      // 2. Save to cloud
+      if (isSupabaseConfigured) {
+        const { data: { user } } = await supabase!.auth.getUser();
+        if (user) {
+          await saveProgress({
+            ...newProgress,
+            user_id: user.id
+          });
+        }
+      }
+
+      handleNext();
     };
 
     if (!isInitialized) {
@@ -646,7 +750,7 @@ export default function Home() {
                 {reviewItems.length === 0 ? '暂无内容' : '太棒了！'}
               </h2>
               <p className="text-muted-foreground mt-2">
-                {reviewItems.length === 0 ? '还没有添加任何单词或语法' : '今天的复习任务已全部完成'}
+                {reviewItems.length === 0 ? '没有符合当前筛选条件的复习内容' : '复习任务已全部完成'}
               </p>
               <Button className="mt-4" onClick={() => setCurrentView('dashboard')}>
                 返回首页
@@ -692,21 +796,17 @@ export default function Home() {
         {isWord ? (
           <WordCard
             word={currentItem as Word}
+            progress={currentProgress}
             mode="review"
             enableListeningMode={isListeningMode}
-            onReview={(quality) => {
-              console.log('Review quality:', quality);
-              handleNext();
-            }}
+            onReview={handleReviewSubmit}
           />
         ) : (
           <GrammarCard
             grammar={currentItem as Grammar}
+            progress={currentProgress}
             mode="review"
-            onReview={(quality) => {
-              console.log('Review quality:', quality);
-              handleNext();
-            }}
+            onReview={handleReviewSubmit}
           />
         )}
       </div>

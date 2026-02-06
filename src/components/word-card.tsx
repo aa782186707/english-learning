@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { cn, getDifficultyColor, getDifficultyLabel } from '@/lib/utils';
 import type { Word, LearningProgress, ReviewQuality } from '@/types';
-import { qualityDescriptions, getQualityColor } from '@/lib/spaced-repetition';
+import { qualityDescriptions, getQualityColor, simpleQualityDescriptions, getSimpleQualityColor, mapSimpleQualityToStandard } from '@/lib/spaced-repetition';
 import {
   Volume2,
   Eye,
@@ -79,14 +79,13 @@ export function WordCard({
         setIsObscured(false); // Reveal word when answer is shown
       }
 
-      // review 模式：数字键评分 (1-6 对应 0-5)
+      // review 模式：数字键评分 (1-3 对应 简化版评分)
       if (showAnswer && onReview) {
-        const keyMap: Record<string, ReviewQuality> = {
-          'Digit1': 0, 'Digit2': 1, 'Digit3': 2,
-          'Digit4': 3, 'Digit5': 4, 'Digit6': 5,
+        const keyMap: Record<string, number> = {
+          'Digit1': 0, 'Digit2': 1, 'Digit3': 2
         };
         if (keyMap[e.code] !== undefined) {
-          onReview(keyMap[e.code]);
+          onReview(mapSimpleQualityToStandard(keyMap[e.code]));
         }
       }
     };
@@ -305,28 +304,32 @@ export function WordCard({
             {mode === 'review' && onReview && (
               <div className="space-y-3 pt-4 border-t">
                 <h4 className="font-medium text-sm text-center text-muted-foreground">
-                  你记得这个内容吗？选择记忆程度
+                  你掌握这个内容了吗？
                 </h4>
-                <div className="grid grid-cols-3 gap-2">
-                  {([0, 1, 2, 3, 4, 5] as ReviewQuality[]).map((quality) => (
+                <div className="grid grid-cols-3 gap-3">
+                  {[0, 1, 2].map((simpleQuality) => (
                     <Button
-                      key={quality}
-                      variant="outline"
-                      size="sm"
+                      key={simpleQuality}
+                      variant="default"
+                      size="lg"
                       className={cn(
-                        'h-auto py-2 flex flex-col',
-                        getQualityColor(quality),
-                        'text-white border-0 hover:opacity-90'
+                        'h-16 flex flex-col items-center justify-center transition-all transform hover:scale-105',
+                        getSimpleQualityColor(simpleQuality),
+                        'text-white border-0 shadow-md'
                       )}
-                      onClick={() => onReview(quality)}
+                      onClick={() => onReview(mapSimpleQualityToStandard(simpleQuality))}
                     >
-                      <span className="text-lg font-bold">{quality}</span>
-                      <span className="text-xs">{qualityDescriptions[quality]}</span>
+                      <span className="text-xl font-bold mb-1">{simpleQualityDescriptions[simpleQuality]}</span>
+                      <span className="text-xs opacity-90 font-normal">
+                        {simpleQuality === 0 && "完全记不住"}
+                        {simpleQuality === 1 && "有些模糊"}
+                        {simpleQuality === 2 && "完美记忆"}
+                      </span>
                     </Button>
                   ))}
                 </div>
-                <p className="text-xs text-center text-muted-foreground">
-                  按数字键 1-6 快速评分
+                <p className="text-xs text-center text-muted-foreground mt-2">
+                  按数字键 1-3 快速评分
                 </p>
               </div>
             )}

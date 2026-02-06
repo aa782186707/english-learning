@@ -171,21 +171,23 @@ export async function fetchProgress(userId: string): Promise<LearningProgress[]>
   return data as LearningProgress[];
 }
 
-export async function updateProgress(
-  id: string,
-  updates: Partial<LearningProgress>
-): Promise<LearningProgress | null> {
+export async function saveProgress(progress: Omit<LearningProgress, 'id' | 'created_at' | 'updated_at'> & { id?: string }): Promise<LearningProgress | null> {
   if (!supabase) return null;
+
+  // 如果有 ID，尝试更新；如果没有或更新失败（不存在），尝试插入
+  // 为了简化，我们可以直接用 upsert，但需要确保唯一约束（user_id + item_id + item_type）
 
   const { data, error } = await supabase
     .from('learning_progress')
-    .update(updates)
-    .eq('id', id)
+    .upsert({
+      ...progress,
+      updated_at: new Date().toISOString(),
+    }, { onConflict: 'user_id, item_type, item_id' })
     .select()
     .single();
 
   if (error) {
-    console.error('Error updating progress:', error);
+    console.error('Error saving progress:', error);
     return null;
   }
 
