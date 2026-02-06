@@ -162,7 +162,6 @@ export const qualityDescriptions: Record<ReviewQuality, string> = {
   3: '正确，但很费力',
   4: '正确，有些犹豫',
   5: '完美记忆',
-  6: '简单' // 保留给类型兼容
 };
 
 /**
