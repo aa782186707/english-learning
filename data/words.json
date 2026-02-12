@@ -476,6 +476,134 @@
       "notes": "一句话搞定两个单词: allocation, optimization",
       "created_at": "2026-02-03T12:00:00.000Z",
       "updated_at": "2026-02-03T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440019",
+      "word": "working on",
+      "phonetic": "/ˈwɜːrkɪŋ ɒn/",
+      "meaning": "v. 正在做；正在处理；致力于",
+      "example_sentences": [
+        "I'm working on the report right now.",
+        "We're working on a solution to fix this issue.",
+        "She's been working on this project for three months."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "日常表达"
+      ],
+      "difficulty": 1,
+      "notes": "表示正在进行某项工作，是职场最常用的表达之一",
+      "memory_tips": {
+        "mnemonic": "work(工作) + on(在...上) → 在某件事上工作 → 正在做",
+        "association": "想象一个人趴在桌子上专心工作的画面",
+        "similar_words": ["handling", "dealing with", "focusing on"]
+      },
+      "created_at": "2026-02-12T12:00:00.000Z",
+      "updated_at": "2026-02-12T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440020",
+      "word": "reschedule",
+      "phonetic": "/ˌriːˈʃedjuːl/",
+      "meaning": "v. 重新安排时间；延期；改期",
+      "example_sentences": [
+        "Can we reschedule the meeting to next week?",
+        "I need to reschedule my flight due to the weather.",
+        "The event has been rescheduled for March 15th."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "会议"
+      ],
+      "difficulty": 1,
+      "notes": "比 delay 或 postpone 更中性、更专业，暗示会重新安排具体时间",
+      "memory_tips": {
+        "word_root": "re- (再次) + schedule (安排) = 重新安排时间",
+        "mnemonic": "re(再) + schedule(日程) → 重新排日程 → 改期",
+        "association": "想象日历上把一个事项擦掉，移到另一天",
+        "similar_words": ["postpone", "delay", "put off", "defer"]
+      },
+      "created_at": "2026-02-12T12:00:00.000Z",
+      "updated_at": "2026-02-12T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440021",
+      "word": "clarify",
+      "phonetic": "/ˈklærɪfaɪ/",
+      "meaning": "v. 澄清；阐明；使明确",
+      "example_sentences": [
+        "Could you clarify what you mean by that?",
+        "Let me clarify the requirements before we proceed.",
+        "I'd like to clarify a few points from the last meeting."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "沟通"
+      ],
+      "difficulty": 2,
+      "notes": "非常礼貌的说法，用于请求对方解释或自己解释清楚某事",
+      "memory_tips": {
+        "word_root": "clar- (清楚，来自拉丁语 clarus) + -ify (使...) = 使清楚",
+        "mnemonic": "clar(清晰，如 clear) + ify(使) → 使清晰 → 澄清",
+        "association": "想象混浊的水变清澈的过程",
+        "similar_words": ["explain", "elaborate", "specify", "make clear"]
+      },
+      "created_at": "2026-02-12T12:00:00.000Z",
+      "updated_at": "2026-02-12T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440022",
+      "word": "proceed with the original plan",
+      "phonetic": null,
+      "meaning": "按原计划进行；继续执行原定方案",
+      "example_sentences": [
+        "After discussion, we decided to proceed with the original plan.",
+        "Let's proceed with the original plan unless there are objections.",
+        "The team agreed to proceed with the original plan despite the challenges."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "决策"
+      ],
+      "difficulty": 2,
+      "notes": "proceed 比 continue 更正式，常用于会议和邮件中表示执行决定",
+      "memory_tips": {
+        "word_root": "proceed (前进、继续) + with (伴随) + original plan (原计划)",
+        "mnemonic": "pro(向前) + ceed(走) → 向前走，按原来的路线 → 按原计划进行",
+        "association": "想象GPS导航说「继续沿原路线行驶」",
+        "similar_words": ["stick to the plan", "follow the original plan", "go ahead as planned"]
+      },
+      "created_at": "2026-02-12T12:00:00.000Z",
+      "updated_at": "2026-02-12T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440023",
+      "word": "finish it by the end of this month",
+      "phonetic": null,
+      "meaning": "在这个月底之前完成",
+      "example_sentences": [
+        "I'll finish it by the end of this month.",
+        "Can you finish the report by the end of this month?",
+        "We need to finish the project by the end of this month to meet the deadline."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "截止日期"
+      ],
+      "difficulty": 1,
+      "notes": "by 表示「在...之前」，是设定截止日期的标准表达",
+      "memory_tips": {
+        "mnemonic": "by = 在...之前（deadline之前的意思）；end of this month = 月底",
+        "association": "想象日历上月底那一天画了一个红圈",
+        "similar_words": ["complete by month-end", "deliver by EOM (End of Month)", "wrap up by the end of the month"]
+      },
+      "created_at": "2026-02-12T12:00:00.000Z",
+      "updated_at": "2026-02-12T12:00:00.000Z"
     }
   ]
 }
