@@ -604,6 +604,188 @@
       },
       "created_at": "2026-02-12T12:00:00.000Z",
       "updated_at": "2026-02-12T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440024",
+      "word": "appreciate",
+      "phonetic": "/əˈpriːʃieɪt/",
+      "meaning": "v. 感谢；感激；欣赏；理解",
+      "example_sentences": [
+        "I really appreciate your help with this project.",
+        "We appreciate you taking the time to meet with us.",
+        "I'd appreciate it if you could send me the report by Friday."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "日常表达"
+      ],
+      "difficulty": 1,
+      "notes": "比 thank you 更正式，职场邮件和会议中非常常用。I appreciate it = 我很感激",
+      "memory_tips": {
+        "word_root": "ap- (to) + preci (价值，来自拉丁语 pretium) + -ate = 认识到价值 → 感激、欣赏",
+        "mnemonic": "a-price(价格)-ate → 能看到价值的 → 感激/欣赏",
+        "association": "想象有人帮了你一个大忙，你从心底觉得这份帮助很有价值",
+        "similar_words": ["grateful", "thankful", "value", "acknowledge"]
+      },
+      "created_at": "2026-02-25T12:00:00.000Z",
+      "updated_at": "2026-02-25T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440025",
+      "word": "our agenda today is",
+      "phonetic": null,
+      "meaning": "我们今天的会议日程/议程是",
+      "example_sentences": [
+        "Our agenda today is to discuss the Q2 roadmap and assign tasks.",
+        "Our agenda today is fairly straightforward — just two items to cover.",
+        "Let me quickly go through our agenda today: first, project updates; second, budget review."
+      ],
+      "tags": [
+        "职场英语",
+        "会议",
+        "高频短语"
+      ],
+      "difficulty": 1,
+      "notes": "agenda 是会议中最常用的词之一，指会议议程/日程安排。开会时用来引出讨论主题",
+      "memory_tips": {
+        "word_root": "agenda 来自拉丁语 agere (做)，原义是「要做的事情」",
+        "mnemonic": "a-gen(基因)-da → 会议的基因/核心 → 议程",
+        "association": "想象会议室白板上列着今天要讨论的清单",
+        "similar_words": ["schedule", "itinerary", "plan", "topics for today"]
+      },
+      "created_at": "2026-02-25T12:00:00.000Z",
+      "updated_at": "2026-02-25T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440026",
+      "word": "monitor",
+      "phonetic": "/ˈmɒnɪtər/",
+      "meaning": "v. 监控；监视；跟踪 n. 显示器；监视器",
+      "example_sentences": [
+        "We need to monitor the server performance closely after deployment.",
+        "The team is monitoring the situation and will provide updates.",
+        "Please monitor the error logs for any anomalies."
+      ],
+      "tags": [
+        "职场英语",
+        "科技",
+        "高频词"
+      ],
+      "difficulty": 1,
+      "notes": "在 IT/互联网行业非常高频，常用于描述对系统、数据、指标的持续观察和跟踪",
+      "memory_tips": {
+        "word_root": "monit- (警告，来自拉丁语 monere) + -or = 发出警告的人/物 → 监控器",
+        "mnemonic": "monitor → 班长(monitor)负责监督班级 → 监控",
+        "association": "想象一个大屏幕上显示着各种系统指标和图表，运维人员盯着看",
+        "similar_words": ["track", "observe", "watch", "oversee", "surveil"]
+      },
+      "created_at": "2026-02-25T12:00:00.000Z",
+      "updated_at": "2026-02-25T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440027",
+      "word": "configuration",
+      "phonetic": "/kənˌfɪɡjəˈreɪʃn/",
+      "meaning": "n. 配置；配置文件；构造",
+      "example_sentences": [
+        "Please update the database configuration before deploying.",
+        "The system configuration needs to be reviewed for security issues.",
+        "Check the configuration file for any incorrect settings."
+      ],
+      "tags": [
+        "职场英语",
+        "科技",
+        "高频词"
+      ],
+      "difficulty": 2,
+      "notes": "IT行业核心词汇，常缩写为 config。配置文件通常叫 config file / configuration file",
+      "memory_tips": {
+        "word_root": "con- (一起) + figur (形状) + -ation = 把各部分组合成形 → 配置",
+        "mnemonic": "config(配置) 是它的缩写形式，程序员天天打交道",
+        "association": "想象拼乐高积木，按照说明书把零件配置好",
+        "similar_words": ["settings", "setup", "preferences", "config"]
+      },
+      "created_at": "2026-02-25T12:00:00.000Z",
+      "updated_at": "2026-02-25T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440028",
+      "word": "document the API changes clearly",
+      "phonetic": null,
+      "meaning": "清楚地记录/编制API更改文档",
+      "example_sentences": [
+        "Please document the API changes clearly so that other teams can integrate smoothly.",
+        "It's important to document the API changes clearly before releasing a new version.",
+        "The tech lead asked us to document the API changes clearly in the changelog."
+      ],
+      "tags": [
+        "职场英语",
+        "科技",
+        "短语"
+      ],
+      "difficulty": 2,
+      "notes": "document 作动词时意为「记录、编写文档」，在开发团队中非常常用。强调变更的可追溯性和团队协作",
+      "memory_tips": {
+        "word_root": "document (v.) = 记录、用文档形式记载；API changes = API变更；clearly = 清楚地",
+        "mnemonic": "doc(文档) + u + ment → 把东西变成文档 → 编制文档",
+        "association": "想象程序员在 README 或 Changelog 里认真记录每一次 API 接口的变化",
+        "similar_words": ["record", "log", "write up", "chronicle"]
+      },
+      "created_at": "2026-02-25T12:00:00.000Z",
+      "updated_at": "2026-02-25T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440029",
+      "word": "deprecated",
+      "phonetic": "/ˈdeprəkeɪtɪd/",
+      "meaning": "adj. 已废弃的；被标记为过时的；不推荐使用的",
+      "example_sentences": [
+        "This method has been deprecated and will be removed in the next major version.",
+        "Please stop using the deprecated API and migrate to the new one.",
+        "The deprecated feature still works but is no longer maintained."
+      ],
+      "tags": [
+        "职场英语",
+        "科技",
+        "高频词"
+      ],
+      "difficulty": 2,
+      "notes": "IT 行业核心术语。deprecated 不等于已删除，而是「不推荐使用，未来可能移除」。常见于代码注释、文档、版本更新日志",
+      "memory_tips": {
+        "word_root": "de- (向下) + prec (祈祷) + -ate = 祈祷它消失 → 废弃",
+        "mnemonic": "de(去掉) + prec(价值) + ated → 被去掉价值的 → 废弃的",
+        "association": "想象代码里一个函数上面画了一条删除线 ~~deprecated~~，提醒你别再用了",
+        "similar_words": ["obsolete", "outdated", "legacy", "phased out"]
+      },
+      "created_at": "2026-02-25T12:00:00.000Z",
+      "updated_at": "2026-02-25T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440030",
+      "word": "made the work seem unrewarding",
+      "phonetic": null,
+      "meaning": "让工作看起来没有收获/没有成就感",
+      "example_sentences": [
+        "The constant changes in requirements made the work seem unrewarding.",
+        "Lack of recognition from management made the work seem unrewarding.",
+        "Spending weeks on a feature only to have it cancelled made the work seem unrewarding."
+      ],
+      "tags": [
+        "职场英语",
+        "表达",
+        "短语"
+      ],
+      "difficulty": 2,
+      "notes": "unrewarding = un-(否定) + rewarding(有回报的)。这个短语常用于表达对工作缺乏成就感的感受，职场中很实用",
+      "memory_tips": {
+        "word_root": "un- (否定) + reward (回报) + -ing = 没有回报的；make...seem... = 让...看起来...",
+        "mnemonic": "un(不) + reward(奖励) + ing → 没有奖励感的 → 没有收获的",
+        "association": "想象辛辛苦苦种了一块地，结果颗粒无收的感觉",
+        "similar_words": ["unfulfilling", "unsatisfying", "thankless", "fruitless"]
+      },
+      "created_at": "2026-02-25T12:00:00.000Z",
+      "updated_at": "2026-02-25T12:00:00.000Z"
     }
   ]
 }
