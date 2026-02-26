@@ -942,6 +942,693 @@
       },
       "created_at": "2026-02-26T12:00:00.000Z",
       "updated_at": "2026-02-26T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440037",
+      "word": "align on",
+      "phonetic": "/əˈlaɪn ɒn/",
+      "meaning": "phr.v. 对齐；达成共识；统一认知",
+      "example_sentences": [
+        "We need to align on the core requirements before coding.",
+        "The goal of today's meeting is to align on where we are and where we're headed with our logistics tracking.",
+        "Let's align on the priorities before we assign tasks."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "会议",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "在需求评审、目标设定等场景高频使用，确保产品、开发、测试各方理解一致，避免后期返工。后面接计划、目标、事项等名词",
+      "memory_tips": {
+        "word_root": "align (排列/对齐) + on (在...上) = 在某件事上对齐 → 达成共识",
+        "mnemonic": "align(对齐线条) → 像尺子把线条对齐一样，把大家的想法对齐",
+        "association": "想象开会时大家各执己见，最后像磁铁一样排列整齐，达成一致",
+        "similar_words": ["reach consensus on", "get on the same page", "be in agreement on"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440038",
+      "word": "walk through",
+      "phonetic": "/wɔːk θruː/",
+      "meaning": "phr.v. 梳理；过一遍；带某人一步步了解",
+      "example_sentences": [
+        "Let me quickly walk us through the project background.",
+        "I'll walk you through the new operating process.",
+        "Can you walk me through the deployment steps?"
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "会议",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "背景同步、文档展示时高频使用。walk somebody through 后面直接接要过的内容。同义替换：review, go through, go over",
+      "memory_tips": {
+        "word_root": "walk (走) + through (穿过) = 带着你走一遍 → 过一遍",
+        "mnemonic": "想象老师带你「走过」一条知识走廊，每经过一个展示板就讲解一遍",
+        "association": "像导游带你walkthrough博物馆一样，逐个展品讲解",
+        "similar_words": ["go through", "go over", "review", "run through"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440039",
+      "word": "hit a wall",
+      "phonetic": "/hɪt ə wɔːl/",
+      "meaning": "idiom. 遇到瓶颈；陷入僵局；碰壁",
+      "example_sentences": [
+        "However, we've hit a wall, and frankly, our current tracking setup has become a total nightmare.",
+        "Our expansion plan hit a wall because we couldn't find a reliable local partner.",
+        "Our user growth was fast at first, but we hit a wall this month."
+      ],
+      "tags": [
+        "职场英语",
+        "习语",
+        "高频短语",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "形容项目或业务进展因不可控因素突然停滞。课堂原文：we've hit a wall, and frankly, our current tracking setup has become a total nightmare",
+      "memory_tips": {
+        "mnemonic": "hit(撞) + a wall(墙) → 正跑着突然撞墙了 → 遇到瓶颈",
+        "association": "想象你正在全速奔跑，突然面前出现一堵高墙，被迫停下",
+        "similar_words": ["reach a bottleneck", "hit a roadblock", "reach an impasse", "come to a standstill"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440040",
+      "word": "transparent",
+      "phonetic": "/trænsˈpærənt/",
+      "meaning": "adj. 透明的；公开的；清晰的",
+      "example_sentences": [
+        "Our main issue is that we are not transparent enough, so we are losing customers.",
+        "We need to make the tracking process more transparent to reduce customer anxiety.",
+        "To reduce communication costs, we need to make the promotion mechanism more transparent."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "指信息、流程公开清晰，是建立信任的关键。课堂中Annie的核心论点就是 we are not transparent enough",
+      "memory_tips": {
+        "word_root": "trans- (穿过) + par- (看到) + -ent = 可以穿过去看到 → 透明的",
+        "mnemonic": "transparent → 像透明玻璃(glass)一样，什么都看得见",
+        "association": "想象物流系统从一片黑雾变成透明玻璃，用户可以清楚看到包裹在哪",
+        "similar_words": ["open", "clear", "visible", "straightforward"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440041",
+      "word": "drown in",
+      "phonetic": "/draʊn ɪn/",
+      "meaning": "phr.v. 淹没在……中；应接不暇",
+      "example_sentences": [
+        "They are literally drowning in 'Where is my parcel?' emails.",
+        "The marketing team is drowning in data after the global campaign launch.",
+        "Due to the system failure, the customer service team is drowning in complaint emails right now."
+      ],
+      "tags": [
+        "职场英语",
+        "习语",
+        "高频短语",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "形容被海量工作（如邮件、投诉）压得喘不过气。注意：这属于opinion/抱怨，不是evidence(证据)，因为没有给出具体数据",
+      "memory_tips": {
+        "mnemonic": "drown(溺水) + in(在...中) → 溺水在邮件海洋里 → 被淹没、应接不暇",
+        "association": "想象办公桌上堆满了山一样高的邮件，你像溺水一样喘不过气",
+        "similar_words": ["be overwhelmed by", "be swamped with", "be buried in", "be flooded with"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440042",
+      "word": "fight fires",
+      "phonetic": "/faɪt ˈfaɪərz/",
+      "meaning": "idiom. 救火；处理紧急突发问题",
+      "example_sentences": [
+        "If we solve these tracking issues, we can finally stop fighting fires and start growing again.",
+        "We need to improve our system so we can stop fighting fires and focus on innovation.",
+        "We are just fighting fires with technical bugs every day and have no time for new features."
+      ],
+      "tags": [
+        "职场英语",
+        "习语",
+        "高频短语",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "形容陷入琐碎、重复的突发状况中，导致无法专注于核心工作或长远规划。与中文「救火队员」的比喻异曲同工",
+      "memory_tips": {
+        "mnemonic": "fight fires → 天天在救火 → 忙于处理各种紧急问题",
+        "association": "想象一个消防员每天到处灭火，完全没时间做其他事",
+        "similar_words": ["put out fires", "deal with emergencies", "handle crises", "troubleshoot"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440043",
+      "word": "in the short term / in the long run",
+      "phonetic": null,
+      "meaning": "短期内…… / 从长远来看……",
+      "example_sentences": [
+        "In the short term, this will help us shut down those merchant complaints and make our daily operations smooth again.",
+        "In the long run, these improvements are more than just a fix. They are the foundation for our global expansion.",
+        "In the short term, it may increase costs; but in the long run, it will improve efficiency."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "会议",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "职场战略分析必备搭配，用于对比「即时利益」与「深远影响」。也是听力 timeline marker（时间信号词）",
+      "memory_tips": {
+        "mnemonic": "short term(短期) vs long run(长跑) → 短跑和马拉松的区别",
+        "association": "想象站在十字路口：一条短路通向近处，一条长路通向远方",
+        "similar_words": ["short-term vs long-term", "immediately vs eventually", "near-term vs over time"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440044",
+      "word": "be the foundation for",
+      "phonetic": null,
+      "meaning": "为……奠定基础",
+      "example_sentences": [
+        "These improvements are more than just a fix. They are the foundation for our global expansion.",
+        "This data cleanup will be the foundation for our future AI project.",
+        "This new data system will be the foundation for our future global expansion."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "会议",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "强调某项工作或改进具有战略意义，是后续更大成功或扩张的前提。同义表达：lay the groundwork for",
+      "memory_tips": {
+        "mnemonic": "foundation(地基) → 盖大楼必须先打地基 → 为未来奠定基础",
+        "association": "想象建筑工地上先浇灌地基，地基打好了才能盖摩天大楼",
+        "similar_words": ["lay the groundwork for", "pave the way for", "set the stage for", "build the basis for"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440045",
+      "word": "surge",
+      "phonetic": "/sɜːrdʒ/",
+      "meaning": "n./v. 激增；猛增；涌动",
+      "example_sentences": [
+        "Since January, my inbox has witnessed a 5% surge in angry inquiries.",
+        "We've seen a surge in orders since the new marketing campaign launched.",
+        "There was a sudden surge in website traffic after the product announcement."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "数据汇报",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "强调突发性的增长，比 increase 更有冲击力。常用搭配：a surge in + 名词",
+      "memory_tips": {
+        "word_root": "surge 来自拉丁语 surgere (升起)，想象海浪突然涌起",
+        "mnemonic": "surge → 想象海浪突然涌起(surge)的画面 → 突然的激增",
+        "association": "想象股价突然飙升的K线图，一根大红柱子冲天而起",
+        "similar_words": ["spike", "sharp increase", "boom", "jump"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440046",
+      "word": "onboarding",
+      "phonetic": "/ˈɒnbɔːrdɪŋ/",
+      "meaning": "n. 入驻；引导；新人培训；入职流程",
+      "example_sentences": [
+        "Stage one focused on building the core infrastructure, like product listing, payment systems, and merchant onboarding.",
+        "The merchant onboarding process usually takes about two days.",
+        "We need to streamline the onboarding experience for new users."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "电商语境中指商家入驻平台的过程；HR语境中指新员工入职引导。on + board(上船) → 登船 → 引导新人上手",
+      "memory_tips": {
+        "word_root": "on (上) + board (板/船) + -ing = 登上船 → 引申为「入驻/入职」",
+        "mnemonic": "on board(上船) → 新商家/新员工登上平台这艘大船",
+        "association": "想象新商家登上电商平台这艘大船，工作人员引导他们上船",
+        "similar_words": ["registration", "enrollment", "induction", "orientation"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440047",
+      "word": "transactions",
+      "phonetic": "/trænˈzækʃənz/",
+      "meaning": "n. 交易；成交（复数）",
+      "example_sentences": [
+        "Our goal is boosting transactions via livestream and short-video commerce.",
+        "The platform processed over 10 million transactions last month.",
+        "Each online transaction is tracked by our payment system."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "电商核心词汇。在电商平台和商家看来，用户的每一笔订单都是一笔online transaction(在线交易)",
+      "memory_tips": {
+        "word_root": "trans- (穿过/交叉) + act (行为) + -ion = 双方交叉的行为 → 交易",
+        "mnemonic": "trans(转) + action(行动) → 钱转手的行动 → 交易",
+        "association": "想象买卖双方各伸出一只手，一手交钱一手交货的画面",
+        "similar_words": ["deals", "trades", "purchases", "orders"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440048",
+      "word": "shipping",
+      "phonetic": "/ˈʃɪpɪŋ/",
+      "meaning": "n. 运输交付；寄送；航运",
+      "example_sentences": [
+        "Phase Four will be centered on growing our business overseas — global payments, local market support and international shipping.",
+        "We are facing some delays in international shipping.",
+        "This is actually a bigger problem than the shipping delays themselves."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "物流",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "电商物流的核心词。不仅指海运(ship)，泛指所有形式的物流运输。常见搭配：shipping delays, free shipping, international shipping",
+      "memory_tips": {
+        "word_root": "ship (船/运输) + -ing = 运输的过程",
+        "mnemonic": "ship(船) → 古代靠船运输货物 → 引申为所有运输方式",
+        "association": "想象一艘巨大的货轮装满集装箱驶向远方",
+        "similar_words": ["delivery", "dispatch", "freight", "logistics"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440049",
+      "word": "inquiries",
+      "phonetic": "/ɪnˈkwaɪəriz/",
+      "meaning": "n. 询问；咨询；查询（复数）",
+      "example_sentences": [
+        "Since January, my inbox has witnessed a 5% surge in angry inquiries.",
+        "The customer service team handles hundreds of inquiries every day.",
+        "We need to reduce response time for merchant inquiries."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "handle inquiries(处理咨询) 是电商平台和商家的重要日常工作。inquiry(单数) / inquiries(复数)",
+      "memory_tips": {
+        "word_root": "in- (进入) + quire (寻求，拉丁语 quaerere) = 向内寻求 → 询问/查询",
+        "mnemonic": "inquire(询问) → inquiry(询问,名词) → inquiries(复数)",
+        "association": "想象客服窗口前排起长队，每个人都举着手问「我的包裹在哪？」",
+        "similar_words": ["queries", "questions", "requests", "feedback"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440050",
+      "word": "complaints",
+      "phonetic": "/kəmˈpleɪnts/",
+      "meaning": "n. 投诉；抱怨；客诉（复数）",
+      "example_sentences": [
+        "In the short term, this will help us shut down those merchant complaints.",
+        "The number of customer complaints has doubled since last quarter.",
+        "We need a better system to track and resolve complaints efficiently."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "complaint(单数) / complaints(复数)。常用搭配：file a complaint(提出投诉), resolve complaints(解决投诉), merchant complaints(商家投诉)",
+      "memory_tips": {
+        "word_root": "com- (加强) + plain (敲打，表达不满) + -t = 表达不满 → 投诉",
+        "mnemonic": "complain(抱怨动词) + t → complaint(投诉名词)",
+        "association": "想象一个愤怒的顾客在柜台前拍桌子投诉",
+        "similar_words": ["grievances", "disputes", "claims", "objections"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440051",
+      "word": "inventory",
+      "phonetic": "/ˈɪnvəntɔːri/",
+      "meaning": "n. 库存；存货；清单",
+      "example_sentences": [
+        "One of our biggest sellers threatened to pull their entire inventory from our platform.",
+        "We must ensure the inventory levels are updated in real-time to avoid overselling.",
+        "The merchant needs to manage their inventory carefully during peak seasons."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "电商核心词汇，指持有的商品总称。平台和商户都要实时关注库存信息。常用搭配：manage inventory, pull inventory, inventory levels",
+      "memory_tips": {
+        "word_root": "in- (进入) + vent (来) + -ory = 进来的东西的清单 → 库存/清单",
+        "mnemonic": "invent(发明) + ory → 发明出来的东西放仓库里 → 库存",
+        "association": "想象仓库里一排排整齐的货架，上面摆满了各种商品",
+        "similar_words": ["stock", "supply", "goods", "merchandise"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440052",
+      "word": "bulk view",
+      "phonetic": "/bʌlk vjuː/",
+      "meaning": "n. 批量查看",
+      "example_sentences": [
+        "They can't filter, they can't bulk view, they are literally drowning in 'Where is my parcel?' emails.",
+        "The new dashboard allows a bulk view of all orders, saving us hours of manual work.",
+        "Merchants need bulk view functionality to manage hundreds of orders at once."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "技术词汇",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "技术功能词，指在系统后台一次性浏览多个条目的能力。bulk = 大量/批量",
+      "memory_tips": {
+        "mnemonic": "bulk(大批量) + view(查看) → 大批量地查看 → 批量查看",
+        "association": "想象不是一个一个打开订单，而是像电子表格一样一次看到全部",
+        "similar_words": ["batch view", "mass view", "overview", "list view"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440053",
+      "word": "place orders",
+      "phonetic": "/pleɪs ˈɔːrdərz/",
+      "meaning": "phr. 下订单；下单",
+      "example_sentences": [
+        "Users place orders through the e-commerce platform.",
+        "Once a user hits that wall of silence during a delivery, they are 40% less likely to ever place orders with us again.",
+        "We processed over 100,000 placed orders during the Double 11 shopping festival."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频短语",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "电商基础词汇，place = 放置/下达，place an order = 下一个订单。这是用户视角的动作",
+      "memory_tips": {
+        "mnemonic": "place(放置) + order(订单) → 把订单放出去 → 下订单",
+        "association": "想象你在购物车里确认商品后，点击「提交订单」的那一刻",
+        "similar_words": ["submit orders", "make purchases", "buy", "check out"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440054",
+      "word": "online transaction",
+      "phonetic": "/ˈɒnlaɪn trænˈzækʃən/",
+      "meaning": "n. 在线交易；线上交易",
+      "example_sentences": [
+        "From the platform's perspective, every user order is an online transaction.",
+        "The number of online transactions has grown significantly this quarter.",
+        "We need to ensure the security of every online transaction on our platform."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频短语",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "在电商平台和商家看来，用户的一笔订单(order)就是一笔在线交易(online transaction)。视角不同，叫法不同",
+      "memory_tips": {
+        "mnemonic": "online(在线) + transaction(交易) → 在线上完成的交易",
+        "association": "用户视角叫「下单(place order)」，平台视角叫「在线交易(online transaction)」",
+        "similar_words": ["e-commerce transaction", "digital transaction", "online purchase", "online order"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440055",
+      "word": "beta testing",
+      "phonetic": "/ˈbeɪtə ˈtestɪŋ/",
+      "meaning": "n. 公测；Beta测试；用户测试",
+      "example_sentences": [
+        "Then in Q3 and Q4 of year one, we moved into beta testing, collecting merchant feedback and stabilizing operations.",
+        "The new feature is currently in beta testing with a small group of users.",
+        "After beta testing, we received valuable feedback that helped us improve the product."
+      ],
+      "tags": [
+        "职场英语",
+        "技术词汇",
+        "项目管理",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "产品开发的重要阶段。Alpha testing(内测) → Beta testing(公测) → General Availability(正式发布)",
+      "memory_tips": {
+        "word_root": "beta (希腊字母第二个) + testing → 第二阶段测试 → 公测",
+        "mnemonic": "Alpha(α)是第一个字母=内测, Beta(β)是第二个字母=公测",
+        "association": "想象游戏公开测试服，玩家帮忙找bug",
+        "similar_words": ["user testing", "pilot testing", "trial run", "soft launch"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440056",
+      "word": "core infrastructure",
+      "phonetic": "/kɔːr ˈɪnfrəstrʌktʃər/",
+      "meaning": "n. 核心基础设施；底层架构",
+      "example_sentences": [
+        "Stage one focused on building the core infrastructure, like product listing, payment systems, and merchant onboarding.",
+        "We need to upgrade our core infrastructure before adding new features.",
+        "The core infrastructure includes databases, servers, and API gateways."
+      ],
+      "tags": [
+        "职场英语",
+        "技术词汇",
+        "项目管理",
+        "物流听力课"
+      ],
+      "difficulty": 3,
+      "notes": "听力中 establish(建立) 被同义替换为 build(搭建)。core infrastructure 指平台/系统最底层、最基础的部分",
+      "memory_tips": {
+        "word_root": "core (核心) + infra- (下方) + structure (结构) = 核心的底层结构",
+        "mnemonic": "core(核心) + infrastructure(基础设施) → 像城市的道路和水电 → 最底层最重要的东西",
+        "association": "想象一栋大楼的地基和钢筋框架，没有它什么都建不起来",
+        "similar_words": ["foundation", "backbone", "base system", "underlying architecture"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440057",
+      "word": "livestreaming",
+      "phonetic": "/ˈlaɪvstriːmɪŋ/",
+      "meaning": "n. 直播；直播带货",
+      "example_sentences": [
+        "Our goal is boosting transactions via livestream and short-video commerce.",
+        "Livestreaming has become a major sales channel for e-commerce platforms.",
+        "The merchant's livestreaming session attracted over 50,000 viewers."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "抖音电商核心业务模式。livestream commerce / livestreaming e-commerce = 直播电商/直播带货",
+      "memory_tips": {
+        "mnemonic": "live(实时的) + streaming(流媒体) → 实时流媒体 → 直播",
+        "association": "想象主播在镜头前卖货，观众实时下单的场景",
+        "similar_words": ["live broadcast", "live commerce", "live selling", "live shopping"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440058",
+      "word": "e-commerce platform",
+      "phonetic": "/iːˈkɒmɜːrs ˈplætfɔːrm/",
+      "meaning": "n. 电商平台；电子商务平台",
+      "example_sentences": [
+        "As an e-commerce platform, we interact with merchants, logistics providers, and customers.",
+        "The e-commerce platform handles everything from merchant onboarding to payment processing.",
+        "Our e-commerce platform has expanded to serve global markets."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "基础词汇",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "e-commerce = electronic commerce = 电子商务。电商平台是连接商家(merchants)、买家(buyers)、物流(logistics)的核心枢纽",
+      "memory_tips": {
+        "mnemonic": "e(electronic电子) + commerce(商务) + platform(平台) → 电子商务平台",
+        "association": "想象淘宝、京东、抖音商城这样的购物平台",
+        "similar_words": ["online marketplace", "digital commerce platform", "shopping platform"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440059",
+      "word": "move into",
+      "phonetic": "/muːv ˈɪntə/",
+      "meaning": "phr.v. 过渡到；转入；进入（新阶段）",
+      "example_sentences": [
+        "Then in Q3 and Q4 of year one, we moved into beta testing.",
+        "After the initial research phase, we moved into prototyping.",
+        "The team is ready to move into the implementation stage."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "项目管理",
+        "物流听力课"
+      ],
+      "difficulty": 1,
+      "notes": "听力中 transition into 的同义替换。用于描述项目从一个阶段过渡到下一个阶段",
+      "memory_tips": {
+        "mnemonic": "move(移动) + into(进入) → 移动进入新阶段 → 过渡到",
+        "association": "想象一条河流流过不同的地形，从平原流入峡谷",
+        "similar_words": ["transition into", "shift to", "progress to", "advance to"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440060",
+      "word": "centered on",
+      "phonetic": "/ˈsentərd ɒn/",
+      "meaning": "phr. 以……为中心；聚焦于",
+      "example_sentences": [
+        "Looking ahead, Phase Four will be centered on growing our business overseas.",
+        "The next sprint will be centered on improving user experience.",
+        "Our strategy is centered on customer satisfaction."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "项目管理",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "听力中 focus on 的同义替换。centered on = focused on = 聚焦于",
+      "memory_tips": {
+        "mnemonic": "center(中心) + on → 以...为中心 → 聚焦于",
+        "association": "想象一个靶心，所有的箭都射向中心",
+        "similar_words": ["focused on", "revolving around", "concentrated on", "dedicated to"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440061",
+      "word": "chilling",
+      "phonetic": "/ˈtʃɪlɪŋ/",
+      "meaning": "adj. 令人不寒而栗的；令人毛骨悚然的",
+      "example_sentences": [
+        "The data is even more chilling: once a user hits that wall of silence during a delivery, they are 40% less likely to ever shop with us again.",
+        "The chilling statistics revealed the true scale of the problem.",
+        "It's a chilling reminder of what happens when we ignore customer feedback."
+      ],
+      "tags": [
+        "职场英语",
+        "高级词汇",
+        "物流听力课"
+      ],
+      "difficulty": 3,
+      "notes": "在课堂中用于描述令人震惊的数据。chilling data = 令人不寒而栗的数据。比 shocking 更文学化",
+      "memory_tips": {
+        "word_root": "chill (冷/寒意) + -ing = 让人感到寒意的 → 令人不寒而栗的",
+        "mnemonic": "chill(冷) → 数据让人「背后发凉」→ 令人不寒而栗",
+        "association": "想象看到一个恐怖数据后，脊背发凉的感觉",
+        "similar_words": ["alarming", "frightening", "disturbing", "shocking"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440062",
+      "word": "achieve moving forward",
+      "phonetic": null,
+      "meaning": "phr. 接下来要达成的目标；往前推进要实现的事",
+      "example_sentences": [
+        "Let me walk us through the project background, the core challenges we're facing, and what we aim to achieve moving forward.",
+        "What do we want to achieve moving forward with this initiative?",
+        "Our goal is to align on what we need to achieve moving forward."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "会议",
+        "物流听力课"
+      ],
+      "difficulty": 2,
+      "notes": "moving forward = 往前看/接下来。achieve moving forward = 接下来要达成的。这是Annie会议三个议程中的第三项",
+      "memory_tips": {
+        "mnemonic": "achieve(达成) + moving forward(向前走) → 向前走的过程中要达成的 → 接下来的目标",
+        "association": "想象站在路口，眼前是前方的路，目标就在路的尽头",
+        "similar_words": ["accomplish going forward", "deliver in the next phase", "target for the future"]
+      },
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
     }
   ]
 }

@@ -239,6 +239,126 @@
       "notes": "catch up 是叙旧的标准表达，一定要记住",
       "created_at": "2026-01-30T17:00:00.000Z",
       "updated_at": "2026-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440016",
+      "title": "听力技巧：同义替换 (Paraphrasing)",
+      "explanation": "在听力中，题干/选项中的原词会被替换成相同意思的词或词组。这是最核心的听力技巧之一。\n\n关键规则：\n1. 出题人不会在正确答案选项中出现与听力原文一模一样的词\n2. 主要被替换的是【动词】和【名词】（主语通常不变）\n3. 替换方式：词→词、词→词组、词组→词\n\n应对策略：\n① 充分理解题干中关键词的含义\n② 预测哪些词可能被替换（重点关注动词和名词）\n③ 听力中听到意思相同的表达时，锁定答案",
+      "examples": [
+        "题干: align on our current position and future direction → 原文: align on where we are and where we're headed (名词→从句)",
+        "题干: briefly review → 原文: quickly walk us through (动词review→词组walk through)",
+        "题干: we're currently dealing with → 原文: we're facing (词组dealing with→单词facing)",
+        "题干: establish → 原文: build (动词→动词同义替换)",
+        "题干: transition into → 原文: move into (动词词组→动词词组同义替换)",
+        "题干: focuses on → 原文: the goal is... / centered on (同义替换)"
+      ],
+      "tags": ["听力技巧", "同义替换", "考试技巧", "物流听力课"],
+      "difficulty": 3,
+      "notes": "来自物流跟踪听力课。同义替换是听力考试中最重要的技巧，几乎每道题都会用到。课后需反复练习，培养对同义替换的敏感度",
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440017",
+      "title": "听力技巧：Timeline Markers（时间信号词/定位词）",
+      "explanation": "当听力材料涉及多个阶段/时间段时，通过时间信号词来定位不同阶段的内容。\n\n什么是 Timeline Markers？\n表示过去、现在、将来的时间定位词，帮助你在听力中快速判断「现在在讲哪个阶段」。\n\n常见的 Timeline Markers：\n\n【表示过去/开始】initially, firstly, at first, in the beginning\n【表示过渡/然后】then, next, after that, subsequently\n【表示截止时间】by + 时间点 (如 by the second year)\n【表示从某时起】since + 时间点 (如 since January)\n【表示将来/展望】looking ahead, moving forward, eventually, in the long run\n\n⚠️ 不是所有词都是信号词！如 logistics, data, inventory, tracking 等只是普通名词，不表示时间。\n\n应对策略：听到 timeline marker 就知道说话者要讲下一个阶段了，集中注意力！",
+      "examples": [
+        "Stage 1: 'Stage one focused on...' → That took the first six months.",
+        "Stage 2: 'Then in Q3 and Q4 of year one, we moved into...' (then = 信号词)",
+        "Stage 3: 'By the second year, we entered Phase Three.' (by = 信号词)",
+        "数据变化: 'Since January, we've seen a 68% increase...' (since = 信号词)",
+        "Stage 4: 'Looking ahead, Phase Four will be centered on...' (looking ahead = 信号词)"
+      ],
+      "tags": ["听力技巧", "时间信号词", "考试技巧", "物流听力课"],
+      "difficulty": 2,
+      "notes": "来自物流跟踪听力课。当项目有多个阶段时，timeline markers 是帮你定位的利器。记住：听到信号词→准备听下一阶段内容",
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440018",
+      "title": "听力技巧：Main Idea定位 — 区分Evidence与Opinion",
+      "explanation": "在听力中，说话者会说很多内容，但核心结论（Main Idea）可能藏在开头或结尾。学会区分证据(evidence)和观点(opinion)是找到主旨的关键。\n\n如何区分？\n• Evidence（证据/事实）：有具体数据、数字、可量化的信息\n  例：5% surge in inquiries, 40% less likely to shop again, 500 different orders\n• Opinion（观点/抱怨）：主观感受、比喻、情绪化表达\n  例：throwing money into a black hole, drowning in emails, total nightmare\n\nMain Idea 出现位置：\n• 总分结构：主旨在开头（先说结论，再给证据）\n• 分总结构：主旨在结尾（先说现象/证据，最后给结论）←听力考试常考这种！\n\n⚠️ 口语建议：说话时应把 Main Idea 放在开头（结论先行），这样更清晰有效。",
+      "examples": [
+        "Evidence: 'my inbox has witnessed a 5% surge in angry inquiries' (有数据5%→证据)",
+        "Opinion: 'customers feel like they are throwing their money into a black hole' (比喻→观点)",
+        "Evidence: 'they are 40% less likely to ever shop with us again' (有数据40%→证据)",
+        "Opinion: 'they are literally drowning in emails' (夸张表达→观点)",
+        "Main Idea: 'our main issue is that we are not transparent enough, so we are losing customers' (结论放在最后=分总结构)"
+      ],
+      "tags": ["听力技巧", "主旨定位", "证据vs观点", "考试技巧", "物流听力课"],
+      "difficulty": 3,
+      "notes": "来自物流跟踪听力课。Annie的错误示范：先抱怨一大堆，最后才说结论。听力考试中，主旨常在一头或一尾。口语中应结论先行！",
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440019",
+      "title": "口语句式模板：描述项目发展阶段",
+      "explanation": "在业务汇报、项目回顾中，使用结构化的句式描述项目从开始到发展的各个阶段。\n\n核心框架：\n1. 总述：Over the past X years, the project has evolved through N major stages.\n2. 阶段一：Stage one focused on [doing]... That took [时间].\n3. 阶段二：Then in [时间], we moved into [doing]...\n4. 阶段三：By the [时间], we entered Phase Three. Our goal is [doing]...\n5. 阶段四：Looking ahead, Phase [N] will be centered on [doing]...\n\n关键词替换对照：\n• establish = build（建立）\n• transition into = move into（过渡到）\n• focus on = center on = the goal is（聚焦于）",
+      "examples": [
+        "Over the past three years, the project has evolved through four major stages, each designed with a clear goal in mind.",
+        "Stage one focused on building the core infrastructure. That took the first six months.",
+        "Then in Q3 and Q4 of year one, we moved into beta testing, collecting merchant feedback and stabilizing operations.",
+        "By the second year, we entered Phase Three. Our goal is boosting transactions via livestream and short-video commerce.",
+        "Looking ahead, Phase Four will be centered on growing our business overseas."
+      ],
+      "tags": ["口语表达", "项目汇报", "句式模板", "物流听力课"],
+      "difficulty": 3,
+      "notes": "来自物流跟踪听力课。这套句式是安妮(Annie)用来描述物流项目四个发展阶段的模板，非常适合项目回顾、OKR汇报等场景",
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440020",
+      "title": "口语句式模板：Since句型 — 描述数据变化",
+      "explanation": "用 Since 句型汇报数据变化，是职场中展示业绩、描述问题趋势的高频表达。\n\n两种核心句式：\n\n1. Since + 时间, we've seen a X% increase/decrease in + 名词\n   自从...以来，我们看到了X%的增长/下降\n   用法：seen 后接增长的数据或变化结果\n\n2. Since + 时间, ... has witnessed a X% surge in + 名词\n   自从...以来，...见证了X%的激增\n   用法：witness(见证) 增加高级感，surge(激增) 强调突发性增长\n\n⚠️ 注意时态：Since + 过去时间 → 主句用现在完成时(have/has + 过去分词)",
+      "examples": [
+        "Since January, we've seen a 68% increase in the number of orders.",
+        "Since January, my inbox has witnessed a 5% surge in angry inquiries.",
+        "Since last month, our overseas orders have witnessed a 30% surge in volume.",
+        "Since the new update, we've seen a significant improvement in user retention.",
+        "Since 2020, we've seen huge growth in the short-drama industry."
+      ],
+      "tags": ["口语表达", "数据汇报", "句式模板", "物流听力课"],
+      "difficulty": 2,
+      "notes": "来自物流跟踪听力课。这是数据汇报、战果展示的标准句式。increase(增长)较中性，surge(激增)更有冲击力",
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440021",
+      "title": "口语句式模板：描述预期效果与总结",
+      "explanation": "在阐述解决方案的好处时，用短期和长期两个维度来说服听众。\n\n核心框架：\n1. 短期效果：In the short term, this will help us [do something].\n2. 长期价值：In the long run, ... will be the foundation for [更大目标].\n\n延伸表达：\n• stop fighting fires and start growing again（不再救火，开始重新增长）\n• more than just a fix（不仅仅是修修补补）\n• opening the door for much bigger wins（为更大的胜利打开大门）\n• lay the groundwork for = be the foundation for（奠定基础）",
+      "examples": [
+        "In the short term, this will help us shut down those merchant complaints and make our daily operations smooth again.",
+        "In the long run, these improvements are more than just a fix. They are the foundation for our global expansion.",
+        "In the short term, this change will be troublesome, but it will save a lot of time in the long run.",
+        "We are starting small, but by fixing this now, we are opening the door for much bigger, international wins in the future.",
+        "If we solve these tracking issues, we can finally stop fighting fires and start growing again."
+      ],
+      "tags": ["口语表达", "总结汇报", "句式模板", "物流听力课"],
+      "difficulty": 2,
+      "notes": "来自物流跟踪听力课。短期+长期的分析框架是职场汇报的经典结构，让你的论述更有说服力",
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440022",
+      "title": "口语表达：our main issue is... 结论先行句式",
+      "explanation": "用 our main issue is... 来一针见血地指出根本问题，是职场沟通中「结论先行」的关键句式。\n\n核心用法：\n在陈述完各种现象（evidence + opinion）后，用这个句式指出根本原因。\n\n但更好的做法是：把这个结论放在最开头说！\n\n对比：\n❌ Annie的方式（分总）：先说一堆抱怨和数据 → 最后才说 our main issue is...\n✅ 推荐方式（总分）：先说 our main issue is... → 再给出数据和证据支撑\n\n这也是听力考试的考点：Main Idea 可能在一头或一尾，要重点听！",
+      "examples": [
+        "Our main issue is that we are not transparent enough, so we are losing customers.",
+        "Our main issue is the lack of communication between the logistics team and the sellers.",
+        "Our main issue is the delayed information sync-up between departments.",
+        "The project is still slow. Our main issue is that we don't have enough engineering resources.",
+        "Our main issue is not the shipping delays themselves, but the lack of tracking visibility."
+      ],
+      "tags": ["口语表达", "结论先行", "句式模板", "物流听力课"],
+      "difficulty": 2,
+      "notes": "来自物流跟踪听力课。记住：口语中结论先行（总分结构），但听力考试中主旨可能在最后（分总结构）",
+      "created_at": "2026-02-26T14:00:00.000Z",
+      "updated_at": "2026-02-26T14:00:00.000Z"
     }
   ]
 }
