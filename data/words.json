@@ -786,6 +786,162 @@
       },
       "created_at": "2026-02-25T12:00:00.000Z",
       "updated_at": "2026-02-25T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440031",
+      "word": "logistics tracking",
+      "phonetic": "/ləˈdʒɪstɪks ˈtrækɪŋ/",
+      "meaning": "n. 物流跟踪；物流追踪",
+      "example_sentences": [
+        "Our logistics tracking system allows customers to check their package status in real time.",
+        "We need to improve our logistics tracking to reduce delivery delays.",
+        "The logistics tracking dashboard shows all shipments currently in transit."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频短语"
+      ],
+      "difficulty": 2,
+      "notes": "logistics（物流）+ tracking（跟踪）。电商和供应链领域的核心词汇",
+      "memory_tips": {
+        "word_root": "logistics 来自希腊语 logistikos (计算的)，引申为后勤/物流；track (追踪) + -ing",
+        "mnemonic": "logic(逻辑) + istics → 有逻辑地安排货物运输 → 物流；tracking → 追踪快递",
+        "association": "想象你在淘宝/京东上查看快递进度的页面",
+        "similar_words": ["shipment tracking", "package tracking", "delivery tracking", "supply chain monitoring"]
+      },
+      "created_at": "2026-02-26T12:00:00.000Z",
+      "updated_at": "2026-02-26T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440032",
+      "word": "merchant",
+      "phonetic": "/ˈmɜːrtʃənt/",
+      "meaning": "n. 商人；卖家；商户",
+      "example_sentences": [
+        "The platform connects merchants with millions of potential customers.",
+        "Each merchant can customize their own storefront on our platform.",
+        "We need to onboard more merchants to increase product diversity."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词"
+      ],
+      "difficulty": 2,
+      "notes": "电商平台语境下，merchant 特指平台上的卖家/商户。比 seller 更正式",
+      "memory_tips": {
+        "word_root": "merch- (商品，来自拉丁语 merx) + -ant (人) = 做商品买卖的人 → 商人",
+        "mnemonic": "merch(商品，如 merchandise) + ant(人) → 卖商品的人 → 商人/卖家",
+        "association": "想象古代丝绸之路上的商人，驮着货物走南闯北",
+        "similar_words": ["seller", "vendor", "retailer", "trader", "supplier"]
+      },
+      "created_at": "2026-02-26T12:00:00.000Z",
+      "updated_at": "2026-02-26T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440033",
+      "word": "we are headed",
+      "phonetic": null,
+      "meaning": "我们正在前往；我们正朝着（某个方向）前进",
+      "example_sentences": [
+        "Let me share where we are headed as a team this quarter.",
+        "We are headed in the right direction with this new strategy.",
+        "Do you know where we are headed with the product roadmap?"
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "会议"
+      ],
+      "difficulty": 1,
+      "notes": "headed 可以表示物理上的「前往」，也常比喻团队/项目/公司的「发展方向」。职场中常用来描述愿景和方向",
+      "memory_tips": {
+        "word_root": "head (头/前方) + -ed → 朝着前方的 → 正在前进",
+        "mnemonic": "head(头) → 头朝着某个方向 → 正在前进/前往",
+        "association": "想象一艘船的船头对准远方的灯塔，正在驶向目的地",
+        "similar_words": ["heading towards", "moving towards", "going in the direction of", "on track to"]
+      },
+      "created_at": "2026-02-26T12:00:00.000Z",
+      "updated_at": "2026-02-26T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440034",
+      "word": "briefly",
+      "phonetic": "/ˈbriːfli/",
+      "meaning": "adv. 简要地；简短地；短暂地",
+      "example_sentences": [
+        "Let me briefly explain the background of this project.",
+        "Could you briefly summarize the key takeaways from the meeting?",
+        "I'll briefly go over the agenda before we dive in."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "会议"
+      ],
+      "difficulty": 1,
+      "notes": "会议和汇报中的高频词，表示「简要地说一下」。常搭配 explain, summarize, describe, mention 等动词",
+      "memory_tips": {
+        "word_root": "brief (简短的) + -ly (副词后缀) = 简短地",
+        "mnemonic": "brief(简报/简短) + ly → 像简报一样简短地 → 简要地",
+        "association": "想象领导说「简单说两句」，然后真的只说了两句",
+        "similar_words": ["concisely", "in short", "in a nutshell", "to put it simply"]
+      },
+      "created_at": "2026-02-26T12:00:00.000Z",
+      "updated_at": "2026-02-26T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440035",
+      "word": "initially",
+      "phonetic": "/ɪˈnɪʃəli/",
+      "meaning": "adv. 最初；一开始；起初",
+      "example_sentences": [
+        "Initially, we planned to launch in Q1, but it was pushed to Q2.",
+        "The feature was initially designed for mobile users only.",
+        "I was initially skeptical, but the results proved me wrong."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "叙述"
+      ],
+      "difficulty": 1,
+      "notes": "常用于描述事情最开始的状态，暗示后来发生了变化。比 at first 更正式",
+      "memory_tips": {
+        "word_root": "in- (进入) + it (走，拉丁语 ire) + -ial + -ly = 走入的最初 → 一开始",
+        "mnemonic": "initial(最初的/首字母) + ly → 在最初的时候 → 一开始",
+        "association": "想象一个故事的开头：「很久很久以前...」",
+        "similar_words": ["at first", "originally", "in the beginning", "at the outset"]
+      },
+      "created_at": "2026-02-26T12:00:00.000Z",
+      "updated_at": "2026-02-26T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440036",
+      "word": "the project has evolved through four major stages",
+      "phonetic": null,
+      "meaning": "这个项目经历了四个主要阶段的演变/发展",
+      "example_sentences": [
+        "The project has evolved through four major stages since its inception last year.",
+        "Looking back, the project has evolved through four major stages, each bringing significant improvements.",
+        "As I'll explain, the project has evolved through four major stages — from concept to production."
+      ],
+      "tags": [
+        "职场英语",
+        "项目管理",
+        "例句"
+      ],
+      "difficulty": 2,
+      "notes": "evolve through = 经历演变。这个句式非常适合在项目汇报、回顾会议中使用，描述项目的发展历程",
+      "memory_tips": {
+        "word_root": "evolve (演变，进化) + through (穿过/经历) + stages (阶段)",
+        "mnemonic": "evolve(进化) → 像达尔文进化论一样，项目一步步进化 → 经历阶段性发展",
+        "association": "想象蝴蝶从卵→幼虫→蛹→成虫的四个阶段，项目也是如此",
+        "similar_words": ["has gone through", "has progressed through", "has developed across", "has undergone"]
+      },
+      "created_at": "2026-02-26T12:00:00.000Z",
+      "updated_at": "2026-02-26T12:00:00.000Z"
     }
   ]
 }
