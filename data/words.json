@@ -1629,6 +1629,380 @@
       },
       "created_at": "2026-02-26T14:00:00.000Z",
       "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440063",
+      "word": "pick up",
+      "phonetic": "/pɪk ʌp/",
+      "meaning": "phr.v. 学会；上手；掌握（也有捡起、接人等含义）",
+      "example_sentences": [
+        "The optimized registration process is easy to pick up for beginners.",
+        "She picked up Python really quickly after taking an online course.",
+        "New employees can pick up the workflow within a week."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "脱壳训练"
+      ],
+      "difficulty": 1,
+      "notes": "脱壳训练Q1：'上手快'不要直译为quick hand，而是用pick up表达'学会/掌握'的意思。pick up是极其高频的多义动词短语",
+      "memory_tips": {
+        "word_root": "pick (选/拣) + up (起来) = 拣起来 → 引申为学会/掌握",
+        "mnemonic": "pick up(捡起来) → 像捡东西一样轻松把技能'捡'起来 → 学会/上手",
+        "association": "想象地上散落着各种技能卡片，你弯腰pick up就学会了",
+        "similar_words": ["learn", "master", "get the hang of", "catch on"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440064",
+      "word": "effortless",
+      "phonetic": "/ˈefərtləs/",
+      "meaning": "adj. 毫不费力的；轻松的",
+      "example_sentences": [
+        "The simplified payment steps make filling in information effortless.",
+        "Her presentation was so effortless that it looked like she didn't even prepare.",
+        "The new UI design makes navigation effortless for first-time users."
+      ],
+      "tags": [
+        "职场英语",
+        "高频形容词",
+        "产品描述",
+        "脱壳训练"
+      ],
+      "difficulty": 2,
+      "notes": "脱壳训练Q2：'不费劲'的地道表达之一。effortless强调完全不需要付出努力",
+      "memory_tips": {
+        "word_root": "effort (努力) + -less (没有) = 不需要努力的 → 毫不费力的",
+        "mnemonic": "effort(努力) + less(更少) → 少努力 → 毫不费力",
+        "association": "想象一个滑冰运动员在冰面上轻盈滑过，看起来毫不费力",
+        "similar_words": ["easy", "smooth", "seamless", "straightforward"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440065",
+      "word": "hassle-free",
+      "phonetic": "/ˈhæsl friː/",
+      "meaning": "adj. 无忧无虑的；不费劲的；没有麻烦的",
+      "example_sentences": [
+        "The simplified payment steps make the process hassle-free.",
+        "We aim to provide a hassle-free return and refund experience.",
+        "Our new onboarding flow is completely hassle-free — just three clicks and you're done."
+      ],
+      "tags": [
+        "职场英语",
+        "产品描述",
+        "高频形容词",
+        "脱壳训练"
+      ],
+      "difficulty": 2,
+      "notes": "脱壳训练Q2：'不费劲'的地道表达。hassle=麻烦，hassle-free=没有麻烦的。产品宣传、用户体验描述中高频使用",
+      "memory_tips": {
+        "word_root": "hassle (麻烦/烦恼) + free (免于) = 免于麻烦的 → 不费劲的",
+        "mnemonic": "hassle(哈塞=好塞=堵塞/麻烦) + free(自由) → 从麻烦中解放 → 无忧无虑",
+        "association": "想象一条畅通无阻的高速公路，没有任何堵车(hassle)",
+        "similar_words": ["trouble-free", "painless", "smooth", "effortless"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440066",
+      "word": "painless",
+      "phonetic": "/ˈpeɪnləs/",
+      "meaning": "adj. 无痛的；轻松不费事的（引申义）",
+      "example_sentences": [
+        "The simplified payment steps make filling in information painless.",
+        "Switching to the new system was surprisingly painless.",
+        "We want to make the migration process as painless as possible for our users."
+      ],
+      "tags": [
+        "职场英语",
+        "产品描述",
+        "高频形容词",
+        "脱壳训练"
+      ],
+      "difficulty": 2,
+      "notes": "脱壳训练Q2：'不费劲'的地道表达。painless本义是'无痛的'，引申为'轻松不费事的'。这是典型的英语比喻用法——用身体感受描述抽象体验",
+      "memory_tips": {
+        "word_root": "pain (疼痛) + -less (没有) = 没有痛苦的 → 引申为轻松不费事",
+        "mnemonic": "pain(疼) + less(没有) → 不疼 → 做起来不痛苦 → 轻松不费事",
+        "association": "想象去医院打了一针无痛的疫苗，完全没感觉就做完了",
+        "similar_words": ["effortless", "hassle-free", "smooth", "easy"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440067",
+      "word": "practical",
+      "phonetic": "/ˈpræktɪkl/",
+      "meaning": "adj. 实用的；实际的；切实可行的",
+      "example_sentences": [
+        "The one-click data export feature is really practical.",
+        "We need a practical solution, not just a theoretical one.",
+        "This tool is practical for daily project management tasks."
+      ],
+      "tags": [
+        "职场英语",
+        "高频形容词",
+        "产品描述",
+        "脱壳训练"
+      ],
+      "difficulty": 1,
+      "notes": "脱壳训练Q3：'好用'的脱壳表达之一。practical=实用的，强调在实际使用中有价值。注意区分：practical(实用的) vs functional(能运行的) vs reliable(可靠的)",
+      "memory_tips": {
+        "word_root": "practice (实践) + -al (形容词后缀) = 与实践相关的 → 实用的",
+        "mnemonic": "practice(练习/实践) → practical(实用的) → 经得起实践检验的东西才是实用的",
+        "association": "想象一把瑞士军刀，虽然不花哨但非常practical",
+        "similar_words": ["useful", "handy", "functional", "utilitarian"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440068",
+      "word": "efficient",
+      "phonetic": "/ɪˈfɪʃnt/",
+      "meaning": "adj. 高效的；效率高的",
+      "example_sentences": [
+        "The one-click data export feature is very efficient.",
+        "We need a more efficient way to handle customer inquiries.",
+        "The new workflow is 3x more efficient than the old one."
+      ],
+      "tags": [
+        "职场英语",
+        "高频形容词",
+        "产品描述",
+        "脱壳训练"
+      ],
+      "difficulty": 1,
+      "notes": "脱壳训练Q3：'好用'的脱壳表达。一键导出→高效→好用。efficient强调用最少的时间/资源达成目标",
+      "memory_tips": {
+        "word_root": "ef- (out 出) + fic (做, 拉丁语 facere) + -ient = 能做出来的 → 有效率的",
+        "mnemonic": "efficient → 一(e)分(f)钟就搞定(ficient) → 高效的",
+        "association": "想象一条全自动化流水线，快速精准地完成生产",
+        "similar_words": ["effective", "productive", "streamlined", "optimized"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440069",
+      "word": "interface with",
+      "phonetic": "/ˈɪntərfeɪs wɪð/",
+      "meaning": "phr.v. 对接；衔接；交互（技术/业务语境）",
+      "example_sentences": [
+        "The R&D team needs to interface with clients to understand their requirements.",
+        "Our API interfaces with third-party payment providers.",
+        "The product team regularly interfaces with engineering to prioritize features."
+      ],
+      "tags": [
+        "职场英语",
+        "技术词汇",
+        "高频短语",
+        "脱壳训练"
+      ],
+      "difficulty": 3,
+      "notes": "脱壳训练Q4：'对接'在技术/业务语境中的地道表达。注意：butt joint是物理对接（管道焊接），不适用于业务场景。interface with偏正式",
+      "memory_tips": {
+        "word_root": "inter- (之间) + face (面/接口) = 两个系统/团队之间的接口 → 对接",
+        "mnemonic": "interface(接口) → 像USB接口一样，两个设备通过接口对接",
+        "association": "想象两个齿轮咬合在一起协同运转，interface就是那个咬合点",
+        "similar_words": ["coordinate with", "collaborate with", "connect with", "liaise with"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440070",
+      "word": "coordinate with",
+      "phonetic": "/koʊˈɔːrdɪneɪt wɪð/",
+      "meaning": "phr.v. 协调配合；协同",
+      "example_sentences": [
+        "The R&D team coordinates with the client to align on requirements.",
+        "Please coordinate with the QA team before the release.",
+        "We need to coordinate with logistics to ensure on-time delivery."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "项目管理",
+        "脱壳训练"
+      ],
+      "difficulty": 2,
+      "notes": "脱壳训练Q4：'对接'的另一种脱壳表达。coordinate with更强调多方之间的协调配合",
+      "memory_tips": {
+        "word_root": "co- (共同) + ordinate (排列/安排) = 共同安排 → 协调配合",
+        "mnemonic": "coordinate(坐标) → 像在坐标系中确定位置一样，各方协调找到共同的点",
+        "association": "想象交响乐团指挥协调各乐器组共同演奏",
+        "similar_words": ["collaborate with", "work with", "interface with", "sync with"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440071",
+      "word": "time is tight",
+      "phonetic": null,
+      "meaning": "phr. 时间紧迫；时间不够用",
+      "example_sentences": [
+        "Time is tight, so let's focus on the key issues first.",
+        "We're running short on time — can we reschedule the demo?",
+        "Time is pressing, we need to deliver the MVP by next Friday."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "项目管理",
+        "脱壳训练"
+      ],
+      "difficulty": 1,
+      "notes": "脱壳训练Q6：'时间紧迫'不要说time is not enough。tight=紧的→时间很紧。同义表达：running short on time, time is running out, time is pressing",
+      "memory_tips": {
+        "mnemonic": "tight(紧的) → 时间像紧身衣一样勒得很紧 → 时间紧迫",
+        "association": "想象沙漏里的沙子快漏完了，时间越来越紧(tight)",
+        "similar_words": ["running short on time", "time is running out", "time is pressing", "under time pressure"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440072",
+      "word": "identify",
+      "phonetic": "/aɪˈdentɪfaɪ/",
+      "meaning": "v. 确定；识别；找出；认出",
+      "example_sentences": [
+        "We've identified core features for the product and need to design interaction flows.",
+        "The QA team identified three critical bugs during testing.",
+        "We need to identify the root cause before proposing a solution."
+      ],
+      "tags": [
+        "职场英语",
+        "高频动词",
+        "项目管理",
+        "脱壳训练"
+      ],
+      "difficulty": 2,
+      "notes": "脱壳训练Q9：'已确定核心功能'用 have identified（现在完成时），体现已完成且成果延续到现在。identify比confirm更强调'从无到有地找出/确定'",
+      "memory_tips": {
+        "word_root": "ident- (相同, 拉丁语 idem) + -ify (使...) = 使与已知的相同 → 识别/确定",
+        "mnemonic": "identity(身份) → identify(识别身份) → 确定/找出",
+        "association": "想象侦探在嫌疑人照片墙上圈出目标，identify = 锁定目标",
+        "similar_words": ["determine", "pinpoint", "recognize", "detect"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440073",
+      "word": "interaction flow",
+      "phonetic": "/ˌɪntərˈækʃən floʊ/",
+      "meaning": "n. 交互流程；用户交互流",
+      "example_sentences": [
+        "We've identified core features and need to design interaction flows.",
+        "The designer is working on the interaction flow for the checkout page.",
+        "Let's review the interaction flow before we start development."
+      ],
+      "tags": [
+        "职场英语",
+        "技术词汇",
+        "产品设计",
+        "脱壳训练"
+      ],
+      "difficulty": 2,
+      "notes": "脱壳训练Q9：产品/设计领域高频术语。interaction flow = 用户与产品交互的步骤流程。类似概念：user flow(用户流程), workflow(工作流程)",
+      "memory_tips": {
+        "mnemonic": "interaction(互动) + flow(流程) → 互动的流程 → 交互流程",
+        "association": "想象用户点击按钮→弹出页面→填写信息→提交的流程图",
+        "similar_words": ["user flow", "workflow", "process flow", "user journey"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440074",
+      "word": "supplier",
+      "phonetic": "/səˈplaɪər/",
+      "meaning": "n. 供应商；供货方",
+      "example_sentences": [
+        "We've contacted the supplier and confirmed the delivery time.",
+        "The supplier promised to ship the components by next Monday.",
+        "We need to find a backup supplier in case of delays."
+      ],
+      "tags": [
+        "职场英语",
+        "商务",
+        "供应链",
+        "脱壳训练"
+      ],
+      "difficulty": 1,
+      "notes": "脱壳训练Q11：supply(供应) + -er(人/方) = 供应商。商务和供应链管理中的核心词汇。常见搭配：contact the supplier, negotiate with suppliers",
+      "memory_tips": {
+        "word_root": "supply (供应) + -er (做...的人/方) = 供应的一方 → 供应商",
+        "mnemonic": "supply(供应) → supplier(供应者) → 给你供货的人/公司",
+        "association": "想象仓库里一辆卡车正在卸货，卡车上写着supplier的公司名",
+        "similar_words": ["vendor", "provider", "manufacturer", "distributor"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440075",
+      "word": "delivery time",
+      "phonetic": "/dɪˈlɪvəri taɪm/",
+      "meaning": "n. 交付时间；送达时间",
+      "example_sentences": [
+        "We've contacted the supplier and confirmed the delivery time for the order.",
+        "The estimated delivery time is 3-5 business days.",
+        "Can we negotiate a shorter delivery time with the logistics partner?"
+      ],
+      "tags": [
+        "职场英语",
+        "物流",
+        "供应链",
+        "脱壳训练"
+      ],
+      "difficulty": 1,
+      "notes": "脱壳训练Q11：物流和供应链管理中的基础词汇。confirm the delivery time = 确认交付时间。也叫 lead time(交货周期), ETA(预计到达时间)",
+      "memory_tips": {
+        "mnemonic": "delivery(交付/配送) + time(时间) → 交付的时间 → 交付时间",
+        "association": "想象快递App上显示的'预计送达时间'",
+        "similar_words": ["lead time", "ETA (estimated time of arrival)", "turnaround time", "shipping time"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440076",
+      "word": "procurement",
+      "phonetic": "/prəˈkjʊərmənt/",
+      "meaning": "n. 采购；获取",
+      "example_sentences": [
+        "The procurement team has contacted the supplier and confirmed the delivery time.",
+        "Our procurement process needs to be more transparent and efficient.",
+        "The company spent $2 million on software procurement this year."
+      ],
+      "tags": [
+        "职场英语",
+        "商务",
+        "供应链",
+        "脱壳训练"
+      ],
+      "difficulty": 3,
+      "notes": "脱壳训练Q11：procurement team = 采购团队，是'已联系供应商'这个动作的隐含主语之一。procure(v. 采购) → procurement(n. 采购)",
+      "memory_tips": {
+        "word_root": "pro- (向前/为了) + cure (关心/照顾, 拉丁语 curare) + -ment = 为了(项目)去照顾(获取资源) → 采购",
+        "mnemonic": "pro(专业) + cure(治愈) + ment → 专业地治愈供应缺口 → 采购",
+        "association": "想象采购经理拿着清单在供应商之间穿梭比价",
+        "similar_words": ["purchasing", "acquisition", "sourcing", "buying"]
+      },
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
     }
   ]
 }

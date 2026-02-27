@@ -359,6 +359,57 @@
       "notes": "来自物流跟踪听力课。记住：口语中结论先行（总分结构），但听力考试中主旨可能在最后（分总结构）",
       "created_at": "2026-02-26T14:00:00.000Z",
       "updated_at": "2026-02-26T14:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440023",
+      "title": "脱壳翻译法：表达意思而非逐字翻译",
+      "explanation": "中译英时，不要逐字直译中文，而是先理解中文要表达的【核心意思】，然后用英语重新表达这个意思。\n\n核心原则：\n1. 看到中文 → 先提炼核心含义\n2. 用英文思维重新表达 → 不拘泥于中文的字面\n3. 一个中文意思往往有多种英文表达\n\n经典案例：\n• '上手快' ≠ quick hand ❌ → easy to pick up / quick to learn / simple to master ✅\n• '不费劲' → effortless / low-effort / hassle-free / painless（四种脱壳方式）\n• '好用' ≠ good use ❌ → practical(实用) / efficient(高效) ✅\n• '对接' ≠ butt joint ❌ → interface with / coordinate with / connect with ✅\n\n⚠️ 直译陷阱：\n• quick hand (快手) → 英语中不存在这个表达\n• butt joint (对接) → 这是管道焊接的物理对接\n• functional (有功能的) ≠ 好用\n• reliable (可靠的) ≠ 好用",
+      "examples": [
+        "上手快 → easy to pick up / quick to learn / simple to master（不是 quick hand）",
+        "不费劲 → effortless / hassle-free / painless / low-effort（用不同角度脱壳）",
+        "好用 → practical(实用角度) / efficient(效率角度)（不是 good use）",
+        "对接客户需求 → interface with clients / coordinate with clients（不是 butt joint）",
+        "时间紧迫 → Time is tight / We're running short on time（不是 time is not enough）"
+      ],
+      "tags": ["翻译技巧", "脱壳训练", "避免直译", "中译英"],
+      "difficulty": 3,
+      "notes": "脱壳翻译是中译英的核心思维方式。关键：理解中文含义 → 忘掉中文字面 → 用英文重新表达。一个中文词往往对应多个英文表达，选最贴切的",
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440024",
+      "title": "中译英技巧：补全隐含的主语和宾语",
+      "explanation": "中文表达经常省略主语和宾语，但英文句子必须结构完整。翻译时需要根据语境补全被省略的成分。\n\n三步法：\n① 找隐含主语：谁做了这个动作？→ 通常是 We / The team / The department\n② 找隐含宾语：对什么做的？→ 根据业务场景推断（the product / the order / the project）\n③ 注意时态：'已...' = 现在完成时(have done)；'需...' = need to do\n\n常见隐含主语：\n• We（我们/团队）— 职场最常见\n• The team / The R&D team / The procurement team\n• The company / The department\n\n时态对应：\n• '已确定' → have identified（完成时，成果延续）\n• '已联系' → have contacted（完成时）\n• '需设计' → need to design（还没做）\n\n⚠️ 注意：两个动作共用 have 时不需重复：\nWe've contacted ... and confirmed ... ✅\nWe've contacted ... and have confirmed ... ❌（冗余）",
+      "examples": [
+        "已确定核心功能，需设计交互流程 → (We've) identified core features for (the product) and need to design interaction flows.",
+        "已联系供应商，确认交付时间 → (We've) contacted the supplier and confirmed the delivery time for (the order).",
+        "已完成需求评审 → (We've) completed the requirement review for (the project).",
+        "需协调资源，推进开发 → (We) need to coordinate resources and push forward with development of (the feature).",
+        "已修复关键bug，待测试验证 → (We've) fixed the critical bugs and (they) are pending QA verification."
+      ],
+      "tags": ["翻译技巧", "脱壳训练", "隐含主语", "隐含宾语", "中译英"],
+      "difficulty": 3,
+      "notes": "中文是「意合语言」，英文是「形合语言」。中文靠上下文理解省略的部分，英文必须把主语宾语写出来。这是中国学生翻译中最常见的难点",
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440025",
+      "title": "脱壳翻译：'不费劲'的四种英文表达",
+      "explanation": "同一个中文含义'不费劲/轻松'可以从不同角度用英文表达，这是脱壳思维的典型应用。\n\n四种脱壳角度：\n1. effortless → 从'努力'角度：不需要付出努力\n2. low-effort → 从'成本'角度：低成本/省力\n3. hassle-free → 从'麻烦'角度：没有麻烦\n4. painless → 从'痛苦'角度：无痛 → 不费事\n\n这四个词的微妙区别：\n• effortless：强调天生自然，毫不费力（最高级别的轻松）\n• low-effort：客观描述，付出的effort少\n• hassle-free：强调过程中没有麻烦/障碍\n• painless：强调过程不会让人痛苦/不舒服",
+      "examples": [
+        "The new UI is effortless to navigate. (新UI操作起来毫不费力)",
+        "This is a low-effort task that anyone can handle. (这是一项省力的任务)",
+        "Our hassle-free return policy makes customers happy. (我们无忧的退货政策让顾客满意)",
+        "Switching to the new system was painless. (切换到新系统轻松不费事)",
+        "简化后的支付步骤填信息不费劲 → The simplified payment steps make filling in information effortless/hassle-free/painless."
+      ],
+      "tags": ["翻译技巧", "脱壳训练", "近义词辨析", "形容词"],
+      "difficulty": 2,
+      "notes": "这组词展示了脱壳思维的精髓：同一个中文意思可以从'努力/成本/麻烦/痛苦'四个不同角度来脱壳表达",
+      "created_at": "2026-02-27T10:00:00.000Z",
+      "updated_at": "2026-02-27T10:00:00.000Z"
     }
   ]
 }
