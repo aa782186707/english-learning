@@ -410,6 +410,56 @@
       "notes": "这组词展示了脱壳思维的精髓：同一个中文意思可以从'努力/成本/麻烦/痛苦'四个不同角度来脱壳表达",
       "created_at": "2026-02-27T10:00:00.000Z",
       "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440026",
+      "title": "中译英语序：主语+谓语动词+宾语/状语 (SVO)",
+      "explanation": "中文语序灵活，主语常省略，且经常用被动表达（…被记录、…被澄清）。英译时要主动转换为英文的 SVO 结构。\n\n转换步骤：\n① 补主语：中文省略了谁？→ 补上 We / The team\n② 找谓语：句子的核心动作是什么？→ 记录/澄清/验证/完成\n③ 排宾语：动作的对象是什么？→ suggestion / problems / results\n④ 被动→主动：中文的'被记录'→ 英文用主动语态 'We have recorded'\n\n⚠️ 中英文差异：\n• 中文偏好被动（建议被记录）→ 英文偏好主动（We have recorded the suggestion）\n• 中文主语常省略 → 英文必须有主语\n• 中文可以把宾语前置 → 英文严格 SVO 语序",
+      "examples": [
+        "工程师提出的建议被记录 → We have recorded the engineer's suggestion. (被动→主动，补主语We)",
+        "其中系统配置问题被澄清 → We have clarified the system configuration problems.",
+        "预测试问题被证实 → We have verified the pre-test problems. (注意用verified不是confirmed)",
+        "并对预测试结果完成审查 → We have completed the review of the pretest results. (审查=review，不是checking)"
+      ],
+      "tags": ["翻译技巧", "句子结构", "SVO语序", "中译英", "词族训练"],
+      "difficulty": 2,
+      "notes": "来自Session 2词族训练Part 3。核心要点：①补主语 ②被动转主动 ③严格SVO语序 ④用准确的词（verify≠confirm, review≠checking）",
+      "created_at": "2026-02-28T12:00:00.000Z",
+      "updated_at": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440027",
+      "title": "易错拼写：中国学生常拼错的职场单词",
+      "explanation": "在翻译练习中暴露的高频拼写错误，需要特别注意。\n\n常见拼写陷阱：\n\n1. ❌ enginner → ✅ engineer\n   记忆：engine + er，不是 engin + ner\n\n2. ❌ comfirmed → ✅ confirmed\n   记忆：con- (不是com-) + firm (坚定) + -ed\n\n3. ❌ pre test → ✅ pre-test 或 pretest\n   规则：pre- 作为前缀必须用连字符或连写，不能空格分开\n\n4. ❌ suggestion of the engineer → ⚠️ 不算错但不自然\n   更好：the engineer's suggestion（所有格更简洁地道）\n\n⚠️ 前缀+名词的连写规则：\n• 加连字符：pre-test, re-evaluate, co-worker\n• 或连写：pretest, reevaluate, coworker\n• 绝不能空格分开：pre test ❌",
+      "examples": [
+        "❌ enginner → ✅ engineer (engine + -er)",
+        "❌ comfirmed → ✅ confirmed (con + firm + -ed)",
+        "❌ pre test → ✅ pre-test / pretest (前缀不能空格分开)",
+        "❌ the suggestion of the engineer → ✅ the engineer's suggestion (所有格更自然)",
+        "❌ the checking → ✅ the review (审查用review，不用checking)"
+      ],
+      "tags": ["易错点", "拼写", "前缀规则", "词族训练"],
+      "difficulty": 1,
+      "notes": "来自Session 2词族训练Part 3翻译纠错。这些是翻译练习中暴露出的真实错误，反复记忆可以避免再犯",
+      "created_at": "2026-02-28T12:00:00.000Z",
+      "updated_at": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440028",
+      "title": "近义词辨析：verify vs confirm / review vs check",
+      "explanation": "在翻译中选词要精准，看似相近的词含义有微妙区别。\n\n📌 verify vs confirm\n• verify = 验证/证实（通过调查、测试来确认是否属实）\n  → 偏向「用证据/数据去证实」\n  → The QA team verified the bug exists.\n• confirm = 确认（对已知信息进行二次确认）\n  → 偏向「对已有判断表示肯定」\n  → I confirm the meeting is at 3pm.\n\n⚠️ '预测试问题被证实' → 应该用 verified（用测试去证实问题存在），不是 confirmed\n\n📌 review vs check\n• review = 审查/评审（系统性地回顾和评价，含判断）\n  → 正式，用于code review/peer review/performance review\n• check = 检查（快速查看对不对，不含评价）\n  → 日常，用于check email/check the data\n\n⚠️ '对预测试结果完成审查' → 应该用 review（系统性审查），不是 checking",
+      "examples": [
+        "verify: We have verified the pre-test problems. (通过测试证实了问题存在)",
+        "confirm: Can you confirm the delivery time? (确认一下交付时间)",
+        "review: We have completed the review of the pretest results. (系统性审查测试结果)",
+        "check: Let me check if the server is running. (快速检查一下服务器)",
+        "❌ We have confirmed the pre-test problems. → 应该用 verified (证实≠确认)"
+      ],
+      "tags": ["近义词辨析", "用词精准", "易错点", "词族训练"],
+      "difficulty": 2,
+      "notes": "来自Session 2词族训练Part 3翻译纠错。verify强调'用证据证实'，confirm强调'对已知信息确认'；review强调'系统性审查'，check强调'快速检查'",
+      "created_at": "2026-02-28T12:00:00.000Z",
+      "updated_at": "2026-02-28T12:00:00.000Z"
     }
   ]
 }

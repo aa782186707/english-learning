@@ -2219,6 +2219,87 @@
       },
       "created_at": "2026-02-28T10:00:00.000Z",
       "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440085",
+      "word": "record",
+      "phonetic": "/rɪˈkɔːrd/ (v.) /ˈrekərd/ (n.)",
+      "meaning": "v. 记录；录制 n. 记录；唱片；纪录",
+      "example_sentences": [
+        "We have recorded the engineer's suggestion.",
+        "Please record the key decisions from today's meeting.",
+        "The system keeps a record of all configuration changes."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "高频动词",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "词族训练：record(记录) → recorder(记录器/录音机，加-er) → recording(录音/记录过程，加-ing)。注意：做动词时重音在后(rɪˈkɔːrd)，做名词时重音在前(ˈrekərd)",
+      "memory_tips": {
+        "word_root": "re- (再次/回) + cord (心, 拉丁语 cor) = 再次放回心里 → 记录/记住",
+        "mnemonic": "re(再次) + cord(绳子) → 用绳子再结一个记号 → 记录",
+        "association": "想象古人在绳子上打结来记录信息（结绳记事）",
+        "similar_words": ["recorder (记录器)", "recording (录音)", "log", "document"]
+      },
+      "created_at": "2026-02-28T12:00:00.000Z",
+      "updated_at": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440086",
+      "word": "review",
+      "phonetic": "/rɪˈvjuː/",
+      "meaning": "n./v. 审查；评审；复习；回顾",
+      "example_sentences": [
+        "We have completed the review of the pretest results.",
+        "The code review found three potential issues.",
+        "Let's review the project timeline before the meeting."
+      ],
+      "tags": [
+        "职场英语",
+        "高频动词",
+        "项目管理",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "注意区分：review(审查/评审，正式，含评价判断) vs check(检查，日常，只看对不对) vs inspect(检验，更严格正式)。'审查'翻译优先用review，不要用checking",
+      "memory_tips": {
+        "word_root": "re- (再次) + view (看) = 再看一遍 → 审查/复习/回顾",
+        "mnemonic": "re(再) + view(看) → 再看一遍 → 审查/复习",
+        "association": "想象老师让你re-view(再看一遍)试卷上的错误",
+        "similar_words": ["code review (代码审查)", "peer review (同行评审)", "inspect", "audit"]
+      },
+      "created_at": "2026-02-28T12:00:00.000Z",
+      "updated_at": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440087",
+      "word": "pre-test",
+      "phonetic": "/priː test/",
+      "meaning": "n. 预测试；前测",
+      "example_sentences": [
+        "We have verified the pre-test problems.",
+        "The pre-test revealed several compatibility issues with the new configuration.",
+        "All pre-test results must be reviewed before the official launch."
+      ],
+      "tags": [
+        "职场英语",
+        "技术词汇",
+        "项目管理",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "拼写注意：写成 pre-test（加连字符）或 pretest（连写）都可以，但不要写成 pre test（分开无连字符）❌。pre- 是常见前缀，表示'在…之前'",
+      "memory_tips": {
+        "word_root": "pre- (在…之前) + test (测试) = 在正式测试之前的测试 → 预测试",
+        "mnemonic": "pre-(预先/之前) + test(测试) → 预先测试",
+        "association": "想象正式考试前的模拟考试，就是pre-test",
+        "similar_words": ["pre-launch (预发布)", "pre-production (预生产)", "preview (预览)", "prerequisite (前提条件)"]
+      },
+      "created_at": "2026-02-28T12:00:00.000Z",
+      "updated_at": "2026-02-28T12:00:00.000Z"
     }
   ]
 }
