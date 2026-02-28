@@ -2003,6 +2003,222 @@
       },
       "created_at": "2026-02-27T10:00:00.000Z",
       "updated_at": "2026-02-27T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440077",
+      "word": "engineer",
+      "phonetic": "/ˌendʒɪˈnɪr/",
+      "meaning": "n. 工程师；v. 设计；策划；改造",
+      "example_sentences": [
+        "The engineer proposed a solution to fix the voice control bug.",
+        "They engineered a workaround to meet the Friday deadline.",
+        "She studied engineering at MIT before joining our team."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "技术词汇",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "词族训练：engineer(工程师) → engine(引擎，去-er) → engineering(工程，加-ing) → engineered(被设计的，加-ed)。engineer既是名词也是动词",
+      "memory_tips": {
+        "word_root": "engine (引擎/机器) + -er (做…的人) = 操作机器的人 → 工程师",
+        "mnemonic": "engine(引擎) + er(人) → 造引擎的人 → 工程师",
+        "association": "想象一个穿着工装的人在设计发动机引擎",
+        "similar_words": ["engine (引擎)", "engineering (工程)", "engineered (被设计的)", "re-engineer (重新设计)"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440078",
+      "word": "suggest",
+      "phonetic": "/səˈdʒest/",
+      "meaning": "v. 建议；暗示；表明",
+      "example_sentences": [
+        "The engineer suggested using a limited version for the launch.",
+        "I suggest we reschedule the meeting to next Tuesday.",
+        "The data suggests that our user retention is improving."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "高频动词",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "词族训练：suggest(建议v.) → suggestion(建议n.，加-ion) → suggestive(暗示的adj.，加-ive)。注意：suggest后接that从句时，从句用虚拟语气(should+动词原形，should可省略)",
+      "memory_tips": {
+        "word_root": "sug- (=sub- 从下面) + gest (携带/带来) = 从下面带上来 → 提出建议",
+        "mnemonic": "suggest → 从(sub)下面举(gest)手提建议",
+        "association": "想象会议中有人举手说'我建议…'",
+        "similar_words": ["suggestion (建议n.)", "suggestive (暗示的)", "propose", "recommend"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440079",
+      "word": "evaluate",
+      "phonetic": "/ɪˈvæljueɪt/",
+      "meaning": "v. 评估；评价；鉴定",
+      "example_sentences": [
+        "We need to evaluate the new configuration before deployment.",
+        "The team evaluated three different solutions and chose the most practical one.",
+        "Our evaluator will assess the system performance next week."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "高频动词",
+        "词族训练"
+      ],
+      "difficulty": 2,
+      "notes": "词族训练：evaluate(评估v.) → evaluation(评估n.，加-tion) → evaluator(评估者，加-tor)。职场高频词，用于方案评审、绩效评估等场景",
+      "memory_tips": {
+        "word_root": "e- (出) + valu (价值, 拉丁语 valere) + -ate (动词后缀) = 把价值评出来 → 评估",
+        "mnemonic": "e(出) + value(价值) + ate → 把价值吃(ate)透 → 评估",
+        "association": "想象一个裁判举着评分牌给选手打分",
+        "similar_words": ["evaluation (评估n.)", "evaluator (评估者)", "assess", "appraise"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440080",
+      "word": "configure",
+      "phonetic": "/kənˈfɪɡjər/",
+      "meaning": "v. 配置；设定；调整设置",
+      "example_sentences": [
+        "Please configure the server settings before running the test.",
+        "We need to reconfigure the system after the upgrade.",
+        "The new configuration was evaluated and approved by the team."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "技术词汇",
+        "词族训练"
+      ],
+      "difficulty": 2,
+      "notes": "词族训练：configure(配置v.) → configuration(配置n.，加-ation) → reconfigure(重新配置，加re-)。IT/开发中的核心词汇",
+      "memory_tips": {
+        "word_root": "con- (共同/一起) + figure (形状/图形) = 把各部分组合成一个整体形状 → 配置",
+        "mnemonic": "con(共同) + figure(图形) → 把各个图形拼在一起 → 配置",
+        "association": "想象在系统设置页面调整各项参数，拼出最优配置",
+        "similar_words": ["configuration (配置n.)", "reconfigure (重新配置)", "set up", "customize"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440081",
+      "word": "test",
+      "phonetic": "/test/",
+      "meaning": "v./n. 测试；检验；考验",
+      "example_sentences": [
+        "The pre-test issues were verified by the QA team.",
+        "We're currently in the testing phase of the new feature.",
+        "Each tester is responsible for covering at least 20 test cases."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "技术词汇",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "词族训练：test(测试) → testing(测试过程，加-ing) → tester(测试者，加-er)。也可加前缀：pre-test(预测试), retest(重新测试)",
+      "memory_tips": {
+        "word_root": "test 源自拉丁语 testum (陶罐)，古代用陶罐检验金属纯度 → 测试",
+        "mnemonic": "test → 考试(test)就是测试",
+        "association": "想象实验室里的工程师在对产品进行各种测试",
+        "similar_words": ["testing (测试过程)", "tester (测试者)", "pre-test (预测试)", "retest (重测)"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440082",
+      "word": "agree",
+      "phonetic": "/əˈɡriː/",
+      "meaning": "v. 同意；一致；达成共识",
+      "example_sentences": [
+        "The team finally agreed on the system launch date.",
+        "We signed an agreement to deliver the project by Q2.",
+        "I disagree with the proposed timeline — it's too aggressive."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "高频动词",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "词族训练：agree(同意v.) → agreement(协议/同意n.，加-ment) → disagree(不同意，加dis-)。also: agreeable(令人愉快的), disagreement(分歧)",
+      "memory_tips": {
+        "word_root": "a- (=ad- 向/朝) + gree (=grat- 令人愉快, 拉丁语 gratus) = 朝向令人愉快的方向 → 同意",
+        "mnemonic": "a(啊) + gree(green绿灯) → 啊！绿灯！→ 同意放行",
+        "association": "想象会议中所有人都点头说Yes，达成agreement",
+        "similar_words": ["agreement (协议n.)", "disagree (不同意)", "agreeable (令人愉快的)", "disagreement (分歧)"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440083",
+      "word": "verify",
+      "phonetic": "/ˈverɪfaɪ/",
+      "meaning": "v. 验证；核实；证实",
+      "example_sentences": [
+        "The pre-test issues were verified by the engineering team.",
+        "Please verify the data before submitting the report.",
+        "The verification process takes about two business days."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "高频动词",
+        "词族训练"
+      ],
+      "difficulty": 2,
+      "notes": "词族训练：verify(验证v.) → verification(验证n.，加-ication) → verifiable(可验证的adj.，加-able)。also: verified(已验证的), unverified(未验证的)",
+      "memory_tips": {
+        "word_root": "veri- (真实, 拉丁语 verus) + -fy (使…) = 使其变为真实 → 验证/证实",
+        "mnemonic": "very(非常) + fy(变成) → 验证它是否very真实",
+        "association": "想象警察核实证件，确认信息是否属实",
+        "similar_words": ["verification (验证n.)", "verifiable (可验证的)", "verified (已验证的)", "confirm"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440084",
+      "word": "complete",
+      "phonetic": "/kəmˈpliːt/",
+      "meaning": "v. 完成；adj. 完整的；彻底的",
+      "example_sentences": [
+        "We completed the review of all pre-test results.",
+        "The project completion date is set for next Friday.",
+        "The report is incomplete — we're still missing the performance data."
+      ],
+      "tags": [
+        "职场英语",
+        "词根词缀",
+        "高频动词",
+        "词族训练"
+      ],
+      "difficulty": 1,
+      "notes": "词族训练：complete(完成v./完整adj.) → completion(完成n.，加-ion) → incomplete(不完整的，加in-) → completely(完全地adv.，加-ly)",
+      "memory_tips": {
+        "word_root": "com- (完全/彻底) + plete (=plere 填满, 拉丁语) = 完全填满 → 完成/完整的",
+        "mnemonic": "com(完全) + plete(填满) → 完全填满 → 完成",
+        "association": "想象一个进度条从0%跑到100%，complete!",
+        "similar_words": ["completion (完成n.)", "incomplete (不完整的)", "completely (完全地)", "accomplish"]
+      },
+      "created_at": "2026-02-28T10:00:00.000Z",
+      "updated_at": "2026-02-28T10:00:00.000Z"
     }
   ]
 }
