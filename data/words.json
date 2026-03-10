@@ -2300,6 +2300,217 @@
       },
       "created_at": "2026-02-28T12:00:00.000Z",
       "updated_at": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440088",
+      "word": "press conference",
+      "phonetic": "/pres ˈkɒnfərəns/",
+      "meaning": "n. 新闻发布会；记者招待会",
+      "example_sentences": [
+        "The company held a marketing press conference to announce the new product.",
+        "The CEO answered questions from reporters at the press conference.",
+        "A press conference was scheduled for 3 PM to address the recent changes."
+      ],
+      "tags": [
+        "职场英语",
+        "商务",
+        "口语考试图表课"
+      ],
+      "difficulty": 2,
+      "notes": "a marketing press conference = 一场营销新闻发布会。press = 媒体/新闻界",
+      "memory_tips": {
+        "word_root": "press (新闻界/媒体) + conference (会议) = 面向媒体的会议 → 新闻发布会",
+        "mnemonic": "press(记者) + conference(开会) → 记者来开会 → 新闻发布会",
+        "association": "想象一排摄像机和麦克风对着发言人的场景",
+        "similar_words": ["news conference", "media briefing", "press briefing"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440089",
+      "word": "boost",
+      "phonetic": "/buːst/",
+      "meaning": "v. 提升；促进；增强 n. 提升；推动",
+      "example_sentences": [
+        "Stage three focused on boosting transactions via livestream and short-video commerce.",
+        "The new marketing campaign helped boost sales by 30%.",
+        "We need to boost our team's morale after the setback."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频词",
+        "口语考试图表课"
+      ],
+      "difficulty": 1,
+      "notes": "boost transactions = 提升交易量/促进交易。比 increase 更有力，暗示主动推动",
+      "memory_tips": {
+        "word_root": "boost 来自美国口语，原义是「向上推」",
+        "mnemonic": "boost → 像火箭booster(助推器)一样把数据往上推",
+        "association": "想象一个箭头猛地向上冲的图表",
+        "similar_words": ["increase", "enhance", "promote", "elevate"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440090",
+      "word": "via",
+      "phonetic": "/ˈvaɪə/",
+      "meaning": "prep. 通过；经由；借助",
+      "example_sentences": [
+        "We boosted transactions via livestream and short-video commerce.",
+        "You can apply via our website or via email.",
+        "The package was shipped via express delivery."
+      ],
+      "tags": [
+        "职场英语",
+        "高频词",
+        "介词",
+        "口语考试图表课"
+      ],
+      "difficulty": 1,
+      "notes": "via 比 through 更正式、更简洁，常用于书面和商务场景。via + 方式/渠道/途径",
+      "memory_tips": {
+        "word_root": "via 来自拉丁语，原义是「路/道路」，引申为「通过某条路径」",
+        "mnemonic": "via → 走这条via(路)过去 → 通过",
+        "association": "想象导航地图上标注的路线经过某个地点",
+        "similar_words": ["through", "by means of", "by way of"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440091",
+      "word": "primary school",
+      "phonetic": "/ˈpraɪməri skuːl/",
+      "meaning": "n. 小学",
+      "example_sentences": [
+        "From 1996 to 2002, he went to primary school.",
+        "She has been teaching at a primary school for ten years.",
+        "Primary school education is compulsory in most countries."
+      ],
+      "tags": [
+        "日常英语",
+        "教育",
+        "口语考试图表课"
+      ],
+      "difficulty": 1,
+      "notes": "英式用 primary school，美式用 elementary school，两者都可以",
+      "memory_tips": {
+        "word_root": "primary (首要的/最初的) + school = 最初的学校 → 小学",
+        "mnemonic": "primary(第一的) → 人生第一个学校 → 小学",
+        "association": "想象小朋友背着书包上学的画面",
+        "similar_words": ["elementary school (美式)", "grade school (美式)"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440092",
+      "word": "cross-border commerce",
+      "phonetic": "/krɒs ˈbɔːrdər ˈkɒmɜːrs/",
+      "meaning": "n. 跨境电商；跨境贸易",
+      "example_sentences": [
+        "Stage four focused on cross-border commerce expansion.",
+        "Cross-border commerce has been growing rapidly in Southeast Asia.",
+        "We need to build global payments and international logistics for cross-border commerce."
+      ],
+      "tags": [
+        "职场英语",
+        "电商",
+        "高频短语",
+        "口语考试图表课"
+      ],
+      "difficulty": 2,
+      "notes": "cross-border = 跨境的；commerce = 商业/贸易。expansion = 扩张。课堂中 Annie 项目的第四阶段核心内容",
+      "memory_tips": {
+        "word_root": "cross (跨越) + border (边境/国界) + commerce (商业) = 跨越国界的商业",
+        "mnemonic": "cross(跨过) + border(边境线) → 跨过国境线做生意 → 跨境电商",
+        "association": "想象货物从中国发往世界各地的物流线路图",
+        "similar_words": ["international trade", "global commerce", "overseas business", "e-commerce expansion"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440093",
+      "word": "expansion",
+      "phonetic": "/ɪkˈspænʃən/",
+      "meaning": "n. 扩张；扩展；膨胀",
+      "example_sentences": [
+        "Stage four worked on the expansion of cross-border commerce.",
+        "The company's rapid expansion into new markets increased revenue by 50%.",
+        "Global expansion requires local market support and international logistics."
+      ],
+      "tags": [
+        "职场英语",
+        "商务",
+        "高频词",
+        "口语考试图表课"
+      ],
+      "difficulty": 2,
+      "notes": "expand(v. 扩张) → expansion(n. 扩张)。the expansion of... = ...的扩张。也可用动名词形式 expanding cross-border commerce",
+      "memory_tips": {
+        "word_root": "ex- (向外) + pand (展开) + -sion (名词后缀) = 向外展开 → 扩张",
+        "mnemonic": "expand(扩展动词) + sion → expansion(扩展名词)",
+        "association": "想象气球不断膨胀变大的过程",
+        "similar_words": ["growth", "extension", "enlargement", "spread"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440094",
+      "word": "go through",
+      "phonetic": "/ɡoʊ θruː/",
+      "meaning": "phr.v. 经历；经过；仔细检查",
+      "example_sentences": [
+        "The project has gone through four stages.",
+        "LoTa has gone through five major phases since 2013.",
+        "We've gone through a lot of challenges, but the team stayed strong."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "口语考试图表课"
+      ],
+      "difficulty": 1,
+      "notes": "描述项目阶段时的核心动词短语。has gone through = 已经经历了（现在完成时）。同义替换：move through, evolve through",
+      "memory_tips": {
+        "word_root": "go (走) + through (穿过) = 走过/穿过 → 经历",
+        "mnemonic": "go through → 从头走到尾 → 经历了整个过程",
+        "association": "想象一个人走过一条隧道，从入口到出口，经历了整个过程",
+        "similar_words": ["move through", "evolve through", "experience", "undergo"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440095",
+      "word": "focused on",
+      "phonetic": "/ˈfoʊkəst ɒn/",
+      "meaning": "phr. 专注于；聚焦于",
+      "example_sentences": [
+        "Stage one focused on building the core infrastructure.",
+        "In the first year, we focused on product development and user testing.",
+        "The team focused on fixing critical bugs before the release."
+      ],
+      "tags": [
+        "职场英语",
+        "高频短语",
+        "口语考试图表课"
+      ],
+      "difficulty": 1,
+      "notes": "描述各阶段核心工作的主谓宾句式中最常用的动词。focus on后接名词或动名词(doing)",
+      "memory_tips": {
+        "mnemonic": "focus(焦点) + on → 把焦点放在...上 → 聚焦于",
+        "association": "想象相机对焦，把镜头聚焦在一个目标上",
+        "similar_words": ["concentrated on", "centered on", "worked on", "dedicated to"]
+      },
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
     }
   ]
 }

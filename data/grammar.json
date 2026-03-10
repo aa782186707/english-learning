@@ -460,6 +460,92 @@
       "notes": "来自Session 2词族训练Part 3翻译纠错。verify强调'用证据证实'，confirm强调'对已知信息确认'；review强调'系统性审查'，check强调'快速检查'",
       "created_at": "2026-02-28T12:00:00.000Z",
       "updated_at": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440029",
+      "title": "口语技巧：总分总结构描述阶段图表",
+      "explanation": "描述带阶段的业务时间线图表时，使用「总-分-总」结构组织语言：\n\n【Step 1 总起】三要素：\n① 时间：说明跨越多少年/从何时开始\n② 阶段数：经历了几个阶段\n③ 起点终点内容：from [起点] to [终点]\n\n句式模板：\nIn the past X years / Since XXXX, the project has gone through N stages/phases, from [doing A] to [doing B].\n\n【Step 2 分段描述】两种句式：\n• 主谓宾：Stage X focused on / worked on doing something\n• 主系表：Stage X was about / was centered on doing something\n然后用 including / such as / like 列举具体内容\n\n【Step 3 总结】换种方式重述总起：\n• Overall / In conclusion, the project moved from [A] to [B] through X stages.\n• The key takeaway is... Looking ahead, we will focus on...\n\n⚠️ 语法要点：一句话中已有主要动词(如 has gone through)，后面的动词用 -ing 形式（非谓语动词）。介词 from/to 后也必须接动名词。",
+      "examples": [
+        "【总起】In the past three years, the project has gone through four phases, from building the core infrastructure to expanding overseas.",
+        "【总起】Since 2023, our project has gone through four stages, from building the core infrastructure to global expansion.",
+        "【分段-主谓宾】Stage one focused on building the core infrastructure, including product listing, payment systems, and merchant onboarding.",
+        "【分段-主系表】Stage three was centered on boosting transactions via livestream and short-video commerce.",
+        "【总结】Overall, the project moved from building the core infrastructure to expanding overseas through four stages."
+      ],
+      "tags": ["口语技巧", "图表描述", "考试技巧", "口语考试图表课"],
+      "difficulty": 3,
+      "notes": "来自口语考试图表描述技巧课。这是口语考试描述阶段图表的核心方法论，需要反复练习直到能自然输出",
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440030",
+      "title": "口语技巧：时间点与时间段的多种表达方式",
+      "explanation": "在描述图表阶段时，不要只用 in + 年份 一种方式，要丰富时间表达：\n\n【表示时间点】\n• back in 1991（追溯到1991年）\n• in the year 1991（在1991年，更正式）\n• in 2012 / in twenty twelve（常规说法）\n\n【表示时间段】\n• from 1996 to 2002（从...到...）\n• between 1995 and 2000（在...和...之间）\n• over the past 3 years / in the last 3 years（过去3年间）\n\n【高阶模糊时间段】\n• during the late 1990s = 90年代末（约1995-2000）\n• in the early 2000s = 2000年代初（约2001-2003）\n\n【since 特殊用法】\nsince + 过去时间 → 主句必须用现在完成时\n例：Since 2023, the project has gone through four stages.\n\n⚠️ 年份读法要点：\n• 2002 = two thousand and two\n• 2012 = twenty twelve 或 two thousand and twelve\n• 2030 = twenty thirty",
+      "examples": [
+        "Back in 1990, the baby was born. (时间点)",
+        "From 1996 to 2002, he went to primary school. (时间段)",
+        "During the late 1990s, he was studying at school. (模糊时间段)",
+        "Since 2023, our project has gone through four stages. (since+完成时)",
+        "Over the past three years, the project has evolved through four major stages. (时间段)"
+      ],
+      "tags": ["口语技巧", "时间表达", "考试技巧", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "来自口语考试图表描述技巧课。丰富时间表达可以避免反复用同一种说法，让口语更有层次感",
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440031",
+      "title": "口语技巧：分段描述的主谓宾与主系表句式",
+      "explanation": "描述各阶段时，不要只用 Stage X is... 的方式，要替换成更高级的表达：\n\n❌ 不推荐：Stage one IS building core infrastructure.（太单调）\n\n【主谓宾句式】\n① Stage X focused on / worked on + doing something\n② We focused on / worked on / built + something\n③ Moving into Stage X, we worked on + doing something\n\n【主系表句式】\n① Stage X was about + doing something\n② Stage X was centered on + doing something\n\n【进阶：切换主语】\n① 用介词短语开头：In Stage X, / During the first stage,\n② 用动名词做主语：Building the core infrastructure is the main focus in Stage 1.\n   Boosting transactions via livestream... is the main focus in Stage 3.\n\n【扩充细节】\n在总括后用以下词列举具体内容：\n• including / such as / like\n• It covered / It involved\n\n⚠️ focus on / work on 后面接动词要加 -ing（因为 on 是介词）\n⚠️ 描述过去阶段用过去时：focused, worked, was",
+      "examples": [
+        "【主谓宾】Stage one focused on building the core infrastructure. (stage做主语)",
+        "【主谓宾】Moving into stage 3, we worked on boosting transactions via livestream and short-video commerce. (we做主语)",
+        "【主系表】Stage four was centered on the expansion of cross-border commerce. (名词形式)",
+        "【主系表】Stage four was about expanding cross-border commerce. (动名词形式)",
+        "【进阶】Boosting transactions through livestream and short-video commerce is the main focus in Stage 3. (动名词做主语)",
+        "【扩充】Stage 1 focused on building the core infrastructure, including product listing, payment systems, and merchant onboarding."
+      ],
+      "tags": ["口语技巧", "句式结构", "考试技巧", "口语考试图表课"],
+      "difficulty": 3,
+      "notes": "来自口语考试图表描述技巧课。核心是把单调的 is 替换成 focused on / was about / was centered on 等更高级的表达，并在各阶段之间交替使用不同句式",
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440032",
+      "title": "口语技巧：Timeline Markers 在口语中的使用",
+      "explanation": "在分段描述时，阶段之间加上时间过渡词(Timeline Markers)，让描述更流畅、更有层次。\n\n【开头/起点】\n• To begin with,\n• In the first stage,\n• At the start,\n• Since...\n\n【推进/中间】\n• Then,\n• After that,\n• Later,\n\n【时间节点定位】\n• In Q3 / In Q4 / In the second year,\n• By + (year / time point),\n\n【展望/未来】\n• Looking ahead,\n• Moving forward,\n\n⚠️ 使用要点：\n1. 说时间之前先说过渡词，提示听众进入下一阶段\n2. 不同阶段换用不同的 marker，避免重复\n3. 过渡词 + 时间 + 阶段内容，形成完整的描述\n\n示例流程：\nTo begin with, back in 2023... → Then, in Q3 and Q4... → Later on, in 2024... → Looking ahead, by 2025...",
+      "examples": [
+        "To begin with, in 2023, stage one focused on building the core infrastructure.",
+        "Then, in Q3 and Q4 of year one, we moved into beta testing.",
+        "Later on, in November 2024, the strategy shifted toward driving transaction growth.",
+        "By March 2025, the platform expanded into cross-border commerce.",
+        "Looking ahead, we will focus on expanding the business overseas."
+      ],
+      "tags": ["口语技巧", "过渡词", "时间信号词", "考试技巧", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "来自口语考试图表描述技巧课。Timeline Markers 在听力中帮你定位阶段，在口语中帮你组织语言。听力课学过识别它们，这节口语课学会使用它们",
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440033",
+      "title": "语法要点：介词后动词加-ing（非谓语动词）",
+      "explanation": "在一句话中已有主要谓语动词时，其他动词必须用非谓语形式（-ing / to do / done）。特别是介词（from, to, on, about等）后面的动词必须加 -ing。\n\n【核心规则】\n① 一句话只能有一个主要谓语动词\n② 介词后的动词 → 加 -ing（动名词）\n③ 如果句中已有 focused on / worked on / was about，后面的动词也要加 -ing\n\n【典型应用场景】\nfrom + doing ... to + doing ...\nfocused on + doing ...\nwas about / was centered on + doing ...\n\n⚠️ 为什么是 building 而不是 build？\n因为 from 是介词，介词后面只能接名词或动名词（-ing形式），不能接动词原形。\n同理：focus on 中的 on 也是介词，后面接 doing。",
+      "examples": [
+        "The project has gone through four phases, from building the core infrastructure to expanding overseas. (介词from/to后加-ing)",
+        "Stage one focused on building the core infrastructure. (focus on后加-ing，因为on是介词)",
+        "Stage three was centered on boosting transactions. (centered on后加-ing)",
+        "I appreciate you coming to my class today. (appreciate后面的you coming，动词加-ing)",
+        "Stage four worked on expanding cross-border commerce. (work on后加-ing)"
+      ],
+      "tags": ["语法", "非谓语动词", "介词用法", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "来自口语考试图表描述技巧课。这是描述阶段图表时最容易犯的语法错误。记住：介词后面的动词永远加-ing",
+      "created_at": "2026-03-10T12:00:00.000Z",
+      "updated_at": "2026-03-10T12:00:00.000Z"
     }
   ]
 }
