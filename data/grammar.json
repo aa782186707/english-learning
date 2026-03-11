@@ -546,6 +546,37 @@
       "notes": "来自口语考试图表描述技巧课。这是描述阶段图表时最容易犯的语法错误。记住：介词后面的动词永远加-ing",
       "created_at": "2026-03-10T12:00:00.000Z",
       "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440034",
+      "title": "口语实战模板：四阶段图表描述（总分总 + 四种句式）",
+      "explanation": "描述四阶段图表的完整实战模板，每个阶段用不同句式，展示语言多样性。\n\n【结构】过渡词 + 时间 + 阶段内容\n\n【总起】三要素一句话\nOver the past X years, the project has gone through N stages, from doing A to doing B.\n\n【Stage 1 — 主谓宾】\nTo begin with, + 时间, stage one focused on doing...\n\n【Stage 2 — 主系表】\nThen, + 时间段, stage two was centered on doing...\n\n【Stage 3 — 动名词做主语（进阶）】\nLater, + 时间, doing something is the main focus in stage three.\n\n【Stage 4 — we做主语】\nLooking ahead, + 时间, we will focus on doing...\n\n【总结】换种方式说总起\nOverall, the project moved from A to B through four stages.\n\n⚠️ 关键技巧：四个阶段换四种不同句式（focused on → was centered on → is the main focus → we will focus on），避免重复，考试加分！",
+      "examples": [
+        "【总起】Over the past four years, the project has gone through four stages, from building the core product to expanding into global markets.",
+        "【Stage 1 主谓宾】To begin with, back in 2022, stage one focused on building the core product, including user registration, payment systems, and basic features.",
+        "【Stage 2 主系表】Then, from 2023 to early 2024, stage two was centered on beta testing, collecting user feedback, and stabilizing operations.",
+        "【Stage 3 动名词做主语】Later, in Q3 and Q4 of 2024, boosting transactions via livestream and short-video commerce is the main focus in stage three, which built strong market momentum.",
+        "【Stage 4 we做主语】Looking ahead, by 2026, we will focus on expanding into global markets, such as localized support, international payments, and cross-border logistics.",
+        "【总结】Overall, the project moved from building the core product to global expansion through four stages."
+      ],
+      "tags": ["口语技巧", "实战模板", "考试技巧", "口语考试图表课"],
+      "difficulty": 3,
+      "notes": "这是口语考试描述阶段图表的终极模板。四种句式对照：Stage1用主谓宾(focused on)、Stage2用主系表(was centered on)、Stage3用动名词做主语(doing...is the main focus)、Stage4用we做主语(we will focus on)。过渡词搭配：To begin with → Then → Later → Looking ahead"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440035",
+      "title": "口语速查：过渡词 + 时间 + 句式搭配表",
+      "explanation": "分段描述时的完整搭配速查表：\n\n【Stage 1】\n过渡词：To begin with, / In the first stage, / At the start,\n时间：back in 2022 / in the year 2022\n句式：+ focused on doing...\n\n【Stage 2】\n过渡词：Then, / After that,\n时间：from 2023 to early 2024 / between 2023 and 2024\n句式：+ was centered on doing...\n\n【Stage 3】\n过渡词：Later, / After that,\n时间：in Q3 and Q4 of 2024 / during the late 2024\n句式：+ doing something is the main focus in stage three\n\n【Stage 4】\n过渡词：Looking ahead, / Moving forward,\n时间：by 2026 / in the fourth year\n句式：+ we will focus on doing...\n\n关键公式：过渡词 + 时间 + 阶段内容（主谓宾/主系表/动名词做主语）",
+      "examples": [
+        "To begin with, back in 2022, stage one focused on building the core product.",
+        "Then, from 2023 to early 2024, stage two was centered on beta testing and stabilizing operations.",
+        "Later, in Q3 and Q4 of 2024, boosting transactions via livestream is the main focus in stage three.",
+        "Looking ahead, by 2026, we will focus on expanding into global markets.",
+        "Moving forward, in the fourth year, we will focus on cross-border commerce expansion."
+      ],
+      "tags": ["口语技巧", "速查表", "过渡词", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "考试前速查用。记住关键公式：过渡词 + 时间 + 阶段内容。每个阶段换不同的过渡词和句式"
     }
   ]
 }
