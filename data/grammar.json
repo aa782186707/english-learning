@@ -577,6 +577,26 @@
       "tags": ["口语技巧", "速查表", "过渡词", "口语考试图表课"],
       "difficulty": 2,
       "notes": "考试前速查用。记住关键公式：过渡词 + 时间 + 阶段内容。每个阶段换不同的过渡词和句式"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440036",
+      "title": "口语练习题及答案：图表描述10题（Part1总览 + Part2分段 + Part3总结）",
+      "explanation": "课后练习题共10题，涵盖图表描述的三个部分，每题都有中文原句、翻译技巧提示和英文答案。\n\n【Part 1 项目总览 (1-2)】\n\n题1: 在过去五年里，这个项目经历了三个主要阶段，从初步研发转向了市场规模化推广。\nTip: Over + 时间段 → 现在完成时\n答: Over the past five years, the project has gone through three major stages, from initial R&D to large-scale market promotion.\n\n题2: 自2023年初以来，我们已经经历了两个阶段，将重点从基础搭建转向了瓶颈突破。\nTip: Since + 时间点 → 现在完成时\n答: Since early 2023, we have gone through two stages, shifting our focus from building the foundation to breaking through bottlenecks.\n\n【Part 2 分段描述 (3-8)】\n\n题3: 项目的第一阶段是解决核心技术瓶颈。\nTip: 将\"是\"替换为更具象化的动词\n答: Stage one focused on resolving core technical bottlenecks.\n\n题4: 第二阶段，我们重点优化了项目的运营流程，提升了工作效率。\nTip: 用介词短语开头作时间状语\n答: During the second stage, we worked on optimizing the operational workflow and improving work efficiency.\n\n题5: 搭建完善的客户服务体系是项目第三阶段的主要重点。\nTip: 动词+ing作主语\n答: Building a comprehensive customer service system is the main focus in stage three.\n\n题6: 在第一阶段，我们完成了市场调研和用户需求分析，这有助于我们明确后续的项目方向。\nTip: 先描述动作，再用\"This helps...\"承接目的\n答: In the first stage, we completed market research and user demand analysis. This helped us clarify the project direction for the following stages.\n\n题7: 完成第二阶段的瓶颈突破后，我们进入了第三阶段的成果验证工作。\nTip: 使用推进类时间线标记词\n答: After that, once the bottleneck breakthrough in stage two was completed, we moved into the results verification work in stage three.\n\n题8: 展望未来，我们将重点推进项目的海外市场拓展，提升品牌国际影响力。\nTip: 使用展望类时间线标记词\n答: Looking ahead, we will focus on expanding into overseas markets and enhancing our brand's international influence.\n\n【Part 3 总结 (9-10)】\n\n题9: 总体而言，该项目通过三个阶段，从技术研发逐步发展到了市场全面推广。\nTip: 用\"move from... to...\"强调整体路径\n答: Overall, the project moved from technical R&D to full-scale market promotion through three stages.\n\n题10: 核心成果是我们实现了项目效率的翻倍；展望未来，我们将重点优化产品体验，扩大用户群体。\nTip: 先用\"key takeaway\"总结核心成果，再用\"Looking ahead\"引出下一步\n答: The key takeaway is that we doubled the project efficiency. Looking ahead, we will focus on optimizing the product experience and expanding the user base.",
+      "examples": [
+        "Over the past five years, the project has gone through three major stages, from initial R&D to large-scale market promotion.",
+        "Since early 2023, we have gone through two stages, shifting our focus from building the foundation to breaking through bottlenecks.",
+        "Stage one focused on resolving core technical bottlenecks.",
+        "During the second stage, we worked on optimizing the operational workflow and improving work efficiency.",
+        "Building a comprehensive customer service system is the main focus in stage three.",
+        "In the first stage, we completed market research and user demand analysis. This helped us clarify the project direction for the following stages.",
+        "After that, once the bottleneck breakthrough in stage two was completed, we moved into the results verification work in stage three.",
+        "Looking ahead, we will focus on expanding into overseas markets and enhancing our brand's international influence.",
+        "Overall, the project moved from technical R&D to full-scale market promotion through three stages.",
+        "The key takeaway is that we doubled the project efficiency. Looking ahead, we will focus on optimizing the product experience and expanding the user base."
+      ],
+      "tags": ["口语练习", "练习题", "图表描述", "口语考试图表课"],
+      "difficulty": 3,
+      "notes": "课后练习10题完整答案。包含三个部分：Part1总览(总起三要素)、Part2分段描述(主谓宾/主系表/动名词做主语/This helps/Timeline Markers)、Part3总结(move from...to.../key takeaway)"
     }
   ]
 }

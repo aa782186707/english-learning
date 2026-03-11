@@ -2511,6 +2511,374 @@
       },
       "created_at": "2026-03-10T12:00:00.000Z",
       "updated_at": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440096",
+      "word": "R&D",
+      "phonetic": "/ˌɑːr ən ˈdiː/",
+      "meaning": "n. 研发；研究与开发（Research and Development 的缩写）",
+      "example_sentences": [
+        "The project moved from initial R&D to large-scale market promotion.",
+        "We invested 30% of our budget in R&D this year.",
+        "The R&D team is working on the next generation of our product."
+      ],
+      "tags": ["职场英语", "高频缩写", "口语考试图表课"],
+      "difficulty": 1,
+      "notes": "Research and Development 的缩写。initial R&D = 初步研发。technical R&D = 技术研发",
+      "memory_tips": {
+        "word_root": "R = Research (研究) + D = Development (开发)",
+        "mnemonic": "R&D → 研(R)究和开发(D)",
+        "association": "想象实验室里的工程师在研究新技术并开发新产品",
+        "similar_words": ["research", "development", "innovation", "engineering"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440097",
+      "word": "bottleneck",
+      "phonetic": "/ˈbɒtlnek/",
+      "meaning": "n. 瓶颈；卡脖子的问题",
+      "example_sentences": [
+        "Stage one focused on resolving core technical bottlenecks.",
+        "The main bottleneck right now is the lack of engineering resources.",
+        "We need to break through this bottleneck before moving to the next stage."
+      ],
+      "tags": ["职场英语", "项目管理", "高频词", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "break through bottlenecks = 突破瓶颈。resolve bottlenecks = 解决瓶颈。常用于描述项目中的关键阻碍",
+      "memory_tips": {
+        "word_root": "bottle (瓶子) + neck (脖子) = 瓶子的脖子处 → 最窄的地方 → 瓶颈",
+        "mnemonic": "瓶子的脖子(bottleneck)是最窄的地方，水流到这里就会变慢 → 卡住了",
+        "association": "想象高速公路突然从4车道变成1车道，所有车都堵住了",
+        "similar_words": ["obstacle", "roadblock", "constraint", "limitation"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440098",
+      "word": "break through",
+      "phonetic": "/breɪk θruː/",
+      "meaning": "phr.v. 突破；攻克；冲破",
+      "example_sentences": [
+        "We shifted our focus from building the foundation to breaking through bottlenecks.",
+        "The team finally broke through the technical challenges after months of effort.",
+        "Once we break through this barrier, the project will progress much faster."
+      ],
+      "tags": ["职场英语", "高频短语", "项目管理", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "break through bottlenecks = 突破瓶颈。名词形式：breakthrough（突破性进展）",
+      "memory_tips": {
+        "word_root": "break (打破) + through (穿过) = 打破并穿过 → 突破",
+        "mnemonic": "break(打碎) + through(穿过) → 打碎墙壁穿过去 → 突破",
+        "association": "想象运动员冲破终点线的彩带",
+        "similar_words": ["overcome", "surpass", "conquer", "crack"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440099",
+      "word": "large-scale",
+      "phonetic": "/lɑːrdʒ skeɪl/",
+      "meaning": "adj. 大规模的；大范围的",
+      "example_sentences": [
+        "The project moved from initial R&D to large-scale market promotion.",
+        "We are planning a large-scale product launch next quarter.",
+        "Large-scale testing revealed several performance issues."
+      ],
+      "tags": ["职场英语", "高频形容词", "口语考试图表课"],
+      "difficulty": 1,
+      "notes": "large-scale market promotion = 大规模市场推广。full-scale = 全面的。反义词：small-scale（小规模的）",
+      "memory_tips": {
+        "mnemonic": "large(大的) + scale(规模) → 大规模的",
+        "association": "想象一张地图从一个小区域放大到整个国家",
+        "similar_words": ["full-scale", "massive", "extensive", "widespread"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440100",
+      "word": "market promotion",
+      "phonetic": "/ˈmɑːrkɪt prəˈmoʊʃən/",
+      "meaning": "n. 市场推广；市场营销活动",
+      "example_sentences": [
+        "The project moved from technical R&D to full-scale market promotion.",
+        "Our market promotion strategy includes both online and offline channels.",
+        "Effective market promotion helped us double our user base."
+      ],
+      "tags": ["职场英语", "营销", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "large-scale market promotion = 大规模市场推广。full-scale market promotion = 全面市场推广",
+      "memory_tips": {
+        "word_root": "market (市场) + promotion (推广/促进) = 在市场上推广",
+        "mnemonic": "promote(推广) → promotion(推广的名词) → market promotion(市场推广)",
+        "association": "想象产品发布会上铺天盖地的广告和宣传活动",
+        "similar_words": ["marketing", "advertising", "publicity", "branding"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440101",
+      "word": "shift focus from...to...",
+      "phonetic": null,
+      "meaning": "phr. 将重点从……转向……",
+      "example_sentences": [
+        "We shifted our focus from building the foundation to breaking through bottlenecks.",
+        "LoTa has moved through five phases, shifting its focus from tech foundation to community and short video.",
+        "The company shifted its focus from domestic sales to international expansion."
+      ],
+      "tags": ["职场英语", "高频短语", "项目管理", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "shift focus = 转移重点。是总起三要素中描述起点→终点变化的进阶表达。也可以用 shifting our/its focus（非谓语形式）",
+      "memory_tips": {
+        "mnemonic": "shift(转移) + focus(焦点) → 把焦点转移 → 将重点转向",
+        "association": "想象聚光灯从舞台左边转到右边",
+        "similar_words": ["redirect attention to", "pivot from...to...", "transition from...to..."]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440102",
+      "word": "operational workflow",
+      "phonetic": "/ˌɒpəˈreɪʃənl ˈwɜːrkfloʊ/",
+      "meaning": "n. 运营流程；操作工作流",
+      "example_sentences": [
+        "During the second stage, we worked on optimizing the operational workflow and improving work efficiency.",
+        "The new operational workflow reduced processing time by 40%.",
+        "We need to document the operational workflow before onboarding new team members."
+      ],
+      "tags": ["职场英语", "项目管理", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "operational = 运营的/操作的（operate的形容词）。workflow = 工作流程。optimize the operational workflow = 优化运营流程",
+      "memory_tips": {
+        "word_root": "operational (运营的，operate + -ional) + workflow (work工作 + flow流程)",
+        "mnemonic": "operation(运营) + al(的) + work(工作) + flow(流动) → 运营工作的流动 → 运营流程",
+        "association": "想象一条流水线上的各个环节按顺序运转",
+        "similar_words": ["business process", "work process", "operating procedure"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440103",
+      "word": "comprehensive",
+      "phonetic": "/ˌkɒmprɪˈhensɪv/",
+      "meaning": "adj. 全面的；综合的；完善的",
+      "example_sentences": [
+        "Building a comprehensive customer service system is the main focus in stage three.",
+        "We need a comprehensive solution to address all the issues.",
+        "The team conducted a comprehensive review of the entire project."
+      ],
+      "tags": ["职场英语", "高频形容词", "口语考试图表课"],
+      "difficulty": 3,
+      "notes": "a comprehensive customer service system = 完善的客户服务体系。comprehensive = 全面的/完善的/综合的",
+      "memory_tips": {
+        "word_root": "com- (共同/全部) + prehend (抓住) + -sive = 全部抓住 → 全面的",
+        "mnemonic": "com(全部) + prehensive(抓住的) → 把所有东西都抓住 → 全面的",
+        "association": "想象一张大网把所有鱼都网住了，一个不漏",
+        "similar_words": ["thorough", "complete", "extensive", "all-inclusive"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440104",
+      "word": "market research",
+      "phonetic": "/ˈmɑːrkɪt rɪˈsɜːrtʃ/",
+      "meaning": "n. 市场调研；市场研究",
+      "example_sentences": [
+        "In the first stage, we completed market research and user demand analysis.",
+        "Market research shows that 70% of users prefer mobile shopping.",
+        "Before launching a new product, thorough market research is essential."
+      ],
+      "tags": ["职场英语", "营销", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "market research = 市场调研。user demand analysis = 用户需求分析。两者经常在项目初期一起进行",
+      "memory_tips": {
+        "mnemonic": "market(市场) + research(调研) → 对市场进行研究 → 市场调研",
+        "association": "想象一个团队拿着问卷和数据报告在分析市场趋势",
+        "similar_words": ["market analysis", "market survey", "consumer research"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440105",
+      "word": "user demand analysis",
+      "phonetic": "/ˈjuːzər dɪˈmɑːnd əˈnæləsɪs/",
+      "meaning": "n. 用户需求分析",
+      "example_sentences": [
+        "In the first stage, we completed market research and user demand analysis.",
+        "User demand analysis revealed that speed is the top priority for our customers.",
+        "We should conduct user demand analysis before designing new features."
+      ],
+      "tags": ["职场英语", "产品管理", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "user demand = 用户需求。analysis = 分析（analyze的名词形式）。这是产品开发初期的关键步骤",
+      "memory_tips": {
+        "word_root": "user (用户) + demand (需求) + analysis (分析，ana-分开 + lysis-解开)",
+        "mnemonic": "用户(user) + 要求(demand) + 分析(analysis) → 分析用户要什么",
+        "association": "想象产品经理在整理用户反馈，归纳出核心需求",
+        "similar_words": ["requirements analysis", "needs assessment", "user research"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440106",
+      "word": "verification",
+      "phonetic": "/ˌverɪfɪˈkeɪʃn/",
+      "meaning": "n. 验证；核实；成果验证",
+      "example_sentences": [
+        "We moved into the results verification work in stage three.",
+        "The verification process confirmed that all features are working correctly.",
+        "After development, verification and testing are critical steps."
+      ],
+      "tags": ["职场英语", "项目管理", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "results verification = 成果验证。verify(v.) → verification(n.)。课上学过 verify 这个词根",
+      "memory_tips": {
+        "word_root": "veri- (真实) + fic (做) + -ation (名词后缀) = 使其成为真实的过程 → 验证",
+        "mnemonic": "verify(验证动词) + cation → verification(验证名词)",
+        "association": "想象QA团队在逐项核对功能清单，打勾确认",
+        "similar_words": ["validation", "confirmation", "testing", "quality assurance"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440107",
+      "word": "overseas markets",
+      "phonetic": "/ˌoʊvərˈsiːz ˈmɑːrkɪts/",
+      "meaning": "n. 海外市场",
+      "example_sentences": [
+        "Looking ahead, we will focus on expanding into overseas markets.",
+        "Our overseas markets generated 40% of total revenue last year.",
+        "Entering overseas markets requires localized support and international logistics."
+      ],
+      "tags": ["职场英语", "商务", "口语考试图表课"],
+      "difficulty": 1,
+      "notes": "expand into overseas markets = 拓展海外市场。overseas = 海外的（over + seas 越过海洋）。同义：international markets, global markets",
+      "memory_tips": {
+        "word_root": "over (越过) + seas (海洋) = 越过海洋 → 海外的",
+        "mnemonic": "over(越过) + seas(大海) → 越过大海 → 海外",
+        "association": "想象货轮跨越太平洋驶向远方的港口",
+        "similar_words": ["international markets", "global markets", "foreign markets"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440108",
+      "word": "enhance",
+      "phonetic": "/ɪnˈhæns/",
+      "meaning": "v. 提升；增强；改善",
+      "example_sentences": [
+        "We will focus on enhancing our brand's international influence.",
+        "The new features enhanced the overall user experience.",
+        "We need to enhance system performance before the product launch."
+      ],
+      "tags": ["职场英语", "高频动词", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "enhance 比 improve 更正式、更有力度。enhance brand influence = 提升品牌影响力",
+      "memory_tips": {
+        "word_root": "en- (使) + hance (=hans 高，古法语) = 使变高 → 提升/增强",
+        "mnemonic": "en(使) + hance(高) → 使变得更高 → 提升/增强",
+        "association": "想象给照片加滤镜enhance一下，变得更好看",
+        "similar_words": ["improve", "boost", "strengthen", "elevate"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440109",
+      "word": "user base",
+      "phonetic": "/ˈjuːzər beɪs/",
+      "meaning": "n. 用户群体；用户基础",
+      "example_sentences": [
+        "Looking ahead, we will focus on optimizing the product experience and expanding the user base.",
+        "Our user base grew from 10,000 to 500,000 in just one year.",
+        "A strong user base is essential for long-term business success."
+      ],
+      "tags": ["职场英语", "产品管理", "口语考试图表课"],
+      "difficulty": 1,
+      "notes": "expand the user base = 扩大用户群体。grow the user base = 增长用户群体。互联网行业核心指标之一",
+      "memory_tips": {
+        "mnemonic": "user(用户) + base(基础/基地) → 用户的基础盘 → 用户群体",
+        "association": "想象一个金字塔，底部越大(user base越大)，整个生意就越稳",
+        "similar_words": ["customer base", "user community", "audience", "user group"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440110",
+      "word": "double",
+      "phonetic": "/ˈdʌbl/",
+      "meaning": "v. 翻倍；加倍 adj. 双倍的 n. 两倍",
+      "example_sentences": [
+        "The key takeaway is that we doubled the project efficiency.",
+        "Our revenue doubled compared to last year.",
+        "We aim to double the user base by the end of this quarter."
+      ],
+      "tags": ["职场英语", "数据汇报", "口语考试图表课"],
+      "difficulty": 1,
+      "notes": "doubled the efficiency = 效率翻倍。double 做动词时 = 使翻倍。triple = 三倍，quadruple = 四倍",
+      "memory_tips": {
+        "mnemonic": "double → 两个(double)一样的 → 翻倍",
+        "association": "想象一个数字x2变成了原来的两倍",
+        "similar_words": ["triple (三倍)", "quadruple (四倍)", "multiply", "increase twofold"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440111",
+      "word": "key takeaway",
+      "phonetic": "/kiː ˈteɪkəweɪ/",
+      "meaning": "n. 核心要点；关键收获",
+      "example_sentences": [
+        "The key takeaway is that we doubled the project efficiency.",
+        "What's the key takeaway from today's meeting?",
+        "The key takeaway from this quarter is that our overseas business is growing fast."
+      ],
+      "tags": ["职场英语", "会议", "高频短语", "口语考试图表课"],
+      "difficulty": 1,
+      "notes": "用于总结时点出最重要的结论。The key takeaway is that... = 核心收获/结论是……",
+      "memory_tips": {
+        "mnemonic": "key(关键的) + takeaway(带走的东西) → 最值得带走的东西 → 核心要点",
+        "association": "想象开完会后，你脑子里带走的最重要的那一条信息",
+        "similar_words": ["main point", "bottom line", "highlight", "key insight"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440112",
+      "word": "resolve",
+      "phonetic": "/rɪˈzɒlv/",
+      "meaning": "v. 解决；处理；决心",
+      "example_sentences": [
+        "Stage one focused on resolving core technical bottlenecks.",
+        "We need to resolve this issue before the deadline.",
+        "The team resolved all critical bugs within two days."
+      ],
+      "tags": ["职场英语", "高频动词", "口语考试图表课"],
+      "difficulty": 2,
+      "notes": "resolve 比 solve 更正式，常用于职场。resolve issues/problems/bottlenecks = 解决问题/瓶颈",
+      "memory_tips": {
+        "word_root": "re- (再次/彻底) + solve (解决) = 彻底解决",
+        "mnemonic": "re(彻底) + solve(解决) → 彻底解决 → 解决（更正式）",
+        "association": "想象一个复杂的结被一点点解开",
+        "similar_words": ["solve", "fix", "address", "tackle"]
+      },
+      "created_at": "2026-03-10T14:00:00.000Z",
+      "updated_at": "2026-03-10T14:00:00.000Z"
     }
   ]
 }
