@@ -597,6 +597,68 @@
       "tags": ["口语练习", "练习题", "图表描述", "口语考试图表课"],
       "difficulty": 3,
       "notes": "课后练习10题完整答案。包含三个部分：Part1总览(总起三要素)、Part2分段描述(主谓宾/主系表/动名词做主语/This helps/Timeline Markers)、Part3总结(move from...to.../key takeaway)"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440037",
+      "title": "听力技巧：通过比喻识别 Main Idea（Metaphorical Framing）",
+      "explanation": "说话人用生动的比喻（metaphor）将问题具象化，让听众更容易理解。\n\n核心句型：A is like B / Doing A is like doing B（此处的 like 是「像」，不是「喜欢」）\n\n其他比喻表达：is similar to / It feels like / It's as if / Think of A as B / Imagine doing B / is no different from\n\n做题技巧：听到比喻标志词时，要警醒——比喻是为了阐述 main idea，理解比喻含义即可反推主旨。",
+      "examples": [
+        "Using our dashboard is like reading a mystery novel where the middle fifty pages have been ripped out. (中间信息缺失)",
+        "Using these internal tools is like driving without a GPS. (缺乏清晰指引)",
+        "It's like trying to build a high-speed train while we're still delivering mail on bicycles. (目标远大但基础落后)",
+        "We have all the ingredients for the soup, but the kitchen is a mess and the guests are already leaving the table. (有素材但系统混乱，用户流失)"
+      ],
+      "tags": ["听力技巧", "比喻", "Main Idea", "Session05"],
+      "difficulty": 3,
+      "notes": "考试时比喻可能以 paraphrase 形式出现，不会原词复现",
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440038",
+      "title": "听力技巧：通过证据支撑识别 Main Idea（Evidence-Based Justification）",
+      "explanation": "说话人用具体案例、数据、真实事实来支撑观点（claim）。\n\n证据 vs 主观感受：\"This has been a total nightmare\" 是主观抱怨，不是证据。证据必须是客观、具体、可验证的。\n\n证据出现的标志词：\n• 举例：To give you an idea of + 名词（= for example）\n• 真实案例：Yesterday / Last week / One vendor sent...\n• 后果：Unless we..., we will...（Unless we 后面往往是 main idea！）\n• 数据：X% of users... / There were X complaints...",
+      "examples": [
+        "To give you an idea of the data we're dealing with, yesterday a vendor sent me a photo of a handwritten note.",
+        "Unless we automate the data standards first, any map we build will just be a fancy way of showing Information Not Found.",
+        "15% of users canceled orders because they didn't know where their packages were.",
+        "19% of merchant support tickets are related to logistics tracking."
+      ],
+      "tags": ["听力技巧", "证据", "Main Idea", "Session05"],
+      "difficulty": 3,
+      "notes": "Claim 和 Support 的出现顺序可能是总分或分总，要听标志词定位",
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440039",
+      "title": "项目阶段描述：预期结果用将来时 + Timeline Markers",
+      "explanation": "描述项目最后一个阶段（Expected key results）时，因为是预期、未来发生的事，必须用将来时。\n\nTimeline Markers（展望未来）：Moving forward / Looking ahead\n\n主谓宾：We will work on + doing something\n主系表：We are expecting to + 动词原形",
+      "examples": [
+        "Moving forward, we are expecting to reduce cross-team data transfer times from 48hr to 12hr.",
+        "We will work on saving 70% time per return case.",
+        "Looking ahead, we will focus on expanding into overseas markets."
+      ],
+      "tags": ["口语", "时态", "项目描述", "Session05"],
+      "difficulty": 2,
+      "notes": "上周作业难点：最后一阶段 expected key results 要用将来时",
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440040",
+      "title": "听力功能句：Claim 与 Support 的标志句型",
+      "explanation": "听力中识别观点（claim）和支撑（support）的标志句型：\n\n表达观点：What I'm saying is that... / What we actually need is...\n比喻：It's like... / A is like B\n举例：To give you an idea of...\n真实案例：Yesterday... / Last week...\n后果：Unless we..., we will...\n\n做题 SOP：题干带引号的句子会原样出现→答案在其前后；注意同义替换（fixing→adjusting, dashboard→platform, carrier→provider 等）",
+      "examples": [
+        "What I'm saying is that we need to automate the data processing, rather than entering it manually.",
+        "To give you an idea of the data we're dealing with, yesterday a vendor sent me...",
+        "Unless we automate the data standards first, any map we build will just be a fancy way of showing Information Not Found."
+      ],
+      "tags": ["听力技巧", "功能句", "Session05"],
+      "difficulty": 2,
+      "notes": "口语中也可用 What I'm saying is that... 替代 I think，更高级",
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
     }
   ]
 }

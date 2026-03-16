@@ -2882,6 +2882,121 @@
       },
       "created_at": "2026-03-10T14:00:00.000Z",
       "updated_at": "2026-03-10T14:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440113",
+      "word": "let alone",
+      "phonetic": "/let əˈləʊn/",
+      "meaning": "phr. 更不用说……（B 比 A 更难，前面都做不到，更不可能做到后面的）",
+      "example_sentences": [
+        "Users can't even see who the carrier is, let alone filter their orders.",
+        "The system can't handle peak traffic, let alone global expansion.",
+        "She can't afford rent, let alone buy a house."
+      ],
+      "tags": ["职场英语", "听力", "Session05", "高频短语"],
+      "difficulty": 2,
+      "notes": "常见结构：can't even A, let alone B。let alone 后面接与前面相同词性的内容",
+      "memory_tips": {
+        "mnemonic": "let alone = 让……独自 → 更别提、更不用说",
+        "association": "连基础都做不到，更不用说进阶了"
+      },
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440114",
+      "word": "rather than",
+      "phonetic": "/ˈrɑːðər ðæn/",
+      "meaning": "phr. 而不是……（用于对比选择）",
+      "example_sentences": [
+        "We need to automate the data processing rather than entering it manually.",
+        "We should focus on fixing the core architecture rather than only improving the UI.",
+        "I prefer walking rather than driving."
+      ],
+      "tags": ["职场英语", "听力", "Session05", "高频短语"],
+      "difficulty": 2,
+      "notes": "A rather than B = 选 A 不选 B。rather than 可接名词、动名词或动词原形",
+      "memory_tips": {
+        "mnemonic": "rather = 宁愿，than = 比 → 宁愿 A 而不是 B"
+      },
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440115",
+      "word": "to give you an idea of",
+      "phonetic": null,
+      "meaning": "phr. 为了让你了解……（引出例子或具体说明，= for example）",
+      "example_sentences": [
+        "To give you an idea of the data we're dealing with, yesterday a vendor sent me a photo of a handwritten note.",
+        "To give you an idea of the size, the building is as big as a football field.",
+        "To give you an idea of how serious the issue is, we received over 200 complaints last week alone."
+      ],
+      "tags": ["职场英语", "听力", "Session05", "举例表达", "功能句"],
+      "difficulty": 2,
+      "notes": "后接名词或名词性短语。听力中听到此短语说明即将举例，是证据支撑的标志词",
+      "memory_tips": {
+        "association": "give you an idea = 给你一个概念 → 让你有个大概了解"
+      },
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440116",
+      "word": "What I'm saying is that",
+      "phonetic": null,
+      "meaning": "phr. 我的意思是……；我在说的是……（澄清观点，比 I think 更高级）",
+      "example_sentences": [
+        "What I'm saying is that we need to automate the data processing, rather than entering it manually.",
+        "What I'm saying is that this isn't a minor fix—we need a complete overhaul.",
+        "What I'm saying is that we should prioritize user experience over short-term revenue."
+      ],
+      "tags": ["职场英语", "听力", "Session05", "表达观点", "功能句"],
+      "difficulty": 2,
+      "notes": "听力中这是表达 claim（观点）的标志句。口语中可替代 I think 使表达更正式",
+      "memory_tips": {
+        "association": "强调「我在说的内容」→ 明确表达自己的立场"
+      },
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440117",
+      "word": "top-to-bottom upgrade",
+      "phonetic": null,
+      "meaning": "phr. 彻底的、从上到下的全面升级",
+      "example_sentences": [
+        "We need a serious top-to-bottom upgrade, map and all.",
+        "What we need is a top-to-bottom upgrade of the system, not just a few minor interface improvements.",
+        "The product requires a top-to-bottom redesign."
+      ],
+      "tags": ["职场英语", "听力", "Session05", "商务表达"],
+      "difficulty": 2,
+      "notes": "形容系统、架构、流程的全面重构，而非小修小补",
+      "memory_tips": {
+        "mnemonic": "top to bottom = 从头到脚 → 全方位的"
+      },
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440118",
+      "word": "rip out",
+      "phonetic": "/rɪp aʊt/",
+      "meaning": "phr. 撕掉；彻底移除；强行拆除",
+      "example_sentences": [
+        "The middle fifty pages have been ripped out. (中间的五十页被撕掉了)",
+        "We may need to rip out the old logging module and rebuild it from scratch.",
+        "They ripped out the entire backend and started fresh."
+      ],
+      "tags": ["职场英语", "听力", "Session05", "技术表达"],
+      "difficulty": 2,
+      "notes": "rip out + object。常用于描述结构性调整、架构重构。听力比喻中表示「缺失」",
+      "memory_tips": {
+        "mnemonic": "rip = 撕，out = 出去 → 撕掉、移除"
+      },
+      "created_at": "2026-03-16T10:00:00.000Z",
+      "updated_at": "2026-03-16T10:00:00.000Z"
     }
   ]
 }

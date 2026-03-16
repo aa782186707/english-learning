@@ -85,6 +85,8 @@ npx tsx scripts/manage-content.ts search --query "un"
 
 ```
 english-learning/
+├── docs/
+│   └── course-notes/       # 课程笔记沉淀（如 Session 05 听力课总结）
 ├── src/
 │   ├── app/                 # Next.js 页面
 │   ├── components/          # React 组件
