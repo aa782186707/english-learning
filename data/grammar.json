@@ -659,6 +659,22 @@
       "notes": "口语中也可用 What I'm saying is that... 替代 I think，更高级",
       "created_at": "2026-03-16T10:00:00.000Z",
       "updated_at": "2026-03-16T10:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440041",
+      "title": "口语/听力：Example Summary 结构与 Support 筛选（Session06）",
+      "explanation": "【示范结构】向 leader 汇报会议时可用三段式：\n\n1) Claim：In the meeting, what Clark was trying to say is that …\n2) Support：First … In addition … Furthermore …（配合 he reported / pointed out / mentioned）\n3) Conclusion：Therefore, the key issue is that … 或 To conclude, what we actually need is …\n\n【听力原文结构】前面可多段 Support（数据、引用、类比），后面才出现 Claim（So, the issue is that … / What I'm trying to say is that …）。claim 与 support 顺序可能多变，要听 markers，不能死记顺序。\n\n【挑选 support】总结时不必复述全部细节；可只保留最有力的两条（如 50% 咨询上升、15% 取消订单），删掉次要引用以免信息过载。",
+      "examples": [
+        "Claim: In the meeting, what Clark was trying to say is that users are leaving because of the lack of logistics transparency.",
+        "Support: First, he reported that customer inquiries have increased by over 50%. In addition, he pointed out that 15% of users canceled orders.",
+        "Conclusion: Therefore, the key issue is that many users cannot track their orders clearly.",
+        "To conclude, what we actually need is a better order tracking system."
+      ],
+      "tags": ["口语", "听力", "Summarising", "Claim", "Support", "Session06", "职场"],
+      "difficulty": 3,
+      "notes": "与 docs/course-notes/Session06-教案-Example-Summary与听力结构.md 对应",
+      "created_at": "2026-03-23T00:00:00.000Z",
+      "updated_at": "2026-03-23T00:00:00.000Z"
     }
   ]
 }
