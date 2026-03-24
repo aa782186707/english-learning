@@ -675,6 +675,23 @@
       "notes": "与 docs/course-notes/Session06-教案-Example-Summary与听力结构.md 对应",
       "created_at": "2026-03-23T00:00:00.000Z",
       "updated_at": "2026-03-23T00:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440042",
+      "title": "职场词汇：描述「繁琐/流程复杂」的多种英文说法",
+      "explanation": "描述项目流程、手续、工作方式「太繁琐」时，除 cumbersome 外可选用：\n\n• overly complex：过于复杂\n• convoluted：绕、环节绕来绕去（略贬）\n• bureaucratic：官僚、条条框框多（偏审批/组织）\n• time-consuming：耗时\n• redundant：重复、多余环节\n• tedious：单调磨人（偏主观感受）\n• clunky：笨拙不顺畅（口语常形容流程或工具）\n\n与「效率低」连用时还可说：overly complicated procedures；unnecessary red tape（多余官僚手续）。",
+      "examples": [
+        "The workflow is overly complex.",
+        "The process is too convoluted.",
+        "We have too many bureaucratic steps.",
+        "The procedure is clunky and time-consuming.",
+        "The issue is that our project workflow is cumbersome, which has kept overall progress inefficient."
+      ],
+      "tags": ["职场", "词汇", "同义替换", "项目流程", "口语"],
+      "difficulty": 2,
+      "notes": "详见 docs/course-notes/vocabulary-繁琐流程-同义表达.md",
+      "created_at": "2026-03-23T00:00:00.000Z",
+      "updated_at": "2026-03-23T00:00:00.000Z"
     }
   ]
 }
