@@ -692,6 +692,24 @@
       "notes": "详见 docs/course-notes/vocabulary-繁琐流程-同义表达.md",
       "created_at": "2026-03-23T00:00:00.000Z",
       "updated_at": "2026-03-23T00:00:00.000Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440043",
+      "title": "条件句与决策讨论：If…will / If…had done…would have / what if / I'm not sure",
+      "explanation": "【第一条件句】If + 一般现在时，will + 动词原形：真实条件下将来可能发生的结果（计划、警告、承诺）。例：If we delay the dashboard launch, we will have more time to fix bugs.\n\n【第三条件句】If + had + 过去分词，would have + 过去分词：与过去事实相反的假设，用于复盘。例：If we had trained the team better during the first stage (in stage one), we would not have made so many mistakes.\n\n【不确定】I'm not sure ... will work：I'm not sure this plan will work.\n\n【提议/替代方案】What if + 主语 + 动词：What if we focus on tracking first? / What if we delay the dashboard launch?\n\n【短语】make fewer mistakes；delay the dashboard launch；focus on...\n\n【decision 与评估】evaluate a decision / decision evaluation；We need to evaluate this decision before we commit more budget.",
+      "examples": [
+        "If we delay the dashboard launch, we will have more time to test.",
+        "If we had trained the team better in stage one, we would not have made so many mistakes.",
+        "I'm not sure this approach will work.",
+        "What if we focus on fixing tracking first?",
+        "We should evaluate the decision before we spend more money.",
+        "Our goal is to make fewer mistakes next quarter."
+      ],
+      "tags": ["语法", "条件句", "虚拟语气", "职场", "口语", "决策"],
+      "difficulty": 3,
+      "notes": "详见 docs/course-notes/语法-条件句与决策讨论表达.md",
+      "created_at": "2026-04-07T00:00:00.000Z",
+      "updated_at": "2026-04-07T00:00:00.000Z"
     }
   ]
 }
